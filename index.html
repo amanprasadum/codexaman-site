@@ -3,484 +3,591 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aman Prasad — Web Developer</title>
+
+<!-- SEO Meta Tags -->
+<title>Aman Prasad | Web Developer Kolkata & Howrah — Affordable WordPress, React Native, MERN Stack</title>
+<meta name="description" content="Aman Prasad — Affordable freelance web developer in Howrah, Kolkata. Professional WordPress website design, React Native mobile apps, MERN Stack development starting at low cost. Best web designer near you in Kolkata, Howrah, West Bengal. Get your business website today.">
+<meta name="keywords" content="web developer Kolkata, freelance web designer Howrah, WordPress developer Kolkata, website design Kolkata, affordable website design Kolkata, cheap website design Howrah, React Native developer India, mobile app developer Kolkata, MERN stack developer Kolkata, website design Howrah, low cost website West Bengal, business website Kolkata, freelance developer India, web developer near me Kolkata, custom website design Kolkata, professional web developer Howrah, website banana Kolkata, website designer near me, website design West Bengal, small business website Kolkata">
+<meta name="author" content="Aman Prasad">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://amanprasad.dev/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Aman Prasad | Affordable Freelance Web Developer — Kolkata & Howrah">
+<meta property="og:description" content="Professional web developer from Howrah, Kolkata. Affordable WordPress websites, React Native apps, MERN Stack. Building fast, SEO-ready websites for small businesses in West Bengal and globally.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_IN">
+
+<!-- Schema.org Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Aman Prasad",
+  "jobTitle": "Freelance Web Developer",
+  "description": "Affordable professional freelance web developer based in Howrah, Kolkata specializing in WordPress, React Native, and MERN Stack development for small businesses",
+  "url": "https://amanprasad.dev/",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Kona",
+    "addressLocality": "Howrah",
+    "addressRegion": "West Bengal",
+    "postalCode": "711114",
+    "addressCountry": "IN"
+  },
+  "email": "amanprasad0902@gmail.com",
+  "telephone": "+918420966418",
+  "areaServed": ["Kolkata", "Howrah", "West Bengal", "India", "Australia"],
+  "priceRange": "₹₹",
+  "knowsAbout": ["WordPress", "React Native", "MERN Stack", "Firebase", "Web Design", "Mobile App Development"]
+}
+</script>
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<!-- Tailwind -->
 <script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Google Fonts - Clean, professional -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+
 <script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          ink: '#0f0f11',
-          'ink-2': '#17171a',
-          'ink-3': '#1e1e23',
-          surface: '#232329',
-          'surface-2': '#2a2a32',
-          silver: '#f4f4f5',
-          'silver-2': '#d4d4d8',
-          mist: '#71717a',
-          'mist-2': '#a1a1aa',
-          gold: '#c9a96e',
-          'gold-2': '#e8c88a',
-          sage: '#6b9e84',
-          'sage-2': '#8dbfa5',
-          rust: '#c07860',
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        blue: {
+          50:'#eff6ff', 100:'#dbeafe', 200:'#bfdbfe',
+          400:'#60a5fa', 500:'#3b82f6', 600:'#2563eb',
+          700:'#1d4ed8', 800:'#1e40af', 900:'#1e3a8a',
         },
-        fontFamily: {
-          serif: ['Instrument Serif', 'Georgia', 'serif'],
-          sans: ['Geist', 'system-ui', 'sans-serif'],
+        yellow: {
+          50:'#fefce8', 100:'#fef9c3', 200:'#fef08a',
+          300:'#fde047', 400:'#facc15', 500:'#eab308',
+          600:'#ca8a04',
         },
-        fontSize: {
-          '8xl': ['6rem', { lineHeight: '1' }],
-          '9xl': ['8rem', { lineHeight: '0.9' }],
-          '10xl': ['10rem', { lineHeight: '0.85' }],
+        slate: {
+          50:'#f8fafc', 100:'#f1f5f9', 200:'#e2e8f0',
+          300:'#cbd5e1', 400:'#94a3b8', 500:'#64748b',
+          600:'#475569', 700:'#334155', 800:'#1e293b', 900:'#0f172a',
         }
-      }
+      },
+      fontFamily: { sans: ['Nunito','ui-sans-serif','sans-serif'] }
     }
   }
+}
 </script>
+
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; }
-  body {
-    background: #0f0f11;
-    color: #f4f4f5;
-    font-family: 'Geist', system-ui, sans-serif;
-    overflow-x: hidden;
-    cursor: none;
-  }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Nunito', sans-serif; background: #f8fafc; color: #1e293b; overflow-x: hidden; }
 
-  /* Custom cursor */
-  #cur { position: fixed; width: 8px; height: 8px; background: #c9a96e; border-radius: 50%; pointer-events: none; z-index: 9999; transform: translate(-50%,-50%); transition: transform 0.1s; }
-  #cur-ring { position: fixed; width: 32px; height: 32px; border: 1px solid rgba(201,169,110,0.4); border-radius: 50%; pointer-events: none; z-index: 9998; transform: translate(-50%,-50%); transition: width 0.3s, height 0.3s; }
-  body:has(a:hover) #cur-ring, body:has(button:hover) #cur-ring { width: 50px; height: 50px; border-color: rgba(201,169,110,0.7); }
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: #2563eb; border-radius: 4px; }
 
-  /* Scrollbar */
-  ::-webkit-scrollbar { width: 3px; }
-  ::-webkit-scrollbar-track { background: #0f0f11; }
-  ::-webkit-scrollbar-thumb { background: #c9a96e; }
+/* NAV */
+#navbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  padding: 16px 5%; display: flex; align-items: center; justify-content: space-between;
+  background: rgba(248,250,252,0.92); backdrop-filter: blur(16px);
+  border-bottom: 1px solid #e2e8f0; transition: all 0.3s;
+}
+#navbar.scrolled { padding: 10px 5%; box-shadow: 0 2px 20px rgba(37,99,235,0.08); }
+.nav-logo { font-size: 1.3rem; font-weight: 800; color: #1e293b; text-decoration: none; letter-spacing: -0.02em; }
+.nav-logo span { color: #2563eb; }
+.nav-links { display: flex; gap: 32px; list-style: none; }
+.nav-links a { color: #64748b; font-size: 0.88rem; font-weight: 600; text-decoration: none; transition: color 0.2s; }
+.nav-links a:hover { color: #2563eb; }
 
-  /* Grain texture */
-  body::before {
-    content: '';
-    position: fixed; inset: 0; z-index: 0;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");
-    pointer-events: none; opacity: 0.6;
-  }
+/* BUTTONS */
+.btn-primary {
+  padding: 10px 22px; background: #2563eb; color: #fff;
+  font-weight: 700; font-size: 0.84rem; border-radius: 8px;
+  text-decoration: none; transition: all 0.2s; border: 2px solid #2563eb;
+  display: inline-flex; align-items: center; gap: 7px;
+}
+.btn-primary:hover { background: #1d4ed8; border-color: #1d4ed8; transform: translateY(-1px); box-shadow: 0 8px 24px rgba(37,99,235,0.28); }
+.btn-outline {
+  padding: 10px 22px; background: transparent; color: #2563eb;
+  font-weight: 700; font-size: 0.84rem; border-radius: 8px;
+  text-decoration: none; transition: all 0.2s; border: 2px solid #bfdbfe;
+  display: inline-flex; align-items: center; gap: 7px;
+}
+.btn-outline:hover { background: #eff6ff; border-color: #93c5fd; }
+.btn-yellow {
+  padding: 10px 22px; background: #facc15; color: #1e293b;
+  font-weight: 700; font-size: 0.84rem; border-radius: 8px;
+  text-decoration: none; transition: all 0.2s; border: 2px solid #facc15;
+  display: inline-flex; align-items: center; gap: 7px;
+}
+.btn-yellow:hover { background: #eab308; border-color: #eab308; transform: translateY(-1px); box-shadow: 0 8px 24px rgba(234,179,8,0.3); }
 
-  /* Subtle grid */
-  .grid-overlay {
-    position: fixed; inset: 0; z-index: 0; pointer-events: none;
-    background-image: linear-gradient(rgba(201,169,110,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(201,169,110,0.025) 1px, transparent 1px);
-    background-size: 80px 80px;
-  }
+/* BADGES / CHIPS */
+.badge-blue { display: inline-flex; align-items: center; gap: 6px; padding: 5px 13px; background: #eff6ff; border: 1.5px solid #bfdbfe; color: #2563eb; font-size: 0.75rem; font-weight: 700; border-radius: 7px; }
+.badge-yellow { display: inline-flex; align-items: center; gap: 6px; padding: 5px 13px; background: #fefce8; border: 1.5px solid #fde047; color: #ca8a04; font-size: 0.75rem; font-weight: 700; border-radius: 7px; }
+.badge-green { display: inline-flex; align-items: center; gap: 6px; padding: 5px 13px; background: #f0fdf4; border: 1.5px solid #bbf7d0; color: #16a34a; font-size: 0.75rem; font-weight: 700; border-radius: 7px; }
+.badge-gray { display: inline-flex; align-items: center; gap: 6px; padding: 5px 13px; background: #f1f5f9; border: 1.5px solid #e2e8f0; color: #64748b; font-size: 0.75rem; font-weight: 600; border-radius: 7px; }
 
-  /* Serif italic utility */
-  .serif { font-family: 'Instrument Serif', Georgia, serif; }
-  .serif-italic { font-family: 'Instrument Serif', Georgia, serif; font-style: italic; }
+/* SECTION TAG */
+.section-tag { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: #2563eb; display: inline-flex; align-items: center; gap: 7px; background: #eff6ff; border: 1.5px solid #bfdbfe; padding: 5px 13px; border-radius: 7px; margin-bottom: 14px; }
 
-  /* Nav */
-  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 24px 6%; display: flex; align-items: center; justify-content: space-between; transition: all 0.4s; }
-  nav.scrolled { background: rgba(15,15,17,0.9); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,0.06); padding: 16px 6%; }
-  .nav-logo { font-family: 'Instrument Serif', serif; font-size: 1.4rem; color: #f4f4f5; text-decoration: none; letter-spacing: -0.02em; }
-  .nav-logo span { color: #c9a96e; font-style: italic; }
-  .nav-links { display: flex; gap: 40px; list-style: none; }
-  .nav-links a { color: #71717a; font-size: 0.82rem; font-weight: 400; text-decoration: none; letter-spacing: 0.04em; text-transform: uppercase; transition: color 0.2s; }
-  .nav-links a:hover { color: #f4f4f5; }
-  .nav-hire { padding: 9px 24px; border: 1px solid rgba(201,169,110,0.3); color: #c9a96e; background: transparent; font-family: 'Geist', sans-serif; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; text-decoration: none; border-radius: 4px; transition: all 0.25s; cursor: none; }
-  .nav-hire:hover { background: #c9a96e; color: #0f0f11; border-color: #c9a96e; }
+/* CARDS */
+.card { background: #fff; border: 1.5px solid #e2e8f0; border-radius: 14px; transition: all 0.25s; }
+.card:hover { border-color: #93c5fd; box-shadow: 0 8px 32px rgba(37,99,235,0.1); transform: translateY(-3px); }
 
-  /* Section */
-  section { position: relative; z-index: 1; }
-  .container { max-width: 1200px; margin: 0 auto; padding: 0 6%; }
+/* SKILL TAGS */
+.stag { display: inline-block; padding: 3px 10px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; font-size: 0.72rem; color: #64748b; font-weight: 600; }
+.stag-blue { display: inline-block; padding: 3px 10px; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 6px; font-size: 0.72rem; color: #2563eb; font-weight: 700; }
+.stag-yellow { display: inline-block; padding: 3px 10px; background: #fefce8; border: 1px solid #fde047; border-radius: 6px; font-size: 0.72rem; color: #ca8a04; font-weight: 700; }
 
-  /* Tag */
-  .section-tag { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: #c9a96e; display: flex; align-items: center; gap: 10px; margin-bottom: 20px; }
-  .section-tag::before { content: ''; width: 20px; height: 1px; background: #c9a96e; display: block; }
+/* MARQUEE */
+.marquee-wrap { overflow: hidden; background: #fff; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0; }
+.marquee-track { display: flex; animation: marquee 32s linear infinite; width: max-content; }
+.marquee-item { padding: 13px 30px; font-size: 0.73rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #94a3b8; border-right: 1px solid #e2e8f0; white-space: nowrap; display: flex; align-items: center; gap: 8px; }
+.marquee-item i { color: #2563eb; font-size: 0.85rem; }
+@keyframes marquee { from{transform:translateX(0)} to{transform:translateX(-50%)} }
 
-  /* Divider line */
-  .divider { width: 100%; height: 1px; background: rgba(255,255,255,0.07); }
+/* STATUS DOTS */
+.dot-live { width: 7px; height: 7px; background: #16a34a; border-radius: 50%; display: inline-block; }
+.dot-prog { width: 7px; height: 7px; background: #eab308; border-radius: 50%; display: inline-block; animation: pulse 1.5s ease-in-out infinite; }
+@keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(1.4)} }
 
-  /* Cards base */
-  .card { background: #232329; border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; transition: all 0.3s; }
-  .card:hover { border-color: rgba(201,169,110,0.2); transform: translateY(-3px); }
+/* STAT */
+.stat-num { font-size: 2.6rem; font-weight: 800; color: #1e293b; line-height: 1; letter-spacing: -0.03em; }
+.stat-accent { color: #2563eb; }
 
-  /* Stat */
-  .stat-num { font-family: 'Instrument Serif', serif; font-size: 3.5rem; color: #f4f4f5; line-height: 1; letter-spacing: -0.03em; }
-  .stat-gold { color: #c9a96e; }
+/* AVATAR */
+.avatar-box { background: #2563eb; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; font-weight: 800; color: #fff; letter-spacing: -0.02em; }
 
-  /* Chip */
-  .chip { display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border: 1px solid rgba(255,255,255,0.08); border-radius: 100px; font-size: 0.78rem; color: #a1a1aa; background: #232329; transition: all 0.2s; }
-  .chip:hover { border-color: rgba(201,169,110,0.3); color: #f4f4f5; }
+/* TIMELINE - EXPERIENCE */
+.exp-row { display: grid; grid-template-columns: 200px 1fr; gap: 40px; padding: 36px 0; border-top: 1.5px solid #e2e8f0; }
 
-  /* Skill tag */
-  .stag { padding: 3px 10px; font-size: 0.7rem; background: #2a2a32; border: 1px solid rgba(255,255,255,0.07); border-radius: 100px; color: #71717a; }
+/* EDU CARD */
+.edu-card { background: #fff; border: 1.5px solid #e2e8f0; border-radius: 12px; padding: 20px; display: flex; gap: 14px; align-items: flex-start; transition: all 0.22s; cursor: pointer; }
+.edu-card:hover { border-color: #93c5fd; box-shadow: 0 4px 20px rgba(37,99,235,0.1); transform: translateY(-2px); }
+.edu-icon { width: 40px; height: 40px; min-width: 40px; border-radius: 10px; background: #eff6ff; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0; color: #2563eb; }
 
-  /* Timeline */
-  .tl-line { width: 1px; background: rgba(255,255,255,0.08); position: absolute; left: 0; top: 8px; bottom: 0; }
-  .tl-dot { width: 7px; height: 7px; background: #c9a96e; border-radius: 50%; position: absolute; left: -3px; top: 8px; }
+/* EDU IMAGE PLACEHOLDER */
+.edu-img-placeholder { width: 100%; height: 130px; background: #f1f5f9; border: 2px dashed #cbd5e1; border-radius: 9px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; color: #94a3b8; font-size: 0.75rem; font-weight: 600; margin-top: 12px; cursor: pointer; transition: all 0.2s; }
+.edu-img-placeholder:hover { border-color: #93c5fd; background: #eff6ff; color: #2563eb; }
+.edu-img-placeholder i { font-size: 1.4rem; }
 
-  /* Reveal states */
-  .reveal { opacity: 0; transform: translateY(28px); }
-  .reveal-left { opacity: 0; transform: translateX(-28px); }
-  .reveal-scale { opacity: 0; transform: scale(0.96); }
+/* CONTACT LINK */
+.clink { display: flex; align-items: center; gap: 12px; padding: 15px 18px; background: #fff; border: 1.5px solid #e2e8f0; border-radius: 10px; color: #475569; text-decoration: none; font-size: 0.88rem; font-weight: 600; transition: all 0.22s; }
+.clink:hover { border-color: #93c5fd; color: #2563eb; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(37,99,235,0.1); }
+.clink-icon { width: 36px; height: 36px; background: #eff6ff; border-radius: 9px; display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0; color: #2563eb; }
 
-  /* Status */
-  .s-live { color: #6b9e84; }
-  .s-prog { color: #c9a96e; }
-  .s-dot-live { width: 5px; height: 5px; background: #6b9e84; border-radius: 50%; display: inline-block; }
-  .s-dot-prog { width: 5px; height: 5px; background: #c9a96e; border-radius: 50%; display: inline-block; animation: blink 1.8s ease-in-out infinite; }
-  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.4} }
+/* CTA */
+.cta-bg { background: #1e40af; position: relative; overflow: hidden; }
+.cta-bg::before { content: ''; position: absolute; top: -60px; right: -60px; width: 260px; height: 260px; background: rgba(250,204,21,0.1); border-radius: 50%; }
+.cta-bg::after { content: ''; position: absolute; bottom: -40px; left: 40px; width: 180px; height: 180px; background: rgba(96,165,250,0.08); border-radius: 50%; }
 
-  /* Horizontal marquee */
-  .marquee-wrap { overflow: hidden; border-top: 1px solid rgba(255,255,255,0.07); border-bottom: 1px solid rgba(255,255,255,0.07); }
-  .marquee-track { display: flex; gap: 0; animation: marquee 22s linear infinite; width: max-content; }
-  .marquee-item { padding: 18px 40px; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: #71717a; border-right: 1px solid rgba(255,255,255,0.07); white-space: nowrap; display: flex; align-items: center; gap: 12px; }
-  .marquee-item span { color: #c9a96e; }
-  @keyframes marquee { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+/* PROJECT SLIDER */
+.slider-track { display: flex; transition: transform 0.45s cubic-bezier(0.4,0,0.2,1); }
+.slide { flex-shrink: 0; }
+.slider-btn { width: 40px; height: 40px; border-radius: 9px; background: #fff; border: 1.5px solid #e2e8f0; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.2s; color: #2563eb; font-size: 1rem; }
+.slider-btn:hover { background: #2563eb; color: #fff; border-color: #2563eb; }
+.slider-dot { width: 8px; height: 8px; border-radius: 4px; background: #cbd5e1; transition: all 0.2s; cursor: pointer; }
+.slider-dot.active { background: #2563eb; width: 22px; }
 
-  /* Avatar */
-  .avatar-box { width: 320px; height: 380px; background: #232329; border: 1px solid rgba(255,255,255,0.07); border-radius: 16px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
-  .avatar-box::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 30% 20%, rgba(201,169,110,0.07), transparent 60%); }
-  .avatar-initials { font-family: 'Instrument Serif', serif; font-size: 7rem; color: rgba(201,169,110,0.2); letter-spacing: -0.04em; }
-  .avatar-badge { position: absolute; bottom: 16px; right: 16px; background: #17171a; border: 1px solid rgba(255,255,255,0.09); border-radius: 10px; padding: 12px 16px; }
+/* PROJ CARD */
+.proj-card { background: #fff; border: 1.5px solid #e2e8f0; border-radius: 14px; overflow: hidden; height: 100%; transition: all 0.25s; cursor: pointer; }
+.proj-card:hover { border-color: #93c5fd; box-shadow: 0 10px 36px rgba(37,99,235,0.12); transform: translateY(-4px); }
 
-  /* Project card link */
-  .proj-link { display: inline-flex; align-items: center; gap: 5px; font-size: 0.78rem; color: #c9a96e; text-decoration: none; font-weight: 500; transition: gap 0.2s; }
-  .proj-link:hover { gap: 9px; }
+/* PROJ IMAGE */
+.proj-img-area { width: 100%; height: 0; padding-bottom: 58%; position: relative; background: #f1f5f9; overflow: hidden; }
+.proj-img-area img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.proj-img-area .proj-fallback { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; }
+.proj-badge { position: absolute; top: 10px; left: 10px; padding: 3px 10px; border-radius: 6px; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; display: flex; align-items: center; gap: 5px; }
+.proj-badge-live { background: rgba(240,253,244,0.95); border: 1px solid #86efac; color: #16a34a; }
+.proj-badge-prog { background: rgba(254,252,232,0.95); border: 1px solid #fde047; color: #ca8a04; }
+.proj-url { position: absolute; bottom: 8px; right: 8px; background: rgba(255,255,255,0.92); border-radius: 6px; padding: 3px 9px; font-size: 0.65rem; font-weight: 700; color: #475569; }
 
-  /* Spotlight */
-  .spotlight { background: #17171a; border: 1px solid rgba(201,169,110,0.15); border-radius: 16px; padding: 40px; position: relative; overflow: hidden; }
-  .spotlight::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, rgba(201,169,110,0.5), transparent); }
+/* PROJECT LIGHTBOX */
+#lightbox { display:none; position:fixed; inset:0; z-index:9999; background:rgba(15,23,42,0.85); align-items:center; justify-content:center; padding:16px; }
+#lightbox.open { display:flex; }
+#lb-inner { background:#fff; border-radius:16px; width:100%; max-width:860px; max-height:90vh; overflow:auto; position:relative; }
+#lb-close { position:absolute; top:14px; right:14px; width:32px; height:32px; border-radius:8px; background:#f1f5f9; border:none; cursor:pointer; font-size:1rem; color:#64748b; display:flex; align-items:center; justify-content:center; z-index:1; transition: all 0.2s; }
+#lb-close:hover { background:#e2e8f0; color:#1e293b; }
+.lb-img-gallery { display:grid; grid-template-columns: 1fr 1fr; gap:8px; padding:16px; }
+.lb-img-slot { height:160px; background:#f1f5f9; border-radius:8px; border:2px dashed #cbd5e1; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:5px; font-size:0.75rem; color:#94a3b8; font-weight:600; overflow:hidden; position:relative; }
+.lb-img-slot img { width:100%; height:100%; object-fit:cover; position:absolute; inset:0; }
+.lb-img-slot span { z-index:1; }
 
-  /* Contact link */
-  .clink { display: flex; align-items: center; gap: 10px; padding: 14px 22px; background: #232329; border: 1px solid rgba(255,255,255,0.07); border-radius: 10px; color: #a1a1aa; text-decoration: none; font-size: 0.88rem; transition: all 0.25s; }
-  .clink:hover { border-color: rgba(201,169,110,0.3); color: #f4f4f5; transform: translateY(-2px); }
-  .clink-icon { width: 34px; height: 34px; background: rgba(201,169,110,0.08); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; color: #c9a96e; flex-shrink: 0; }
+/* Calendly embed container */
+#calendly-container { min-height: 700px; }
 
-  /* Edu card */
-  .edu-card { background: #17171a; border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 22px 24px; display: flex; gap: 14px; align-items: flex-start; transition: all 0.25s; }
-  .edu-card:hover { border-color: rgba(201,169,110,0.2); }
-  .edu-icon { width: 36px; height: 36px; min-width: 36px; border-radius: 9px; background: rgba(201,169,110,0.08); display: flex; align-items: center; justify-content: center; color: #c9a96e; font-size: 0.85rem; }
+/* AOS */
+.aos { opacity: 0; transform: translateY(22px); transition: opacity 0.55s ease, transform 0.55s ease; }
+.aos.visible { opacity: 1; transform: translateY(0); }
+.aos-left { opacity: 0; transform: translateX(-22px); transition: opacity 0.55s ease, transform 0.55s ease; }
+.aos-left.visible { opacity: 1; transform: translateX(0); }
 
-  /* Btn */
-  .btn-gold { display: inline-flex; align-items: center; gap: 8px; padding: 14px 32px; background: #c9a96e; color: #0f0f11; font-weight: 600; font-size: 0.88rem; border: none; border-radius: 8px; text-decoration: none; cursor: none; transition: all 0.25s; letter-spacing: 0.02em; }
-  .btn-gold:hover { background: #e8c88a; transform: translateY(-1px); }
-  .btn-outline { display: inline-flex; align-items: center; gap: 8px; padding: 14px 32px; background: transparent; color: #a1a1aa; font-size: 0.88rem; border: 1px solid rgba(255,255,255,0.12); border-radius: 8px; text-decoration: none; cursor: none; transition: all 0.25s; letter-spacing: 0.02em; }
-  .btn-outline:hover { border-color: rgba(201,169,110,0.4); color: #f4f4f5; }
+/* HERO */
+.hero-bg { background: #f8fafc; }
+.hero-bg::before { display:none; } /* no gradient - flat bg */
 
-  @media (max-width: 900px) {
-    .nav-links { display: none; }
-    .hero-title { font-size: 4rem !important; }
-    .about-grid { grid-template-columns: 1fr !important; }
-    .skills-3 { grid-template-columns: 1fr 1fr !important; }
-    .proj-2 { grid-template-columns: 1fr !important; }
-    .edu-2 { grid-template-columns: 1fr !important; }
-    .learn-3 { grid-template-columns: 1fr !important; }
-    .exp-grid { grid-template-columns: 1fr !important; gap: 4px !important; }
-    .avatar-box { width: 100%; max-width: 300px; height: 320px; }
-    .stats-row { flex-direction: column !important; }
-    .stat-border { border-right: none !important; border-bottom: 1px solid rgba(255,255,255,0.07) !important; padding-bottom: 24px !important; }
-    .spotlight-inner { grid-template-columns: 1fr !important; }
-  }
-  @media (max-width: 600px) {
-    .skills-3 { grid-template-columns: 1fr !important; }
-    .hero-title { font-size: 3rem !important; }
-    .hero-actions-wrap { flex-direction: column !important; align-items: center; }
-  }
+/* BOUNCE */
+@keyframes bounce { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(5px)} }
+
+/* SKILL BAR */
+.skill-bar-track { height: 6px; background: #e2e8f0; border-radius: 4px; overflow: hidden; }
+.skill-bar-fill { height: 100%; background: #2563eb; border-radius: 4px; transition: width 1.2s ease; }
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .nav-links { display: none; }
+  .hero-grid, .about-grid, .exp-row { grid-template-columns: 1fr !important; gap: 28px !important; }
+  .skills-grid { grid-template-columns: 1fr 1fr !important; }
+  .edu-grid { grid-template-columns: 1fr !important; }
+  .stats-row { grid-template-columns: 1fr 1fr !important; }
+  .learn-grid { grid-template-columns: 1fr !important; }
+  .lb-img-gallery { grid-template-columns: 1fr !important; }
+}
+@media (max-width: 600px) {
+  .skills-grid, .learn-grid { grid-template-columns: 1fr !important; }
+  .hero-btns { flex-direction: column; }
+  .cta-btns { flex-direction: column; align-items: center; }
+}
 </style>
 </head>
 <body>
 
-<div id="cur"></div>
-<div id="cur-ring"></div>
-<div class="grid-overlay"></div>
-
-<!-- NAV -->
+<!-- NAVBAR -->
 <nav id="navbar">
-  <a href="#" class="nav-logo">aman<span>prasad</span></a>
+  <a href="#" class="nav-logo">AP<span>.</span></a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <a href="mailto:amanprasad0902@gmail.com" class="nav-hire">Hire Me</a>
+  <div style="display:flex;gap:10px;align-items:center;">
+    <a href="#meeting" class="btn-yellow" style="font-size:0.82rem;padding:9px 18px;">
+      <i class="bi bi-calendar-check"></i> Book a Call
+    </a>
+    <a href="mailto:amanprasad0902@gmail.com" class="btn-primary" style="font-size:0.82rem;padding:9px 18px;">
+      <i class="bi bi-envelope"></i> Hire Me
+    </a>
+  </div>
 </nav>
 
 <!-- HERO -->
-<section id="hero" class="min-h-screen flex flex-col items-center justify-center text-center relative overflow-hidden" style="padding: 120px 6% 80px;">
-  <!-- Ambient light -->
-  <div style="position:absolute;top:-200px;left:50%;transform:translateX(-50%);width:700px;height:500px;background:radial-gradient(ellipse, rgba(201,169,110,0.06) 0%, transparent 70%);pointer-events:none;"></div>
-  <div style="position:absolute;bottom:-100px;right:-100px;width:500px;height:400px;background:radial-gradient(ellipse, rgba(107,158,132,0.05) 0%, transparent 70%);pointer-events:none;"></div>
+<section id="hero" class="hero-bg" style="min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:100px 5% 60px;position:relative;" aria-label="Aman Prasad Web Developer Howrah Kolkata">
+  <div class="hero-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;max-width:1200px;margin:0 auto;width:100%;">
+    <div>
+      <div class="badge-blue aos" style="margin-bottom:18px;">
+        <span class="dot-live"></span> Available for Freelance &mdash; Kolkata & Howrah
+      </div>
+      <h1 class="aos" style="font-size:clamp(2.4rem,4.5vw,3.8rem);font-weight:800;line-height:1.1;letter-spacing:-0.03em;color:#0f172a;margin-bottom:14px;">
+        Web Developer<br>
+        <span style="color:#2563eb;">&amp; Digital Builder</span><br>
+        <span style="color:#64748b;font-size:0.75em;font-weight:700;">in Kolkata &amp; Howrah</span>
+      </h1>
+      <p class="aos" style="font-size:1rem;color:#64748b;line-height:1.8;max-width:480px;margin-bottom:14px;">
+        Professional, affordable websites for businesses in <strong style="color:#1e293b;">Kolkata, Howrah, West Bengal</strong> and globally. WordPress, React Native, MERN Stack.
+      </p>
+      <!-- SEO keyword rich tagline -->
+      <p class="aos" style="font-size:0.82rem;color:#94a3b8;margin-bottom:28px;">
+        <i class="bi bi-geo-alt-fill" style="color:#2563eb;"></i> Kona, Howrah &nbsp;|&nbsp; <i class="bi bi-currency-rupee" style="color:#2563eb;"></i> Affordable Pricing &nbsp;|&nbsp; <i class="bi bi-lightning-charge-fill" style="color:#facc15;"></i> Fast Delivery
+      </p>
+      <div class="hero-btns aos" style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px;">
+        <a href="#projects" class="btn-primary"><i class="bi bi-grid-3x3-gap"></i> View Projects</a>
+        <a href="#meeting" class="btn-yellow"><i class="bi bi-calendar-check"></i> Free Consultation</a>
+        <a href="#contact" class="btn-outline"><i class="bi bi-chat-dots"></i> Let's Talk</a>
+      </div>
+      <div class="aos" style="display:flex;flex-wrap:wrap;gap:7px;">
+        <span class="badge-gray"><i class="bi bi-wordpress"></i> WordPress</span>
+        <span class="badge-gray"><i class="bi bi-phone"></i> React Native</span>
+        <span class="badge-gray"><i class="bi bi-stack"></i> MERN Stack</span>
+        <span class="badge-gray"><i class="bi bi-lightning"></i> Firebase</span>
+        <span class="badge-gray"><i class="bi bi-database"></i> MySQL</span>
+      </div>
+    </div>
 
-  <div class="hero-badge reveal" style="display:inline-flex;align-items:center;gap:10px;padding:8px 18px;border:1px solid rgba(201,169,110,0.2);background:rgba(201,169,110,0.05);border-radius:100px;font-size:0.72rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:#a1a1aa;margin-bottom:36px;">
-    <span class="s-dot-live"></span> Open to freelance work
+    <!-- Profile card -->
+    <div class="aos" style="display:flex;flex-direction:column;gap:14px;">
+      <div style="background:#fff;border:1.5px solid #e2e8f0;border-radius:16px;padding:26px;box-shadow:0 4px 24px rgba(37,99,235,0.07);">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:20px;">
+          <div class="avatar-box" style="width:58px;height:58px;flex-shrink:0;">AP</div>
+          <div>
+            <div style="font-weight:800;font-size:0.98rem;color:#0f172a;">Aman Prasad</div>
+            <div style="font-size:0.78rem;color:#64748b;">Web Developer &middot; Howrah, Kolkata</div>
+            <div style="display:flex;align-items:center;gap:5px;margin-top:3px;font-size:0.72rem;color:#16a34a;font-weight:700;"><span class="dot-live"></span> Open to projects</div>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:16px;">
+          <div style="background:#f8fafc;border:1.5px solid #e2e8f0;border-radius:9px;padding:12px;text-align:center;">
+            <div style="font-size:1.6rem;font-weight:800;color:#2563eb;line-height:1;">9+</div>
+            <div style="font-size:0.65rem;color:#94a3b8;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;margin-top:2px;">Projects</div>
+          </div>
+          <div style="background:#f8fafc;border:1.5px solid #e2e8f0;border-radius:9px;padding:12px;text-align:center;">
+            <div style="font-size:1.6rem;font-weight:800;color:#2563eb;line-height:1;">5+</div>
+            <div style="font-size:0.65rem;color:#94a3b8;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;margin-top:2px;">Yrs Exp</div>
+          </div>
+          <div style="background:#f8fafc;border:1.5px solid #e2e8f0;border-radius:9px;padding:12px;text-align:center;">
+            <div style="font-size:1.6rem;font-weight:800;color:#2563eb;line-height:1;">3+</div>
+            <div style="font-size:0.65rem;color:#94a3b8;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;margin-top:2px;">Countries</div>
+          </div>
+        </div>
+        <div style="background:#fefce8;border:1.5px solid #fde047;border-radius:9px;padding:11px;display:flex;align-items:center;gap:9px;">
+          <i class="bi bi-phone-fill" style="color:#ca8a04;font-size:0.9rem;flex-shrink:0;"></i>
+          <div style="font-size:0.78rem;color:#92400e;font-weight:700;">Building: Inventory Management App (React Native)</div>
+        </div>
+      </div>
+      <!-- SEO Trust bar -->
+      <div style="background:#fff;border:1.5px solid #e2e8f0;border-radius:12px;padding:14px 18px;display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;">
+        <div style="font-size:0.75rem;color:#64748b;font-weight:600;">Clients served in</div>
+        <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
+          <span style="font-size:0.8rem;color:#475569;font-weight:700;display:flex;align-items:center;gap:4px;"><i class="bi bi-geo-alt" style="color:#2563eb;"></i>Kolkata</span>
+          <span style="color:#cbd5e1;">|</span>
+          <span style="font-size:0.8rem;color:#475569;font-weight:700;display:flex;align-items:center;gap:4px;"><i class="bi bi-geo-alt" style="color:#2563eb;"></i>Howrah</span>
+          <span style="color:#cbd5e1;">|</span>
+          <span style="font-size:0.8rem;color:#475569;font-weight:700;display:flex;align-items:center;gap:4px;"><i class="bi bi-globe" style="color:#2563eb;"></i>Australia</span>
+        </div>
+      </div>
+      <!-- Affordable highlight -->
+      <div style="background:#eff6ff;border:1.5px solid #bfdbfe;border-radius:12px;padding:14px 18px;display:flex;align-items:center;gap:10px;">
+        <i class="bi bi-currency-rupee" style="color:#2563eb;font-size:1.3rem;flex-shrink:0;"></i>
+        <div>
+          <div style="font-size:0.82rem;font-weight:800;color:#1e40af;">Affordable Pricing for Small Businesses</div>
+          <div style="font-size:0.72rem;color:#3b82f6;">Professional quality websites at budgets that suit local businesses</div>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <h1 class="hero-title serif reveal" style="font-size:clamp(3.5rem, 9vw, 8.5rem);line-height:0.92;letter-spacing:-0.03em;color:#f4f4f5;margin-bottom:16px;">
-    Web Developer<br><span class="serif-italic" style="color:#c9a96e;">&amp; Digital Builder</span>
-  </h1>
-
-  <p class="hero-name reveal" style="font-size:0.85rem;font-weight:400;letter-spacing:0.18em;text-transform:uppercase;color:#71717a;margin-bottom:28px;">Aman Prasad — Howrah, Kolkata</p>
-
-  <p class="reveal" style="max-width:500px;font-size:1rem;color:#71717a;line-height:1.8;font-weight:300;margin-bottom:48px;">
-    Building purposeful digital products — business websites, mobile apps, and custom web solutions. Clean code, refined design, measurable impact.
-  </p>
-
-  <div class="hero-actions-wrap reveal" style="display:flex;gap:12px;justify-content:center;">
-    <a href="#projects" class="btn-gold">View Projects ↗</a>
-    <a href="mailto:amanprasad0902@gmail.com" class="btn-outline">Get in Touch</a>
-  </div>
-
-  <div class="reveal" style="position:absolute;bottom:40px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;color:#71717a;">
-    Scroll
-    <div style="width:1px;height:36px;background:linear-gradient(to bottom,#c9a96e,transparent);animation:scrollAnim 1.6s ease-in-out infinite;"></div>
+  <!-- Scroll hint -->
+  <div style="position:absolute;bottom:28px;left:50%;animation:bounce 1.7s ease-in-out infinite;display:flex;flex-direction:column;align-items:center;gap:4px;font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#94a3b8;">
+    Scroll <i class="bi bi-chevron-down" style="color:#2563eb;font-size:0.9rem;"></i>
   </div>
 </section>
 
-<style>@keyframes scrollAnim{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}100%{transform:scaleY(0);transform-origin:bottom}}</style>
-
 <!-- MARQUEE -->
-<div class="marquee-wrap" style="position:relative;z-index:1;">
+<div class="marquee-wrap">
   <div class="marquee-track">
-    <div class="marquee-item"><span>●</span> HTML / CSS / JS</div>
-    <div class="marquee-item"><span>●</span> React Native</div>
-    <div class="marquee-item"><span>●</span> WordPress</div>
-    <div class="marquee-item"><span>●</span> Firebase</div>
-    <div class="marquee-item"><span>●</span> MySQL</div>
-    <div class="marquee-item"><span>●</span> MERN Stack</div>
-    <div class="marquee-item"><span>●</span> Expo</div>
-    <div class="marquee-item"><span>●</span> LangChain</div>
-    <div class="marquee-item"><span>●</span> IT Support</div>
-    <div class="marquee-item"><span>●</span> Inventory Systems</div>
-    <!-- duplicate -->
-    <div class="marquee-item"><span>●</span> HTML / CSS / JS</div>
-    <div class="marquee-item"><span>●</span> React Native</div>
-    <div class="marquee-item"><span>●</span> WordPress</div>
-    <div class="marquee-item"><span>●</span> Firebase</div>
-    <div class="marquee-item"><span>●</span> MySQL</div>
-    <div class="marquee-item"><span>●</span> MERN Stack</div>
-    <div class="marquee-item"><span>●</span> Expo</div>
-    <div class="marquee-item"><span>●</span> LangChain</div>
-    <div class="marquee-item"><span>●</span> IT Support</div>
-    <div class="marquee-item"><span>●</span> Inventory Systems</div>
-  </div>
-</div>
-
-<!-- STATS -->
-<div style="position:relative;z-index:1;background:#17171a;border-bottom:1px solid rgba(255,255,255,0.07);">
-  <div class="container">
-    <div class="stats-row" style="display:flex;justify-content:center;align-items:stretch;flex-wrap:wrap;">
-      <div class="stat-border reveal" style="padding:40px 52px;text-align:center;border-right:1px solid rgba(255,255,255,0.07);">
-        <div class="stat-num">9<span class="stat-gold">+</span></div>
-        <div style="font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:#71717a;margin-top:6px;">Projects Delivered</div>
-      </div>
-      <div class="stat-border reveal" style="padding:40px 52px;text-align:center;border-right:1px solid rgba(255,255,255,0.07);">
-        <div class="stat-num">5<span class="stat-gold">+</span></div>
-        <div style="font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:#71717a;margin-top:6px;">Years Experience</div>
-      </div>
-      <div class="stat-border reveal" style="padding:40px 52px;text-align:center;border-right:1px solid rgba(255,255,255,0.07);">
-        <div class="stat-num">3<span class="stat-gold">+</span></div>
-        <div style="font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:#71717a;margin-top:6px;">Countries Served</div>
-      </div>
-      <div class="stat-border reveal" style="padding:40px 52px;text-align:center;">
-        <div class="stat-num">1<span class="stat-gold">x</span></div>
-        <div style="font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:#71717a;margin-top:6px;">App in Development</div>
-      </div>
-    </div>
+    <div class="marquee-item"><i class="bi bi-globe2"></i> Web Developer Kolkata</div>
+    <div class="marquee-item"><i class="bi bi-code-slash"></i> HTML / CSS / JavaScript</div>
+    <div class="marquee-item"><i class="bi bi-wordpress"></i> WordPress Expert</div>
+    <div class="marquee-item"><i class="bi bi-phone"></i> React Native Apps</div>
+    <div class="marquee-item"><i class="bi bi-lightning-charge"></i> Firebase Backend</div>
+    <div class="marquee-item"><i class="bi bi-database"></i> MySQL Databases</div>
+    <div class="marquee-item"><i class="bi bi-stack"></i> MERN Stack</div>
+    <div class="marquee-item"><i class="bi bi-geo-alt"></i> Freelancer Howrah</div>
+    <div class="marquee-item"><i class="bi bi-shop"></i> Business Websites</div>
+    <div class="marquee-item"><i class="bi bi-currency-rupee"></i> Affordable Prices</div>
+    <div class="marquee-item"><i class="bi bi-robot"></i> AI Automation</div>
+    <div class="marquee-item"><i class="bi bi-headset"></i> IT Support</div>
+    <!-- duplicates for seamless loop -->
+    <div class="marquee-item"><i class="bi bi-globe2"></i> Web Developer Kolkata</div>
+    <div class="marquee-item"><i class="bi bi-code-slash"></i> HTML / CSS / JavaScript</div>
+    <div class="marquee-item"><i class="bi bi-wordpress"></i> WordPress Expert</div>
+    <div class="marquee-item"><i class="bi bi-phone"></i> React Native Apps</div>
+    <div class="marquee-item"><i class="bi bi-lightning-charge"></i> Firebase Backend</div>
+    <div class="marquee-item"><i class="bi bi-database"></i> MySQL Databases</div>
+    <div class="marquee-item"><i class="bi bi-stack"></i> MERN Stack</div>
+    <div class="marquee-item"><i class="bi bi-geo-alt"></i> Freelancer Howrah</div>
+    <div class="marquee-item"><i class="bi bi-shop"></i> Business Websites</div>
+    <div class="marquee-item"><i class="bi bi-currency-rupee"></i> Affordable Prices</div>
+    <div class="marquee-item"><i class="bi bi-robot"></i> AI Automation</div>
+    <div class="marquee-item"><i class="bi bi-headset"></i> IT Support</div>
   </div>
 </div>
 
 <!-- ABOUT -->
-<section id="about" style="background:#0f0f11;padding:120px 0;">
-  <div class="container">
-    <div class="about-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;">
-      <div class="reveal-left" style="display:flex;flex-direction:column;align-items:flex-start;gap:0;">
-        <div class="avatar-box">
-          <div class="avatar-initials">AP</div>
-          <div class="avatar-badge">
-            <div style="font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:#71717a;margin-bottom:2px;">Based in</div>
-            <div style="font-family:'Instrument Serif',serif;font-size:1.1rem;color:#c9a96e;line-height:1;">Howrah, WB</div>
+<section id="about" style="background:#fff;padding:96px 5%;" aria-label="About Aman Prasad Web Developer Howrah Kolkata">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div class="about-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;">
+      <div class="aos-left">
+        <div style="background:#f8fafc;border:1.5px solid #e2e8f0;border-radius:18px;padding:32px;">
+          <div class="avatar-box" style="width:72px;height:72px;margin-bottom:18px;font-size:1.4rem;">AP</div>
+          <h3 style="font-size:1.2rem;font-weight:800;color:#0f172a;margin-bottom:6px;">Aman Prasad</h3>
+          <p style="font-size:0.82rem;color:#2563eb;font-weight:700;margin-bottom:18px;">Freelance Web Developer &mdash; Howrah, Kolkata</p>
+          <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:22px;">
+            <div style="display:flex;align-items:center;gap:10px;font-size:0.82rem;color:#475569;font-weight:600;"><i class="bi bi-envelope-fill" style="color:#2563eb;width:16px;"></i>amanprasad0902@gmail.com</div>
+            <div style="display:flex;align-items:center;gap:10px;font-size:0.82rem;color:#475569;font-weight:600;"><i class="bi bi-telephone-fill" style="color:#2563eb;width:16px;"></i>+91 84209 66418</div>
+            <div style="display:flex;align-items:center;gap:10px;font-size:0.82rem;color:#475569;font-weight:600;"><i class="bi bi-geo-alt-fill" style="color:#2563eb;width:16px;"></i>Kona, Howrah &mdash; 711114, West Bengal</div>
+          </div>
+          <!-- Skill Bars -->
+          <div style="display:flex;flex-direction:column;gap:13px;">
+            <div>
+              <div style="display:flex;justify-content:space-between;font-size:0.75rem;font-weight:700;color:#475569;margin-bottom:5px;"><span>WordPress &amp; Web Design</span><span style="color:#2563eb;">90%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90%"></div></div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;font-size:0.75rem;font-weight:700;color:#475569;margin-bottom:5px;"><span>React Native / Mobile</span><span style="color:#2563eb;">75%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75%"></div></div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;font-size:0.75rem;font-weight:700;color:#475569;margin-bottom:5px;"><span>MERN Stack</span><span style="color:#2563eb;">60%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="60%"></div></div>
+            </div>
           </div>
         </div>
       </div>
       <div>
-        <div class="section-tag reveal">About Me</div>
-        <h2 class="reveal" style="font-family:'Instrument Serif',serif;font-size:clamp(2rem,4vw,3rem);letter-spacing:-0.02em;line-height:1.1;margin-bottom:24px;">
-          Building the web,<br><span style="font-style:italic;color:#c9a96e;">one layer at a time.</span>
+        <div class="section-tag aos">About Me</div>
+        <h2 class="aos" style="font-size:clamp(1.8rem,3.2vw,2.6rem);font-weight:800;letter-spacing:-0.02em;line-height:1.18;margin-bottom:18px;color:#0f172a;">
+          Building purposeful<br><span style="color:#2563eb;">digital products</span> for<br>real businesses in Kolkata.
         </h2>
-        <div class="reveal" style="display:flex;flex-direction:column;gap:14px;color:#71717a;font-size:0.95rem;line-height:1.85;font-weight:300;">
-          <p>I'm Aman Prasad — a web developer from Kona, Howrah with a background spanning both design and engineering. I build business websites, custom web solutions, and mobile apps that solve real-world problems.</p>
-          <p>Currently expanding into the MERN Stack and React Native while exploring AI automation workflows. My projects span loft conversion companies in Australia to kidswear manufacturers right here in India.</p>
-          <p><a href="mailto:amanprasad0902@gmail.com" style="color:#c9a96e;text-decoration:none;">amanprasad0902@gmail.com</a> &nbsp;·&nbsp; <a href="tel:8420966418" style="color:#6b9e84;text-decoration:none;">+91 84209 66418</a></p>
+        <div class="aos" style="display:flex;flex-direction:column;gap:13px;color:#64748b;font-size:0.94rem;line-height:1.85;">
+          <p>I'm a freelance web developer from Kona, Howrah with 5+ years of experience building professional business websites, mobile apps, and custom web solutions at affordable prices. I work with businesses in <strong style="color:#1e293b;">Kolkata, Howrah, West Bengal</strong> and internationally.</p>
+          <p>Whether you need a <strong style="color:#1e293b;">WordPress website, an e-commerce store, or a mobile app</strong> — I deliver fast, SEO-optimised, and mobile-friendly websites that help your business grow online. Affordable pricing tailored to local businesses.</p>
+          <p>Currently expanding into <strong style="color:#1e293b;">MERN Stack</strong> and exploring AI automation with LangChain and n8n.</p>
         </div>
-        <div class="reveal" style="display:flex;flex-wrap:wrap;gap:8px;margin-top:28px;">
-          <div class="chip">HTML / CSS / JS</div>
-          <div class="chip">Bootstrap</div>
-          <div class="chip">React Native</div>
-          <div class="chip">MySQL</div>
-          <div class="chip">MS Office</div>
-          <div class="chip">WordPress</div>
+        <div class="aos" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:24px;">
+          <div style="background:#f8fafc;border:1.5px solid #e2e8f0;border-radius:10px;padding:16px;">
+            <div style="font-size:1.8rem;font-weight:800;color:#2563eb;line-height:1;margin-bottom:3px;">9+</div>
+            <div style="font-size:0.75rem;color:#64748b;font-weight:700;">Projects Delivered</div>
+          </div>
+          <div style="background:#f8fafc;border:1.5px solid #e2e8f0;border-radius:10px;padding:16px;">
+            <div style="font-size:1.8rem;font-weight:800;color:#2563eb;line-height:1;margin-bottom:3px;">5+</div>
+            <div style="font-size:0.75rem;color:#64748b;font-weight:700;">Years Experience</div>
+          </div>
+          <div style="background:#f8fafc;border:1.5px solid #e2e8f0;border-radius:10px;padding:16px;">
+            <div style="font-size:1.8rem;font-weight:800;color:#2563eb;line-height:1;margin-bottom:3px;">3+</div>
+            <div style="font-size:0.75rem;color:#64748b;font-weight:700;">Countries Served</div>
+          </div>
+          <div style="background:#fefce8;border:1.5px solid #fde047;border-radius:10px;padding:16px;">
+            <div style="font-size:1.8rem;font-weight:800;color:#ca8a04;line-height:1;margin-bottom:3px;">₹₹</div>
+            <div style="font-size:0.75rem;color:#92400e;font-weight:700;">Affordable Pricing</div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SKILLS -->
-<section id="skills" style="background:#0f0f11;padding:0 0 120px 0;">
-  <div class="container">
-    <div class="divider"></div>
-    <div style="padding-top:80px;">
-      <div class="section-tag reveal">Technical Stack</div>
-      <div style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:56px;">
-        <h2 class="reveal" style="font-family:'Instrument Serif',serif;font-size:clamp(2rem,4vw,3rem);letter-spacing:-0.02em;line-height:1.1;">What I <span style="font-style:italic;color:#c9a96e;">Build With</span></h2>
-        <p class="reveal" style="font-size:0.85rem;color:#71717a;max-width:280px;text-align:right;font-weight:300;line-height:1.7;">A well-rounded toolkit spanning front-end, back-end, databases, and productivity tools.</p>
+<!-- WHY CHOOSE ME - SEO section -->
+<section style="background:#eff6ff;padding:72px 5%;border-top:1.5px solid #bfdbfe;border-bottom:1.5px solid #bfdbfe;" aria-label="Why choose Aman Prasad web developer Kolkata affordable website design">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div style="text-align:center;margin-bottom:40px;">
+      <div class="section-tag aos" style="justify-content:center;">Why Choose Me</div>
+      <h2 class="aos" style="font-size:clamp(1.7rem,3vw,2.3rem);font-weight:800;letter-spacing:-0.02em;color:#0f172a;">Best Web Developer in <span style="color:#2563eb;">Kolkata &amp; Howrah</span></h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px;" class="why-grid">
+      <div class="card aos" style="padding:22px;text-align:center;">
+        <i class="bi bi-currency-rupee" style="font-size:1.8rem;color:#2563eb;margin-bottom:10px;display:block;"></i>
+        <h3 style="font-size:0.9rem;font-weight:800;color:#0f172a;margin-bottom:7px;">Affordable Prices</h3>
+        <p style="font-size:0.78rem;color:#64748b;line-height:1.65;">Professional websites at budgets that suit small businesses in Kolkata and Howrah.</p>
       </div>
+      <div class="card aos" style="padding:22px;text-align:center;">
+        <i class="bi bi-search" style="font-size:1.8rem;color:#2563eb;margin-bottom:10px;display:block;"></i>
+        <h3 style="font-size:0.9rem;font-weight:800;color:#0f172a;margin-bottom:7px;">SEO Optimised</h3>
+        <p style="font-size:0.78rem;color:#64748b;line-height:1.65;">Every website I build is optimised to rank on Google and bring you local customers.</p>
+      </div>
+      <div class="card aos" style="padding:22px;text-align:center;">
+        <i class="bi bi-lightning-charge-fill" style="font-size:1.8rem;color:#facc15;margin-bottom:10px;display:block;"></i>
+        <h3 style="font-size:0.9rem;font-weight:800;color:#0f172a;margin-bottom:7px;">Fast Delivery</h3>
+        <p style="font-size:0.78rem;color:#64748b;line-height:1.65;">Quick turnaround times without compromising on quality or attention to detail.</p>
+      </div>
+      <div class="card aos" style="padding:22px;text-align:center;">
+        <i class="bi bi-headset" style="font-size:1.8rem;color:#2563eb;margin-bottom:10px;display:block;"></i>
+        <h3 style="font-size:0.9rem;font-weight:800;color:#0f172a;margin-bottom:7px;">Dedicated Support</h3>
+        <p style="font-size:0.78rem;color:#64748b;line-height:1.65;">Ongoing support and maintenance so your website runs perfectly at all times.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+@media(max-width:900px){.why-grid{grid-template-columns:1fr 1fr !important;}}
+@media(max-width:500px){.why-grid{grid-template-columns:1fr !important;}}
+</style>
 
-      <div class="skills-3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;">
-        <div class="card reveal" style="padding:28px;">
-          <div style="width:40px;height:40px;background:rgba(201,169,110,0.08);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1rem;color:#c9a96e;margin-bottom:16px;">⬡</div>
-          <h3 style="font-weight:600;font-size:0.92rem;margin-bottom:8px;color:#f4f4f5;">Frontend Development</h3>
-          <p style="font-size:0.8rem;color:#71717a;font-weight:300;line-height:1.6;margin-bottom:14px;">Responsive, interactive interfaces with modern web standards.</p>
-          <div style="display:flex;flex-wrap:wrap;gap:5px;">
-            <span class="stag">HTML5</span><span class="stag">CSS3</span><span class="stag">JavaScript</span><span class="stag">jQuery</span><span class="stag">Bootstrap</span>
-          </div>
-        </div>
-        <div class="card reveal" style="padding:28px;">
-          <div style="width:40px;height:40px;background:rgba(107,158,132,0.08);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1rem;color:#6b9e84;margin-bottom:16px;">◫</div>
-          <h3 style="font-weight:600;font-size:0.92rem;margin-bottom:8px;color:#f4f4f5;">Backend &amp; Database</h3>
-          <p style="font-size:0.8rem;color:#71717a;font-weight:300;line-height:1.6;margin-bottom:14px;">Data management and server-side integration for dynamic applications.</p>
-          <div style="display:flex;flex-wrap:wrap;gap:5px;">
-            <span class="stag">MySQL</span><span class="stag">Firebase</span><span class="stag">Cloud Functions</span><span class="stag">PHP</span>
-          </div>
-        </div>
-        <div class="card reveal" style="padding:28px;">
-          <div style="width:40px;height:40px;background:rgba(192,120,96,0.08);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1rem;color:#c07860;margin-bottom:16px;">◈</div>
-          <h3 style="font-weight:600;font-size:0.92rem;margin-bottom:8px;color:#f4f4f5;">Mobile Development</h3>
-          <p style="font-size:0.8rem;color:#71717a;font-weight:300;line-height:1.6;margin-bottom:14px;">Cross-platform mobile apps with seamless UX and native feel.</p>
-          <div style="display:flex;flex-wrap:wrap;gap:5px;">
-            <span class="stag">React Native</span><span class="stag">Expo</span><span class="stag">Firebase Auth</span><span class="stag">Barcode Scanner</span>
-          </div>
-        </div>
-        <div class="card reveal" style="padding:28px;">
-          <div style="width:40px;height:40px;background:rgba(201,169,110,0.08);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1rem;color:#c9a96e;margin-bottom:16px;">◰</div>
-          <h3 style="font-weight:600;font-size:0.92rem;margin-bottom:8px;color:#f4f4f5;">CMS &amp; Platforms</h3>
-          <p style="font-size:0.8rem;color:#71717a;font-weight:300;line-height:1.6;margin-bottom:14px;">WordPress-based business sites with full CMS control and customisation.</p>
-          <div style="display:flex;flex-wrap:wrap;gap:5px;">
-            <span class="stag">WordPress</span><span class="stag">Theme Dev</span><span class="stag">CMS Control</span>
-          </div>
-        </div>
-        <div class="card reveal" style="padding:28px;">
-          <div style="width:40px;height:40px;background:rgba(107,158,132,0.08);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1rem;color:#6b9e84;margin-bottom:16px;">▦</div>
-          <h3 style="font-weight:600;font-size:0.92rem;margin-bottom:8px;color:#f4f4f5;">Productivity &amp; Office</h3>
-          <p style="font-size:0.8rem;color:#71717a;font-weight:300;line-height:1.6;margin-bottom:14px;">Advanced command of office and data tools for business operations.</p>
-          <div style="display:flex;flex-wrap:wrap;gap:5px;">
-            <span class="stag">MS Office</span><span class="stag">Advanced Excel</span><span class="stag">Data Entry</span>
-          </div>
-        </div>
-        <div class="card reveal" style="padding:28px;border-color:rgba(201,169,110,0.15);background:rgba(201,169,110,0.03);">
-          <div style="width:40px;height:40px;background:rgba(201,169,110,0.08);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1rem;color:#c9a96e;margin-bottom:16px;">⟡</div>
-          <h3 style="font-weight:600;font-size:0.92rem;margin-bottom:8px;color:#f4f4f5;">Currently Learning</h3>
-          <p style="font-size:0.8rem;color:#71717a;font-weight:300;line-height:1.6;margin-bottom:14px;">Expanding into full-stack and AI-driven development workflows.</p>
-          <div style="display:flex;flex-wrap:wrap;gap:5px;">
-            <span class="stag">React</span><span class="stag">Node.js</span><span class="stag">MongoDB</span><span class="stag">Express</span><span class="stag">LangChain</span>
-          </div>
-        </div>
+<!-- SKILLS -->
+<section id="skills" style="background:#f8fafc;padding:96px 5%;" aria-label="Technical Skills WordPress React Native MERN Stack Web Developer Kolkata">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div style="text-align:center;margin-bottom:52px;">
+      <div class="section-tag aos" style="justify-content:center;"><i class="bi bi-tools"></i> Technical Stack</div>
+      <h2 class="aos" style="font-size:clamp(1.8rem,3.2vw,2.6rem);font-weight:800;letter-spacing:-0.02em;color:#0f172a;margin-bottom:10px;">What I <span style="color:#2563eb;">Build With</span></h2>
+      <p class="aos" style="font-size:0.94rem;color:#64748b;max-width:460px;margin:0 auto;">A full-stack toolkit spanning web, mobile, databases, and productivity tools.</p>
+    </div>
+    <div class="skills-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;">
+      <div class="card aos" style="padding:26px;">
+        <i class="bi bi-window-desktop" style="font-size:1.6rem;color:#2563eb;margin-bottom:14px;display:block;"></i>
+        <h3 style="font-weight:800;font-size:0.9rem;margin-bottom:7px;color:#0f172a;">Frontend Development</h3>
+        <p style="font-size:0.78rem;color:#64748b;line-height:1.65;margin-bottom:12px;">Responsive, pixel-perfect interfaces using modern web standards.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:5px;"><span class="stag">HTML5</span><span class="stag">CSS3</span><span class="stag">JavaScript</span><span class="stag">jQuery</span><span class="stag">Bootstrap</span></div>
+      </div>
+      <div class="card aos" style="padding:26px;">
+        <i class="bi bi-server" style="font-size:1.6rem;color:#2563eb;margin-bottom:14px;display:block;"></i>
+        <h3 style="font-weight:800;font-size:0.9rem;margin-bottom:7px;color:#0f172a;">Backend &amp; Database</h3>
+        <p style="font-size:0.78rem;color:#64748b;line-height:1.65;margin-bottom:12px;">Server-side logic, database design, and cloud backend services.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:5px;"><span class="stag">MySQL</span><span class="stag">Firebase</span><span class="stag">Cloud Functions</span><span class="stag">PHP</span></div>
+      </div>
+      <div class="card aos" style="padding:26px;">
+        <i class="bi bi-phone-fill" style="font-size:1.6rem;color:#2563eb;margin-bottom:14px;display:block;"></i>
+        <h3 style="font-weight:800;font-size:0.9rem;margin-bottom:7px;color:#0f172a;">Mobile Development</h3>
+        <p style="font-size:0.78rem;color:#64748b;line-height:1.65;margin-bottom:12px;">Cross-platform Android &amp; iOS apps with seamless UX.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:5px;"><span class="stag">React Native</span><span class="stag">Expo</span><span class="stag">Firebase Auth</span><span class="stag">Barcode</span></div>
+      </div>
+      <div class="card aos" style="padding:26px;">
+        <i class="bi bi-wordpress" style="font-size:1.6rem;color:#2563eb;margin-bottom:14px;display:block;"></i>
+        <h3 style="font-weight:800;font-size:0.9rem;margin-bottom:7px;color:#0f172a;">CMS &amp; WordPress</h3>
+        <p style="font-size:0.78rem;color:#64748b;line-height:1.65;margin-bottom:12px;">Complete WordPress websites with custom themes, plugins, and WooCommerce.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:5px;"><span class="stag">WordPress</span><span class="stag">Theme Dev</span><span class="stag">WooCommerce</span><span class="stag">SEO</span></div>
+      </div>
+      <div class="card aos" style="padding:26px;">
+        <i class="bi bi-file-earmark-spreadsheet" style="font-size:1.6rem;color:#2563eb;margin-bottom:14px;display:block;"></i>
+        <h3 style="font-weight:800;font-size:0.9rem;margin-bottom:7px;color:#0f172a;">Productivity &amp; Office</h3>
+        <p style="font-size:0.78rem;color:#64748b;line-height:1.65;margin-bottom:12px;">Advanced MS Office and data tools for efficient business operations.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:5px;"><span class="stag">MS Office</span><span class="stag">Advanced Excel</span><span class="stag">Data Entry</span></div>
+      </div>
+      <div class="card aos" style="padding:26px;border-color:#bfdbfe;background:#f8fbff;">
+        <i class="bi bi-rocket-takeoff" style="font-size:1.6rem;color:#facc15;margin-bottom:14px;display:block;"></i>
+        <h3 style="font-weight:800;font-size:0.9rem;margin-bottom:7px;color:#0f172a;">Currently Learning</h3>
+        <p style="font-size:0.78rem;color:#64748b;line-height:1.65;margin-bottom:12px;">Expanding into full-stack and AI-driven development actively.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:5px;"><span class="stag-blue">React</span><span class="stag-blue">Node.js</span><span class="stag-blue">MongoDB</span><span class="stag-yellow">LangChain</span></div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- EXPERIENCE -->
-<section id="experience" style="background:#17171a;padding:120px 0;">
-  <div class="container">
-    <div class="section-tag reveal">Work History</div>
-    <h2 class="reveal" style="font-family:'Instrument Serif',serif;font-size:clamp(2rem,4vw,3rem);letter-spacing:-0.02em;line-height:1.1;margin-bottom:56px;">Professional <span style="font-style:italic;color:#c9a96e;">Experience</span></h2>
+<section id="experience" style="background:#fff;padding:96px 5%;" aria-label="Work Experience IT Support Web Designer Kolkata">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div class="section-tag aos"><i class="bi bi-briefcase"></i> Work History</div>
+    <h2 class="aos" style="font-size:clamp(1.8rem,3.2vw,2.6rem);font-weight:800;letter-spacing:-0.02em;color:#0f172a;margin-bottom:52px;">Professional <span style="color:#2563eb;">Experience</span></h2>
 
     <div style="display:flex;flex-direction:column;gap:0;">
-      <!-- Experience 1 -->
-      <div class="exp-grid reveal" style="display:grid;grid-template-columns:200px 1fr;gap:48px;padding:44px 0;border-top:1px solid rgba(255,255,255,0.07);position:relative;">
-        <div>
-          <div style="font-size:0.78rem;font-weight:500;letter-spacing:0.04em;color:#71717a;margin-bottom:8px;">2022 — Present</div>
-          <span style="display:inline-block;padding:3px 10px;font-size:0.68rem;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;background:rgba(107,158,132,0.1);color:#6b9e84;border:1px solid rgba(107,158,132,0.25);border-radius:100px;">Current</span>
+      <div class="exp-row aos">
+        <div style="padding-top:4px;">
+          <div style="font-size:0.78rem;font-weight:700;color:#64748b;margin-bottom:10px;">2022 &mdash; Present</div>
+          <span class="badge-green"><i class="bi bi-circle-fill" style="font-size:0.5rem;"></i> Current Role</span>
         </div>
         <div>
-          <div style="font-family:'Instrument Serif',serif;font-size:1.3rem;margin-bottom:4px;color:#f4f4f5;letter-spacing:-0.01em;">IT Support & Operations Specialist</div>
-          <div style="font-size:0.82rem;color:#c9a96e;font-weight:500;margin-bottom:14px;">Bhagwati Traders Pvt Ltd</div>
-          <p style="font-size:0.88rem;color:#71717a;font-weight:300;line-height:1.8;max-width:580px;">Providing day-to-day IT support and handling internal tech queries. Overseeing website design and content updates, managing the inventory application, and handling enquiries routed through digital channels. Using advanced Excel and MS Office for operational workflows and record-keeping.</p>
-          <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:16px;">
-            <span class="stag">IT Support</span><span class="stag">Website Management</span><span class="stag">Inventory App</span><span class="stag">MS Office</span><span class="stag">Content &amp; Enquiries</span>
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:6px;">
+            <div style="width:38px;height:38px;background:#eff6ff;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="bi bi-buildings" style="color:#2563eb;font-size:1rem;"></i></div>
+            <div>
+              <h3 style="font-weight:800;font-size:1rem;color:#0f172a;line-height:1.2;">IT Support &amp; Operations Specialist</h3>
+              <div style="font-size:0.82rem;color:#2563eb;font-weight:700;">Bhagwati Traders Pvt Ltd</div>
+            </div>
           </div>
+          <p style="font-size:0.88rem;color:#64748b;line-height:1.8;max-width:580px;margin:13px 0;">Day-to-day IT support, website management and content updates, inventory application oversight, and digital channel enquiries. Using advanced Excel and MS Office for operational workflows and record-keeping.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:6px;"><span class="stag">IT Support</span><span class="stag">Website Management</span><span class="stag">Inventory App</span><span class="stag">MS Office</span><span class="stag">Excel</span></div>
         </div>
       </div>
 
-      <!-- Experience 2 -->
-      <div class="exp-grid reveal" style="display:grid;grid-template-columns:200px 1fr;gap:48px;padding:44px 0;border-top:1px solid rgba(255,255,255,0.07);border-bottom:1px solid rgba(255,255,255,0.07);">
-        <div>
-          <div style="font-size:0.78rem;font-weight:500;letter-spacing:0.04em;color:#71717a;margin-bottom:8px;">Jan — Aug 2020</div>
-          <span style="display:inline-block;padding:3px 10px;font-size:0.68rem;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;background:#232329;color:#71717a;border:1px solid rgba(255,255,255,0.08);border-radius:100px;">Past</span>
+      <div class="exp-row aos" style="border-bottom:1.5px solid #e2e8f0;">
+        <div style="padding-top:4px;">
+          <div style="font-size:0.78rem;font-weight:700;color:#64748b;margin-bottom:10px;">Jan &mdash; Aug 2020</div>
+          <span class="badge-gray">Past Role</span>
         </div>
         <div>
-          <div style="font-family:'Instrument Serif',serif;font-size:1.3rem;margin-bottom:4px;color:#f4f4f5;letter-spacing:-0.01em;">Junior Associate Web Designer</div>
-          <div style="font-size:0.82rem;color:#c9a96e;font-weight:500;margin-bottom:14px;">Visite Tech (South City)</div>
-          <p style="font-size:0.88rem;color:#71717a;font-weight:300;line-height:1.8;max-width:580px;">Assisted senior designers on client-facing website projects. Worked on front-end design and visual development, sharpening skills in layout, typography, and cross-browser compatibility. Role was discontinued due to the COVID-19 pandemic.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- EDUCATION -->
-<section id="education" style="background:#0f0f11;padding:120px 0;">
-  <div class="container">
-    <div class="section-tag reveal">Academic Background</div>
-    <h2 class="reveal" style="font-family:'Instrument Serif',serif;font-size:clamp(2rem,4vw,3rem);letter-spacing:-0.02em;line-height:1.1;margin-bottom:56px;">Education &amp; <span style="font-style:italic;color:#c9a96e;">Certifications</span></h2>
-    <div class="edu-2" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
-      <div class="edu-card reveal">
-        <div class="edu-icon">🎓</div>
-        <div>
-          <div style="font-weight:500;font-size:0.88rem;color:#f4f4f5;margin-bottom:3px;">Bachelor of Commerce (BCOM)</div>
-          <div style="font-size:0.78rem;color:#71717a;font-weight:300;">IGNOU — Indira Gandhi National Open University</div>
-          <div style="font-size:0.72rem;color:#c9a96e;margin-top:5px;font-weight:500;">2023</div>
-        </div>
-      </div>
-      <div class="edu-card reveal">
-        <div class="edu-icon">⌨</div>
-        <div>
-          <div style="font-weight:500;font-size:0.88rem;color:#f4f4f5;margin-bottom:3px;">Advanced Computer Programming</div>
-          <div style="font-size:0.78rem;color:#71717a;font-weight:300;">Ramakrishna Mission Shilpamandira (Belur Math)</div>
-          <div style="font-size:0.72rem;color:#c9a96e;margin-top:5px;font-weight:500;">2019 — 2021</div>
-        </div>
-      </div>
-      <div class="edu-card reveal">
-        <div class="edu-icon">🏛</div>
-        <div>
-          <div style="font-weight:500;font-size:0.88rem;color:#f4f4f5;margin-bottom:3px;">IT Tools &amp; Office Software</div>
-          <div style="font-size:0.78rem;color:#71717a;font-weight:300;">NIELIT (National Institute of Electronics and IT)</div>
-          <div style="font-size:0.72rem;color:#c9a96e;margin-top:5px;font-weight:500;">2019</div>
-        </div>
-      </div>
-      <div class="edu-card reveal">
-        <div class="edu-icon">💻</div>
-        <div>
-          <div style="font-weight:500;font-size:0.88rem;color:#f4f4f5;margin-bottom:3px;">Basic Computer Application</div>
-          <div style="font-size:0.78rem;color:#71717a;font-weight:300;">Subhomoy Computer Academy</div>
-          <div style="font-size:0.72rem;color:#c9a96e;margin-top:5px;font-weight:500;">2018</div>
-        </div>
-      </div>
-      <div class="edu-card reveal" style="grid-column:1/-1;max-width:400px;">
-        <div class="edu-icon">📖</div>
-        <div>
-          <div style="font-weight:500;font-size:0.88rem;color:#f4f4f5;margin-bottom:3px;">Higher Secondary Education</div>
-          <div style="font-size:0.78rem;color:#71717a;font-weight:300;">Howrah Hindi High School, Salkia</div>
-          <div style="font-size:0.72rem;color:#c9a96e;margin-top:5px;font-weight:500;">2017</div>
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:6px;">
+            <div style="width:38px;height:38px;background:#f8fafc;border:1.5px solid #e2e8f0;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="bi bi-palette" style="color:#64748b;font-size:1rem;"></i></div>
+            <div>
+              <h3 style="font-weight:800;font-size:1rem;color:#0f172a;line-height:1.2;">Junior Associate Web Designer</h3>
+              <div style="font-size:0.82rem;color:#2563eb;font-weight:700;">Visite Tech (South City)</div>
+            </div>
+          </div>
+          <p style="font-size:0.88rem;color:#64748b;line-height:1.8;max-width:580px;margin:13px 0;">Assisted senior designers on client-facing website projects. Worked on front-end design and visual development, sharpening skills in layout, typography, and cross-browser compatibility. Role discontinued due to COVID-19.</p>
         </div>
       </div>
     </div>
@@ -488,161 +595,225 @@
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" style="background:#17171a;padding:120px 0;">
-  <div class="container">
-    <div class="section-tag reveal">Portfolio</div>
-    <div style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:40px;">
-      <h2 class="reveal" style="font-family:'Instrument Serif',serif;font-size:clamp(2rem,4vw,3rem);letter-spacing:-0.02em;line-height:1.1;">Selected <span style="font-style:italic;color:#c9a96e;">Projects</span></h2>
-      <p class="reveal" style="font-size:0.82rem;color:#71717a;max-width:260px;text-align:right;font-weight:300;line-height:1.7;">From service businesses to ERP and mobile apps.</p>
+<section id="projects" style="background:#f8fafc;padding:96px 5%;" aria-label="Portfolio Web Development Projects Kolkata India Australia">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:44px;flex-wrap:wrap;gap:14px;">
+      <div>
+        <div class="section-tag aos"><i class="bi bi-grid-3x3-gap"></i> Portfolio</div>
+        <h2 class="aos" style="font-size:clamp(1.8rem,3.2vw,2.6rem);font-weight:800;letter-spacing:-0.02em;color:#0f172a;">Selected <span style="color:#2563eb;">Projects</span></h2>
+      </div>
+      <p class="aos" style="font-size:0.85rem;color:#64748b;max-width:280px;line-height:1.7;">Click any project to view full details and photos.</p>
     </div>
 
-    <!-- Spotlight -->
-    <div class="spotlight reveal" style="margin-bottom:14px;">
-      <div class="spotlight-inner" style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;">
-        <div>
-          <div style="display:inline-flex;align-items:center;gap:6px;font-size:0.7rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:#c9a96e;margin-bottom:16px;">
-            <span class="s-dot-prog"></span> Active Development
-          </div>
-          <h3 style="font-family:'Instrument Serif',serif;font-size:1.7rem;letter-spacing:-0.02em;line-height:1.2;margin-bottom:14px;color:#f4f4f5;">Inventory Management<br><span style="font-style:italic;">Mobile App</span></h3>
-          <p style="font-size:0.88rem;color:#71717a;font-weight:300;line-height:1.8;margin-bottom:20px;">A cross-platform mobile application built with React Native (Expo) featuring real-time record management, barcode scanning, and secure Firebase authentication.</p>
+    <!-- Featured Project -->
+    <div class="card aos" style="margin-bottom:18px;overflow:hidden;">
+      <div id="featured-grid" style="display:grid;grid-template-columns:1fr 1fr;">
+        <div style="padding:36px;background:#eff6ff;">
+          <div class="badge-yellow" style="margin-bottom:18px;"><span class="dot-prog"></span> Active Development</div>
+          <h3 style="font-size:1.6rem;font-weight:800;letter-spacing:-0.02em;line-height:1.22;margin-bottom:13px;color:#0f172a;">Inventory Management <span style="color:#2563eb;">Mobile App</span></h3>
+          <p style="font-size:0.88rem;color:#475569;line-height:1.8;margin-bottom:18px;">A cross-platform mobile application built with React Native (Expo) featuring real-time record management, barcode scanning, and secure Firebase authentication.</p>
           <div style="display:flex;flex-wrap:wrap;gap:6px;">
-            <span class="stag">React Native</span><span class="stag">Expo</span><span class="stag">Firebase</span><span class="stag">Cloud Functions</span><span class="stag">Barcode Scanner</span>
+            <span class="stag-blue">React Native</span><span class="stag-blue">Expo</span><span class="stag-blue">Firebase</span><span class="stag-blue">Cloud Functions</span><span class="stag-blue">Barcode Scanner</span>
           </div>
         </div>
-        <div>
-          <div style="font-size:0.72rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:#71717a;margin-bottom:14px;">Key Features</div>
-          <div style="display:flex;flex-direction:column;gap:10px;">
-            <div style="display:flex;align-items:flex-start;gap:12px;font-size:0.85rem;color:#71717a;font-weight:300;line-height:1.6;">
-              <span style="color:#c9a96e;margin-top:2px;flex-shrink:0;">→</span> Challan and billing generation system
-            </div>
-            <div style="display:flex;align-items:flex-start;gap:12px;font-size:0.85rem;color:#71717a;font-weight:300;line-height:1.6;">
-              <span style="color:#c9a96e;margin-top:2px;flex-shrink:0;">→</span> Real-time record search and management
-            </div>
-            <div style="display:flex;align-items:flex-start;gap:12px;font-size:0.85rem;color:#71717a;font-weight:300;line-height:1.6;">
-              <span style="color:#c9a96e;margin-top:2px;flex-shrink:0;">→</span> Barcode scanner with scan-to-insert functionality
-            </div>
-            <div style="display:flex;align-items:flex-start;gap:12px;font-size:0.85rem;color:#71717a;font-weight:300;line-height:1.6;">
-              <span style="color:#c9a96e;margin-top:2px;flex-shrink:0;">→</span> Secure authentication — phone and email via Firebase
-            </div>
-            <div style="display:flex;align-items:flex-start;gap:12px;font-size:0.85rem;color:#71717a;font-weight:300;line-height:1.6;">
-              <span style="color:#c9a96e;margin-top:2px;flex-shrink:0;">→</span> Cloud Functions backend for efficient data handling
-            </div>
+        <div style="padding:32px;background:#fff;border-left:1.5px solid #e2e8f0;display:flex;flex-direction:column;justify-content:center;">
+          <div style="font-size:0.72rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:#94a3b8;margin-bottom:14px;">Key Features</div>
+          <div style="display:flex;flex-direction:column;gap:11px;">
+            <div style="display:flex;align-items:flex-start;gap:10px;font-size:0.85rem;color:#475569;line-height:1.5;"><i class="bi bi-check-circle-fill" style="color:#2563eb;flex-shrink:0;margin-top:2px;"></i>Challan and billing generation system</div>
+            <div style="display:flex;align-items:flex-start;gap:10px;font-size:0.85rem;color:#475569;line-height:1.5;"><i class="bi bi-check-circle-fill" style="color:#2563eb;flex-shrink:0;margin-top:2px;"></i>Real-time record search and management</div>
+            <div style="display:flex;align-items:flex-start;gap:10px;font-size:0.85rem;color:#475569;line-height:1.5;"><i class="bi bi-check-circle-fill" style="color:#2563eb;flex-shrink:0;margin-top:2px;"></i>Barcode scanner with scan-to-insert</div>
+            <div style="display:flex;align-items:flex-start;gap:10px;font-size:0.85rem;color:#475569;line-height:1.5;"><i class="bi bi-check-circle-fill" style="color:#2563eb;flex-shrink:0;margin-top:2px;"></i>Firebase phone &amp; email authentication</div>
+            <div style="display:flex;align-items:flex-start;gap:10px;font-size:0.85rem;color:#475569;line-height:1.5;"><i class="bi bi-check-circle-fill" style="color:#2563eb;flex-shrink:0;margin-top:2px;"></i>Cloud Functions backend</div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Projects Grid -->
-    <div class="proj-2" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
-      <div class="card reveal" style="padding:28px;">
-        <div style="display:flex;align-items:center;gap:6px;font-size:0.68rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:#6b9e84;margin-bottom:14px;"><span class="s-dot-live"></span> Live</div>
-        <div style="font-family:'Instrument Serif',serif;font-size:1.1rem;margin-bottom:8px;color:#f4f4f5;letter-spacing:-0.01em;">EPIC Loft Conversion</div>
-        <p style="font-size:0.82rem;color:#71717a;font-weight:300;line-height:1.7;margin-bottom:16px;">Complete business website for a loft conversion company in Australia, showcasing services and customer engagement.</p>
-        <div style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:16px;"><span class="stag">WordPress</span><span class="stag">AU Market</span></div>
-        <a href="https://epicloftconversion.co.uk/" class="proj-link" target="_blank">epicloftconversion.co.uk →</a>
+    <!-- Projects Grid with lightbox -->
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;" class="proj-grid aos" id="proj-grid">
+      <!-- Injected by JS -->
+    </div>
+
+    <!-- Pagination dots -->
+    <div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-top:22px;" id="proj-dots"></div>
+  </div>
+</section>
+
+<!-- PROJECT LIGHTBOX -->
+<div id="lightbox" onclick="if(event.target===this)closeLightbox()">
+  <div id="lb-inner">
+    <button id="lb-close" onclick="closeLightbox()"><i class="bi bi-x-lg"></i></button>
+    <!-- Content injected by JS -->
+  </div>
+</div>
+
+<!-- EDUCATION & CERTIFICATIONS -->
+<section id="education" style="background:#fff;padding:96px 5%;" aria-label="Education Certifications IGNOU BCOM Ramakrishna Mission NIELIT Howrah Kolkata">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div class="section-tag aos"><i class="bi bi-mortarboard"></i> Academic Background</div>
+    <h2 class="aos" style="font-size:clamp(1.8rem,3.2vw,2.6rem);font-weight:800;letter-spacing:-0.02em;color:#0f172a;margin-bottom:10px;">Education &amp; <span style="color:#2563eb;">Certifications</span></h2>
+    <p class="aos" style="font-size:0.9rem;color:#64748b;margin-bottom:44px;">Click any card to add a certificate image in the future.</p>
+
+    <div class="edu-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+      <div class="edu-card aos" onclick="toggleEduImg(this)">
+        <div class="edu-icon"><i class="bi bi-mortarboard-fill"></i></div>
+        <div style="flex:1;">
+          <div style="font-weight:800;font-size:0.88rem;color:#0f172a;margin-bottom:2px;">Bachelor of Commerce (BCOM)</div>
+          <div style="font-size:0.78rem;color:#64748b;">IGNOU — Indira Gandhi National Open University</div>
+          <div style="font-size:0.72rem;color:#2563eb;margin-top:5px;font-weight:800;">2023</div>
+          <div class="edu-img-placeholder" style="display:none;">
+            <i class="bi bi-image-fill"></i>
+            <span>Certificate image coming soon</span>
+          </div>
+        </div>
       </div>
 
-      <div class="card reveal" style="padding:28px;">
-        <div style="display:flex;align-items:center;gap:6px;font-size:0.68rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:#c9a96e;margin-bottom:14px;"><span class="s-dot-prog"></span> In Progress</div>
-        <div style="font-family:'Instrument Serif',serif;font-size:1.1rem;margin-bottom:8px;color:#f4f4f5;letter-spacing:-0.01em;">Web Easy Experts</div>
-        <p style="font-size:0.82rem;color:#71717a;font-weight:300;line-height:1.7;margin-bottom:16px;">Business website for a web agency, focused on service presentation and strong brand positioning.</p>
-        <div style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:16px;"><span class="stag">Web Agency</span><span class="stag">CMS</span></div>
-        <a href="https://webeasyexperts.com/" class="proj-link" target="_blank">webeasyexperts.com →</a>
+      <div class="edu-card aos" onclick="toggleEduImg(this)">
+        <div class="edu-icon"><i class="bi bi-keyboard"></i></div>
+        <div style="flex:1;">
+          <div style="font-weight:800;font-size:0.88rem;color:#0f172a;margin-bottom:2px;">Advanced Computer Programming</div>
+          <div style="font-size:0.78rem;color:#64748b;">Ramakrishna Mission Shilpamandira (Belur Math)</div>
+          <div style="font-size:0.72rem;color:#2563eb;margin-top:5px;font-weight:800;">2019 &mdash; 2021</div>
+          <div class="edu-img-placeholder" style="display:none;">
+            <i class="bi bi-image-fill"></i>
+            <span>Certificate image coming soon</span>
+          </div>
+        </div>
       </div>
 
-      <div class="card reveal" style="padding:28px;">
-        <div style="display:flex;align-items:center;gap:6px;font-size:0.68rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:#c9a96e;margin-bottom:14px;"><span class="s-dot-prog"></span> In Progress</div>
-        <div style="font-family:'Instrument Serif',serif;font-size:1.1rem;margin-bottom:8px;color:#f4f4f5;letter-spacing:-0.01em;">Bexily ERP</div>
-        <p style="font-size:0.82rem;color:#71717a;font-weight:300;line-height:1.7;margin-bottom:16px;">Business website for an ERP solutions provider, highlighting enterprise services for corporate clients.</p>
-        <div style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:16px;"><span class="stag">ERP</span><span class="stag">B2B</span></div>
-        <a href="https://bexily.com/" class="proj-link" target="_blank">bexily.com →</a>
+      <div class="edu-card aos" onclick="toggleEduImg(this)">
+        <div class="edu-icon"><i class="bi bi-bank"></i></div>
+        <div style="flex:1;">
+          <div style="font-weight:800;font-size:0.88rem;color:#0f172a;margin-bottom:2px;">IT Tools &amp; Office Software</div>
+          <div style="font-size:0.78rem;color:#64748b;">NIELIT (National Institute of Electronics and IT)</div>
+          <div style="font-size:0.72rem;color:#2563eb;margin-top:5px;font-weight:800;">2019</div>
+          <div class="edu-img-placeholder" style="display:none;">
+            <i class="bi bi-image-fill"></i>
+            <span>Certificate image coming soon</span>
+          </div>
+        </div>
       </div>
 
-      <div class="card reveal" style="padding:28px;">
-        <div style="display:flex;align-items:center;gap:6px;font-size:0.68rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:#6b9e84;margin-bottom:14px;"><span class="s-dot-live"></span> Live</div>
-        <div style="font-family:'Instrument Serif',serif;font-size:1.1rem;margin-bottom:8px;color:#f4f4f5;letter-spacing:-0.01em;">Pavitra Mitti</div>
-        <p style="font-size:0.82rem;color:#71717a;font-weight:300;line-height:1.7;margin-bottom:16px;">Plant nursery website in Basirhat, Kolkata — product display and customer engagement for an eco-conscious brand.</p>
-        <div style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:16px;"><span class="stag">Nursery</span><span class="stag">Kolkata</span></div>
-        <a href="https://pavitramitti.co.in/" class="proj-link" target="_blank">pavitramitti.co.in →</a>
+      <div class="edu-card aos" onclick="toggleEduImg(this)">
+        <div class="edu-icon"><i class="bi bi-pc-display"></i></div>
+        <div style="flex:1;">
+          <div style="font-weight:800;font-size:0.88rem;color:#0f172a;margin-bottom:2px;">Basic Computer Application</div>
+          <div style="font-size:0.78rem;color:#64748b;">Subhomoy Computer Academy</div>
+          <div style="font-size:0.72rem;color:#2563eb;margin-top:5px;font-weight:800;">2018</div>
+          <div class="edu-img-placeholder" style="display:none;">
+            <i class="bi bi-image-fill"></i>
+            <span>Certificate image coming soon</span>
+          </div>
+        </div>
       </div>
 
-      <div class="card reveal" style="padding:28px;">
-        <div style="display:flex;align-items:center;gap:6px;font-size:0.68rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:#6b9e84;margin-bottom:14px;"><span class="s-dot-live"></span> Live</div>
-        <div style="font-family:'Instrument Serif',serif;font-size:1.1rem;margin-bottom:8px;color:#f4f4f5;letter-spacing:-0.01em;">Uniwaves</div>
-        <p style="font-size:0.82rem;color:#71717a;font-weight:300;line-height:1.7;margin-bottom:16px;">Corporate website for a kidswear manufacturer and wholesale company, highlighting production and range.</p>
-        <div style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:16px;"><span class="stag">Manufacturing</span><span class="stag">Wholesale</span></div>
-        <a href="https://uniwaves.co.in/" class="proj-link" target="_blank">uniwaves.co.in →</a>
-      </div>
-
-      <div class="card reveal" style="padding:28px;">
-        <div style="display:flex;align-items:center;gap:6px;font-size:0.68rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:#6b9e84;margin-bottom:14px;"><span class="s-dot-live"></span> Live</div>
-        <div style="font-family:'Instrument Serif',serif;font-size:1.1rem;margin-bottom:8px;color:#f4f4f5;letter-spacing:-0.01em;">BPT Group</div>
-        <p style="font-size:0.82rem;color:#71717a;font-weight:300;line-height:1.7;margin-bottom:16px;">Corporate business website built to establish a strong professional online presence for a multi-service group.</p>
-        <div style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:16px;"><span class="stag">Corporate</span><span class="stag">Business</span></div>
-        <a href="https://www.bptgroup.in/" class="proj-link" target="_blank">bptgroup.in →</a>
-      </div>
-
-      <div class="card reveal" style="padding:28px;">
-        <div style="display:flex;align-items:center;gap:6px;font-size:0.68rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:#6b9e84;margin-bottom:14px;"><span class="s-dot-live"></span> Live</div>
-        <div style="font-family:'Instrument Serif',serif;font-size:1.1rem;margin-bottom:8px;color:#f4f4f5;letter-spacing:-0.01em;">The Caulking Guy</div>
-        <p style="font-size:0.82rem;color:#71717a;font-weight:300;line-height:1.7;margin-bottom:16px;">Service website for a caulking and sealing solutions provider in Australia, driving customer inquiries.</p>
-        <div style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:16px;"><span class="stag">Service</span><span class="stag">AU Market</span></div>
-        <a href="https://thecaulkingguy.com.au/" class="proj-link" target="_blank">thecaulkingguy.com.au →</a>
-      </div>
-
-      <div class="card reveal" style="padding:28px;">
-        <div style="display:flex;align-items:center;gap:6px;font-size:0.68rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:#6b9e84;margin-bottom:14px;"><span class="s-dot-live"></span> Live</div>
-        <div style="font-family:'Instrument Serif',serif;font-size:1.1rem;margin-bottom:8px;color:#f4f4f5;letter-spacing:-0.01em;">Inspiring Group</div>
-        <p style="font-size:0.82rem;color:#71717a;font-weight:300;line-height:1.7;margin-bottom:16px;">Business website designed to improve client engagement and enhance brand visibility online.</p>
-        <div style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:16px;"><span class="stag">Business</span><span class="stag">Branding</span></div>
-        <a href="https://inspiringgroup.in/" class="proj-link" target="_blank">inspiringgroup.in →</a>
-      </div>
-
-      <div class="card reveal" style="padding:28px;grid-column:1/-1;max-width:500px;">
-        <div style="display:flex;align-items:center;gap:6px;font-size:0.68rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:#6b9e84;margin-bottom:14px;"><span class="s-dot-live"></span> Live</div>
-        <div style="font-family:'Instrument Serif',serif;font-size:1.1rem;margin-bottom:8px;color:#f4f4f5;letter-spacing:-0.01em;">Maa Laxmi Export</div>
-        <p style="font-size:0.82rem;color:#71717a;font-weight:300;line-height:1.7;margin-bottom:16px;">Business website for an export company enhancing global outreach and credibility with international buyers.</p>
-        <div style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:16px;"><span class="stag">Export</span><span class="stag">Global</span></div>
-        <a href="https://www.maalaxmiexport.com/" class="proj-link" target="_blank">maalaxmiexport.com →</a>
+      <div class="edu-card aos" style="grid-column:1/-1;" onclick="toggleEduImg(this)">
+        <div class="edu-icon"><i class="bi bi-book-half"></i></div>
+        <div style="flex:1;">
+          <div style="font-weight:800;font-size:0.88rem;color:#0f172a;margin-bottom:2px;">Higher Secondary Education</div>
+          <div style="font-size:0.78rem;color:#64748b;">Howrah Hindi High School, Salkia</div>
+          <div style="font-size:0.72rem;color:#2563eb;margin-top:5px;font-weight:800;">2017</div>
+          <div class="edu-img-placeholder" style="display:none;">
+            <i class="bi bi-image-fill"></i>
+            <span>Certificate image coming soon</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- LEARNING -->
-<section id="learning" style="background:#0f0f11;padding:120px 0;">
-  <div class="container">
-    <div class="section-tag reveal">Growth Areas</div>
-    <h2 class="reveal" style="font-family:'Instrument Serif',serif;font-size:clamp(2rem,4vw,3rem);letter-spacing:-0.02em;line-height:1.1;margin-bottom:56px;">Currently <span style="font-style:italic;color:#c9a96e;">Exploring</span></h2>
-    <div class="learn-3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;">
-      <div class="card reveal" style="padding:28px;">
-        <div style="width:46px;height:46px;background:rgba(201,169,110,0.08);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:#c9a96e;margin-bottom:18px;">⬚</div>
-        <h3 style="font-weight:600;font-size:0.92rem;margin-bottom:12px;color:#f4f4f5;">MERN Stack</h3>
-        <div style="display:flex;flex-direction:column;gap:8px;">
-          <div style="font-size:0.8rem;color:#71717a;font-weight:300;display:flex;align-items:center;gap:8px;"><span style="color:#c9a96e;font-size:0.65rem;">→</span>MongoDB for NoSQL data management</div>
-          <div style="font-size:0.8rem;color:#71717a;font-weight:300;display:flex;align-items:center;gap:8px;"><span style="color:#c9a96e;font-size:0.65rem;">→</span>Express.js backend APIs</div>
-          <div style="font-size:0.8rem;color:#71717a;font-weight:300;display:flex;align-items:center;gap:8px;"><span style="color:#c9a96e;font-size:0.65rem;">→</span>React for component-based UIs</div>
-          <div style="font-size:0.8rem;color:#71717a;font-weight:300;display:flex;align-items:center;gap:8px;"><span style="color:#c9a96e;font-size:0.65rem;">→</span>Node.js server-side runtime</div>
-        </div>
+<!-- CURRENTLY LEARNING -->
+<section style="background:#f8fafc;padding:80px 5%;" aria-label="Learning MERN Stack React Native AI automation Kolkata developer">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div style="text-align:center;margin-bottom:40px;">
+      <div class="section-tag aos" style="justify-content:center;"><i class="bi bi-stars"></i> Growth Areas</div>
+      <h2 class="aos" style="font-size:clamp(1.7rem,3vw,2.3rem);font-weight:800;letter-spacing:-0.02em;color:#0f172a;">Currently <span style="color:#2563eb;">Exploring</span></h2>
+    </div>
+    <div class="learn-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;">
+      <div class="card aos" style="padding:26px;">
+        <i class="bi bi-stack" style="font-size:1.6rem;color:#2563eb;margin-bottom:13px;display:block;"></i>
+        <h3 style="font-weight:800;font-size:0.9rem;color:#0f172a;margin-bottom:10px;">MERN Stack</h3>
+        <ul style="display:flex;flex-direction:column;gap:7px;">
+          <li style="font-size:0.78rem;color:#64748b;display:flex;gap:7px;align-items:center;"><i class="bi bi-arrow-right-short" style="color:#2563eb;font-size:1rem;flex-shrink:0;"></i>MongoDB for NoSQL data management</li>
+          <li style="font-size:0.78rem;color:#64748b;display:flex;gap:7px;align-items:center;"><i class="bi bi-arrow-right-short" style="color:#2563eb;font-size:1rem;flex-shrink:0;"></i>Express.js RESTful backend APIs</li>
+          <li style="font-size:0.78rem;color:#64748b;display:flex;gap:7px;align-items:center;"><i class="bi bi-arrow-right-short" style="color:#2563eb;font-size:1rem;flex-shrink:0;"></i>React component-based UIs</li>
+          <li style="font-size:0.78rem;color:#64748b;display:flex;gap:7px;align-items:center;"><i class="bi bi-arrow-right-short" style="color:#2563eb;font-size:1rem;flex-shrink:0;"></i>Node.js server-side runtime</li>
+        </ul>
       </div>
-      <div class="card reveal" style="padding:28px;">
-        <div style="width:46px;height:46px;background:rgba(107,158,132,0.08);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:#6b9e84;margin-bottom:18px;">◱</div>
-        <h3 style="font-weight:600;font-size:0.92rem;margin-bottom:12px;color:#f4f4f5;">Mobile Development</h3>
-        <div style="display:flex;flex-direction:column;gap:8px;">
-          <div style="font-size:0.8rem;color:#71717a;font-weight:300;display:flex;align-items:center;gap:8px;"><span style="color:#6b9e84;font-size:0.65rem;">→</span>React Native (Expo framework)</div>
-          <div style="font-size:0.8rem;color:#71717a;font-weight:300;display:flex;align-items:center;gap:8px;"><span style="color:#6b9e84;font-size:0.65rem;">→</span>Firebase auth &amp; backend services</div>
-          <div style="font-size:0.8rem;color:#71717a;font-weight:300;display:flex;align-items:center;gap:8px;"><span style="color:#6b9e84;font-size:0.65rem;">→</span>Cross-platform Android &amp; iOS</div>
-          <div style="font-size:0.8rem;color:#71717a;font-weight:300;display:flex;align-items:center;gap:8px;"><span style="color:#6b9e84;font-size:0.65rem;">→</span>Native device APIs</div>
-        </div>
+      <div class="card aos" style="padding:26px;">
+        <i class="bi bi-phone-fill" style="font-size:1.6rem;color:#2563eb;margin-bottom:13px;display:block;"></i>
+        <h3 style="font-weight:800;font-size:0.9rem;color:#0f172a;margin-bottom:10px;">Mobile Development</h3>
+        <ul style="display:flex;flex-direction:column;gap:7px;">
+          <li style="font-size:0.78rem;color:#64748b;display:flex;gap:7px;align-items:center;"><i class="bi bi-arrow-right-short" style="color:#2563eb;font-size:1rem;flex-shrink:0;"></i>React Native (Expo framework)</li>
+          <li style="font-size:0.78rem;color:#64748b;display:flex;gap:7px;align-items:center;"><i class="bi bi-arrow-right-short" style="color:#2563eb;font-size:1rem;flex-shrink:0;"></i>Firebase auth &amp; backend services</li>
+          <li style="font-size:0.78rem;color:#64748b;display:flex;gap:7px;align-items:center;"><i class="bi bi-arrow-right-short" style="color:#2563eb;font-size:1rem;flex-shrink:0;"></i>Cross-platform Android &amp; iOS</li>
+          <li style="font-size:0.78rem;color:#64748b;display:flex;gap:7px;align-items:center;"><i class="bi bi-arrow-right-short" style="color:#2563eb;font-size:1rem;flex-shrink:0;"></i>Native device APIs integration</li>
+        </ul>
       </div>
-      <div class="card reveal" style="padding:28px;">
-        <div style="width:46px;height:46px;background:rgba(192,120,96,0.08);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:#c07860;margin-bottom:18px;">⌬</div>
-        <h3 style="font-weight:600;font-size:0.92rem;margin-bottom:12px;color:#f4f4f5;">AI &amp; Automation</h3>
-        <div style="display:flex;flex-direction:column;gap:8px;">
-          <div style="font-size:0.8rem;color:#71717a;font-weight:300;display:flex;align-items:center;gap:8px;"><span style="color:#c07860;font-size:0.65rem;">→</span>LangChain for AI workflows</div>
-          <div style="font-size:0.8rem;color:#71717a;font-weight:300;display:flex;align-items:center;gap:8px;"><span style="color:#c07860;font-size:0.65rem;">→</span>Python automation scripting</div>
-          <div style="font-size:0.8rem;color:#71717a;font-weight:300;display:flex;align-items:center;gap:8px;"><span style="color:#c07860;font-size:0.65rem;">→</span>n8n for workflow automation</div>
-          <div style="font-size:0.8rem;color:#71717a;font-weight:300;display:flex;align-items:center;gap:8px;"><span style="color:#c07860;font-size:0.65rem;">→</span>Scalable, efficient pipelines</div>
+      <div class="card aos" style="padding:26px;">
+        <i class="bi bi-robot" style="font-size:1.6rem;color:#facc15;margin-bottom:13px;display:block;"></i>
+        <h3 style="font-weight:800;font-size:0.9rem;color:#0f172a;margin-bottom:10px;">AI &amp; Automation</h3>
+        <ul style="display:flex;flex-direction:column;gap:7px;">
+          <li style="font-size:0.78rem;color:#64748b;display:flex;gap:7px;align-items:center;"><i class="bi bi-arrow-right-short" style="color:#2563eb;font-size:1rem;flex-shrink:0;"></i>LangChain for AI workflows</li>
+          <li style="font-size:0.78rem;color:#64748b;display:flex;gap:7px;align-items:center;"><i class="bi bi-arrow-right-short" style="color:#2563eb;font-size:1rem;flex-shrink:0;"></i>Python automation scripting</li>
+          <li style="font-size:0.78rem;color:#64748b;display:flex;gap:7px;align-items:center;"><i class="bi bi-arrow-right-short" style="color:#2563eb;font-size:1rem;flex-shrink:0;"></i>n8n workflow automation</li>
+          <li style="font-size:0.78rem;color:#64748b;display:flex;gap:7px;align-items:center;"><i class="bi bi-arrow-right-short" style="color:#2563eb;font-size:1rem;flex-shrink:0;"></i>Scalable, efficient pipelines</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FREE MEETING / CALENDLY -->
+<section id="meeting" style="background:#fff;padding:96px 5%;border-top:1.5px solid #e2e8f0;" aria-label="Schedule free consultation meeting with web developer Kolkata">
+  <div style="max-width:1100px;margin:0 auto;">
+    <div style="text-align:center;margin-bottom:44px;">
+      <div class="section-tag aos" style="justify-content:center;"><i class="bi bi-calendar-check"></i> Free Consultation</div>
+      <h2 class="aos" style="font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:800;letter-spacing:-0.02em;color:#0f172a;margin-bottom:12px;">
+        Schedule a <span style="color:#2563eb;">Free Meeting</span>
+      </h2>
+      <p class="aos" style="font-size:0.95rem;color:#64748b;max-width:480px;margin:0 auto;line-height:1.8;">
+        Book a free 30-minute consultation call. Tell me about your project, get a quote, and let's start building your website today — no commitment required.
+      </p>
+      <!-- Trust points -->
+      <div class="aos" style="display:flex;justify-content:center;gap:24px;flex-wrap:wrap;margin-top:18px;">
+        <div style="display:flex;align-items:center;gap:7px;font-size:0.8rem;color:#64748b;font-weight:700;"><i class="bi bi-check-circle-fill" style="color:#16a34a;"></i>100% Free</div>
+        <div style="display:flex;align-items:center;gap:7px;font-size:0.8rem;color:#64748b;font-weight:700;"><i class="bi bi-check-circle-fill" style="color:#16a34a;"></i>No obligation</div>
+        <div style="display:flex;align-items:center;gap:7px;font-size:0.8rem;color:#64748b;font-weight:700;"><i class="bi bi-check-circle-fill" style="color:#16a34a;"></i>Get instant quote</div>
+        <div style="display:flex;align-items:center;gap:7px;font-size:0.8rem;color:#64748b;font-weight:700;"><i class="bi bi-check-circle-fill" style="color:#16a34a;"></i>30 mins only</div>
+      </div>
+    </div>
+    <!-- Calendly inline embed -->
+    <div class="aos" id="calendly-container" style="border:1.5px solid #e2e8f0;border-radius:16px;overflow:hidden;min-height:700px;">
+      <div class="calendly-inline-widget" 
+           data-url="https://calendly.com/amanprasad-um/30min?hide_gdpr_banner=1&primary_color=2563eb"
+           style="min-width:320px;height:700px;"></div>
+    </div>
+  </div>
+</section>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+<!-- CTA -->
+<section style="padding:60px 5%;" aria-label="Hire web developer Kolkata Howrah freelance affordable">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div class="cta-bg aos" style="border-radius:18px;padding:60px 48px;text-align:center;position:relative;overflow:hidden;">
+      <div style="position:relative;z-index:1;">
+        <div style="display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.2);border-radius:8px;padding:5px 14px;font-size:0.72rem;font-weight:700;color:#bfdbfe;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:18px;">
+          <span class="dot-live" style="background:#86efac;"></span>Open to Freelance Work
+        </div>
+        <h2 style="font-size:clamp(1.8rem,4vw,3rem);font-weight:800;letter-spacing:-0.03em;line-height:1.1;color:#fff;margin-bottom:14px;">Need an affordable website<br><span style="color:#fde047;">for your business in Kolkata?</span></h2>
+        <p style="font-size:0.95rem;color:rgba(219,234,254,0.85);max-width:440px;margin:0 auto 32px;line-height:1.8;">Fast, SEO-optimised, and professional websites for businesses in Kolkata, Howrah, West Bengal. Best prices guaranteed.</p>
+        <div class="cta-btns" style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+          <a href="mailto:amanprasad0902@gmail.com" style="padding:13px 28px;background:#fff;color:#2563eb;font-weight:800;border-radius:9px;text-decoration:none;font-size:0.9rem;display:inline-flex;align-items:center;gap:8px;transition:all 0.2s;" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 24px rgba(0,0,0,0.15)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
+            <i class="bi bi-envelope-fill"></i> Send me an Email
+          </a>
+          <a href="#meeting" style="padding:13px 28px;background:#facc15;color:#1e293b;font-weight:800;border-radius:9px;text-decoration:none;font-size:0.9rem;display:inline-flex;align-items:center;gap:8px;transition:all 0.2s;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform=''">
+            <i class="bi bi-calendar-check-fill"></i> Book Free Call
+          </a>
+          <a href="tel:8420966418" style="padding:13px 28px;background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);color:#fff;font-weight:700;border-radius:9px;text-decoration:none;font-size:0.9rem;display:inline-flex;align-items:center;gap:8px;">
+            <i class="bi bi-telephone-fill"></i> Call Now
+          </a>
         </div>
       </div>
     </div>
@@ -650,149 +821,203 @@
 </section>
 
 <!-- CONTACT -->
-<section id="contact" style="background:#17171a;padding:120px 0;">
-  <div style="max-width:720px;margin:0 auto;text-align:center;padding:0 6%;">
-    <div class="section-tag reveal" style="justify-content:center;">Get In Touch</div>
-    <h2 class="reveal" style="font-family:'Instrument Serif',serif;font-size:clamp(2.5rem,6vw,5rem);letter-spacing:-0.03em;line-height:1.05;margin-bottom:20px;">
-      Let's build<br><span style="font-style:italic;color:#c9a96e;">something great.</span>
+<section id="contact" style="background:#fff;padding:96px 5%;" aria-label="Contact Aman Prasad Freelance Web Developer Kolkata Howrah India">
+  <div style="max-width:680px;margin:0 auto;text-align:center;">
+    <div class="section-tag aos" style="justify-content:center;"><i class="bi bi-chat-dots"></i> Get In Touch</div>
+    <h2 class="aos" style="font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:800;letter-spacing:-0.03em;line-height:1.1;margin-bottom:14px;color:#0f172a;">
+      Let's build<br><span style="color:#2563eb;">something great.</span>
     </h2>
-    <p class="reveal" style="font-size:0.95rem;color:#71717a;font-weight:300;line-height:1.8;max-width:440px;margin:0 auto 48px;">
-      Have a project in mind or need a website for your business? I'm open to freelance work and new opportunities.
+    <p class="aos" style="font-size:0.95rem;color:#64748b;line-height:1.8;max-width:420px;margin:0 auto 42px;">
+      Need a professional, affordable website for your business in Kolkata or Howrah? I'm open to all enquiries.
     </p>
-
-    <div class="reveal" style="display:flex;flex-direction:column;gap:10px;max-width:480px;margin:0 auto 36px;">
+    <div class="aos" style="display:flex;flex-direction:column;gap:10px;max-width:460px;margin:0 auto 32px;">
       <a href="mailto:amanprasad0902@gmail.com" class="clink">
-        <div class="clink-icon">✉</div>
+        <div class="clink-icon"><i class="bi bi-envelope-fill"></i></div>
         amanprasad0902@gmail.com
       </a>
       <a href="tel:8420966418" class="clink">
-        <div class="clink-icon">✆</div>
+        <div class="clink-icon"><i class="bi bi-telephone-fill"></i></div>
         +91 84209 66418
       </a>
       <div class="clink" style="cursor:default;">
-        <div class="clink-icon">◎</div>
-        Kona, Howrah — 711114
+        <div class="clink-icon"><i class="bi bi-geo-alt-fill"></i></div>
+        Kona, Howrah, West Bengal &mdash; 711114
       </div>
     </div>
-
-    <div class="reveal">
-      <a href="mailto:amanprasad0902@gmail.com" class="btn-gold">Send a Message →</a>
+    <div class="aos" style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
+      <a href="mailto:amanprasad0902@gmail.com" class="btn-primary"><i class="bi bi-envelope"></i> Send a Message</a>
+      <a href="#meeting" class="btn-yellow"><i class="bi bi-calendar-check"></i> Book Free Meeting</a>
     </div>
   </div>
 </section>
 
 <!-- FOOTER -->
-<footer style="background:#0f0f11;border-top:1px solid rgba(255,255,255,0.07);padding:28px 6%;display:flex;align-items:center;justify-content:space-between;font-size:0.78rem;color:#71717a;position:relative;z-index:1;">
-  <div style="font-family:'Instrument Serif',serif;font-size:1rem;color:#a1a1aa;">
-    aman<span style="color:#c9a96e;font-style:italic;">prasad</span>
-    <span style="margin-left:12px;font-family:'Geist',sans-serif;font-size:0.72rem;font-style:normal;color:#71717a;">© 2025</span>
+<footer style="background:#0f172a;padding:26px 5%;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;">
+  <div>
+    <a href="#" style="font-size:1.1rem;font-weight:800;color:#f8fafc;text-decoration:none;">Aman<span style="color:#60a5fa;">Prasad</span></a>
+    <span style="margin-left:12px;font-size:0.72rem;color:#64748b;">&copy; 2025 &middot; Web Developer &middot; Kolkata, India</span>
   </div>
-  <div style="display:flex;gap:24px;align-items:center;">
-    <a href="mailto:amanprasad0902@gmail.com" style="color:#71717a;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#c9a96e'" onmouseout="this.style.color='#71717a'">Email</a>
-    <a href="tel:8420966418" style="color:#71717a;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#c9a96e'" onmouseout="this.style.color='#71717a'">Phone</a>
-    <span>Howrah, West Bengal</span>
+  <div style="display:flex;gap:18px;align-items:center;">
+    <a href="mailto:amanprasad0902@gmail.com" style="color:#64748b;text-decoration:none;font-size:0.8rem;font-weight:600;display:flex;align-items:center;gap:5px;" onmouseover="this.style.color='#60a5fa'" onmouseout="this.style.color='#64748b'"><i class="bi bi-envelope"></i> Email</a>
+    <a href="tel:8420966418" style="color:#64748b;text-decoration:none;font-size:0.8rem;font-weight:600;display:flex;align-items:center;gap:5px;" onmouseover="this.style.color='#60a5fa'" onmouseout="this.style.color='#64748b'"><i class="bi bi-telephone"></i> Phone</a>
+    <a href="#meeting" style="color:#64748b;text-decoration:none;font-size:0.8rem;font-weight:600;display:flex;align-items:center;gap:5px;" onmouseover="this.style.color='#facc15'" onmouseout="this.style.color='#64748b'"><i class="bi bi-calendar-check"></i> Book a Call</a>
+    <span style="font-size:0.8rem;color:#475569;">Howrah, West Bengal</span>
   </div>
 </footer>
 
 <script>
-gsap.registerPlugin(ScrollTrigger);
+// ---- PROJECTS DATA ----
+const projects = [
+  { name:"EPIC Loft Conversion", desc:"Business website for a loft conversion company serving UK and Australian markets. Strong lead generation with clean service layout.", url:"https://epicloftconversion.co.uk/", urlShort:"epicloftconversion.co.uk", tags:["WordPress","AU Market","Business"], status:"live", icon:"bi-house-door-fill", color:"#dbeafe", accent:"#2563eb" },
+  { name:"Pavitra Mitti", desc:"Plant nursery website in Basirhat, Kolkata. Product display and customer engagement for an eco-conscious local brand.", url:"https://pavitramitti.co.in/", urlShort:"pavitramitti.co.in", tags:["WordPress","Nursery","Kolkata"], status:"live", icon:"bi-flower2", color:"#dcfce7", accent:"#16a34a" },
+  { name:"Uniwaves", desc:"Corporate website for a kidswear manufacturer and wholesale company in West Bengal. B2B focused design.", url:"https://uniwaves.co.in/", urlShort:"uniwaves.co.in", tags:["Manufacturing","Wholesale","Corporate"], status:"live", icon:"bi-bag-heart-fill", color:"#fef3c7", accent:"#d97706" },
+  { name:"BPT Group", desc:"Corporate business website establishing strong online presence for a multi-service group. Clean, structured layout.", url:"https://www.bptgroup.in/", urlShort:"bptgroup.in", tags:["Corporate","Business","WordPress"], status:"live", icon:"bi-buildings-fill", color:"#e0e7ff", accent:"#4f46e5" },
+  { name:"The Caulking Guy", desc:"Service website for a caulking and sealing provider in Australia. Optimised for local search and customer inquiries.", url:"https://thecaulkingguy.com.au/", urlShort:"thecaulkingguy.com.au", tags:["Service","AU Market","WordPress"], status:"live", icon:"bi-tools", color:"#fce7f3", accent:"#be185d" },
+  { name:"Inspiring Group", desc:"Business website improving client engagement and brand visibility online. Professional layout with strong calls to action.", url:"https://inspiringgroup.in/", urlShort:"inspiringgroup.in", tags:["Business","Branding","WordPress"], status:"live", icon:"bi-star-fill", color:"#f0fdf4", accent:"#059669" },
+  { name:"Maa Laxmi Export", desc:"Website for an export company enhancing global outreach and credibility with international buyers worldwide.", url:"https://www.maalaxmiexport.com/", urlShort:"maalaxmiexport.com", tags:["Export","Global","Business"], status:"live", icon:"bi-box-seam-fill", color:"#fffbeb", accent:"#d97706" },
+  { name:"Web Easy Experts", desc:"Business website for a web agency focused on service presentation and brand positioning. In active development.", url:"https://webeasyexperts.com/", urlShort:"webeasyexperts.com", tags:["Web Agency","CMS","In Progress"], status:"progress", icon:"bi-globe2", color:"#eff6ff", accent:"#2563eb" },
+  { name:"Bexily ERP", desc:"Website for an ERP solutions provider highlighting enterprise services for corporate clients. Professional B2B design.", url:"https://bexily.com/", urlShort:"bexily.com", tags:["ERP","B2B","Enterprise"], status:"progress", icon:"bi-gear-wide-connected", color:"#f1f5f9", accent:"#475569" }
+];
 
-// Cursor
-const cur = document.getElementById('cur');
-const ring = document.getElementById('cur-ring');
-let mx = 0, my = 0, rx = 0, ry = 0;
-document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
-(function tick() {
-  cur.style.left = mx + 'px'; cur.style.top = my + 'px';
-  rx += (mx - rx) * 0.1; ry += (my - ry) * 0.1;
-  ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
-  requestAnimationFrame(tick);
-})();
+const PER_PAGE = 6;
+let projPage = 0;
 
-// Nav scroll
-const nav = document.getElementById('navbar');
-window.addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 50));
+function renderProjects() {
+  const grid = document.getElementById('proj-grid');
+  const dots = document.getElementById('proj-dots');
+  const start = projPage * PER_PAGE;
+  const slice = projects.slice(start, start + PER_PAGE);
 
-// Hero entrance
-gsap.timeline({ defaults: { ease: 'power3.out' } })
-  .to('.hero-badge', { opacity: 1, y: 0, duration: 0.7 }, 0.2)
-  .to('.hero-title', { opacity: 1, y: 0, duration: 0.9 }, 0.4)
-  .to('.hero-name', { opacity: 1, y: 0, duration: 0.7 }, 0.6)
-  .to('.hero-desc, #hero p', { opacity: 1, y: 0, duration: 0.7 }, 0.75)
-  .to('.hero-actions-wrap', { opacity: 1, y: 0, duration: 0.7 }, 0.9)
-  .to('#hero .scroll-ind', { opacity: 1, duration: 0.6 }, 1.2);
+  grid.innerHTML = slice.map((p, i) => `
+    <div class="proj-card" onclick="openLightbox(${start + i})" style="cursor:pointer;">
+      <div class="proj-img-area" style="background:${p.color};">
+        <div class="proj-fallback">
+          <i class="bi ${p.icon}" style="color:${p.accent};font-size:2.8rem;"></i>
+        </div>
+        <div class="proj-badge ${p.status==='live'?'proj-badge-live':'proj-badge-prog'}">
+          <i class="bi ${p.status==='live'?'bi-circle-fill':'bi-clock-fill'}" style="font-size:0.5rem;"></i>
+          ${p.status==='live'?'Live':'In Progress'}
+        </div>
+        <div class="proj-url"><i class="bi bi-link-45deg"></i> ${p.urlShort}</div>
+      </div>
+      <div style="padding:18px;">
+        <h3 style="font-weight:800;font-size:0.9rem;color:#0f172a;margin-bottom:6px;">${p.name}</h3>
+        <p style="font-size:0.78rem;color:#64748b;line-height:1.65;margin-bottom:10px;">${p.desc}</p>
+        <div style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:12px;">
+          ${p.tags.map(t=>`<span style="padding:2px 8px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:5px;font-size:0.67rem;color:#64748b;font-weight:700;">${t}</span>`).join('')}
+        </div>
+        <div style="display:flex;align-items:center;justify-content:space-between;">
+          <span style="font-size:0.78rem;color:${p.accent};font-weight:800;display:flex;align-items:center;gap:5px;"><i class="bi bi-box-arrow-up-right"></i> View Project</span>
+          <span style="font-size:0.72rem;color:#94a3b8;font-weight:600;"><i class="bi bi-images"></i> Click for photos</span>
+        </div>
+      </div>
+    </div>
+  `).join('');
 
-// Scroll reveals
-gsap.utils.toArray('.reveal').forEach(el => {
-  gsap.fromTo(el, { opacity: 0, y: 32 }, {
-    opacity: 1, y: 0, duration: 0.7, ease: 'power2.out',
-    scrollTrigger: { trigger: el, start: 'top 88%', toggleActions: 'play none none none' }
-  });
-});
-
-gsap.utils.toArray('.reveal-left').forEach(el => {
-  gsap.fromTo(el, { opacity: 0, x: -32 }, {
-    opacity: 1, x: 0, duration: 0.8, ease: 'power2.out',
-    scrollTrigger: { trigger: el, start: 'top 85%', toggleActions: 'play none none none' }
-  });
-});
-
-gsap.utils.toArray('.reveal-scale').forEach(el => {
-  gsap.fromTo(el, { opacity: 0, scale: 0.95 }, {
-    opacity: 1, scale: 1, duration: 0.7, ease: 'power2.out',
-    scrollTrigger: { trigger: el, start: 'top 88%', toggleActions: 'play none none none' }
-  });
-});
-
-// Stagger skill cards
-gsap.from('.skills-3 .card', {
-  opacity: 0, y: 40, stagger: 0.08, duration: 0.6, ease: 'power2.out',
-  scrollTrigger: { trigger: '.skills-3', start: 'top 82%' }
-});
-
-// Stagger project cards
-gsap.from('.proj-2 .card', {
-  opacity: 0, y: 40, stagger: 0.07, duration: 0.55, ease: 'power2.out',
-  scrollTrigger: { trigger: '.proj-2', start: 'top 85%' }
-});
-
-// Stat counters
-document.querySelectorAll('.stat-num').forEach(el => {
-  const raw = el.textContent;
-  const num = parseInt(raw);
-  const suf = el.querySelector('.stat-gold')?.textContent || '';
-  if (!isNaN(num)) {
-    ScrollTrigger.create({
-      trigger: el, start: 'top 90%', once: true,
-      onEnter: () => {
-        gsap.fromTo({ v: 0 }, { v: num, duration: 1.4, ease: 'power2.out',
-          onUpdate: function() {
-            el.innerHTML = Math.ceil(this.targets()[0].v) + `<span class="stat-gold">${suf}</span>`;
-          }
-        });
-      }
-    });
+  // dots
+  const totalPages = Math.ceil(projects.length / PER_PAGE);
+  dots.innerHTML = '';
+  for(let i=0; i<totalPages; i++){
+    const d = document.createElement('div');
+    d.className = 'slider-dot' + (i===projPage?' active':'');
+    d.onclick = ()=>{ projPage=i; renderProjects(); };
+    dots.appendChild(d);
   }
-});
+}
 
-// Scroll parallax hero
-window.addEventListener('scroll', () => {
-  const t = document.querySelector('.hero-title');
-  if (t) t.style.transform = `translateY(${scrollY * 0.18}px)`;
-});
+// ---- LIGHTBOX ----
+function openLightbox(idx) {
+  const p = projects[idx];
+  const lb = document.getElementById('lb-inner');
+  lb.innerHTML = `
+    <button id="lb-close" onclick="closeLightbox()"><i class="bi bi-x-lg"></i></button>
+    <div style="padding:32px;">
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:20px;">
+        <div style="width:48px;height:48px;background:${p.color};border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+          <i class="bi ${p.icon}" style="color:${p.accent};font-size:1.4rem;"></i>
+        </div>
+        <div>
+          <h2 style="font-size:1.2rem;font-weight:800;color:#0f172a;">${p.name}</h2>
+          <a href="${p.url}" target="_blank" rel="noopener" style="font-size:0.8rem;color:#2563eb;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:4px;"><i class="bi bi-box-arrow-up-right"></i> ${p.urlShort}</a>
+        </div>
+        <div style="margin-left:auto;">
+          <span class="proj-badge ${p.status==='live'?'proj-badge-live':'proj-badge-prog'}" style="position:static;">
+            <i class="bi ${p.status==='live'?'bi-circle-fill':'bi-clock-fill'}" style="font-size:0.5rem;"></i>
+            ${p.status==='live'?'Live':'In Progress'}
+          </span>
+        </div>
+      </div>
+      <p style="font-size:0.9rem;color:#64748b;line-height:1.8;margin-bottom:16px;">${p.desc}</p>
+      <div style="display:flex;flex-wrap:wrap;gap:5px;margin-bottom:24px;">
+        ${p.tags.map(t=>`<span class="stag">${t}</span>`).join('')}
+      </div>
+      <div style="font-size:0.8rem;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;color:#94a3b8;margin-bottom:10px;"><i class="bi bi-images"></i> Project Screenshots</div>
+      <div class="lb-img-gallery">
+        <div class="lb-img-slot"><i class="bi bi-image" style="font-size:1.5rem;color:#cbd5e1;position:relative;z-index:1;"></i><span>Screenshot 1 — Coming Soon</span></div>
+        <div class="lb-img-slot"><i class="bi bi-image" style="font-size:1.5rem;color:#cbd5e1;position:relative;z-index:1;"></i><span>Screenshot 2 — Coming Soon</span></div>
+        <div class="lb-img-slot"><i class="bi bi-image" style="font-size:1.5rem;color:#cbd5e1;position:relative;z-index:1;"></i><span>Screenshot 3 — Coming Soon</span></div>
+        <div class="lb-img-slot"><i class="bi bi-image" style="font-size:1.5rem;color:#cbd5e1;position:relative;z-index:1;"></i><span>Screenshot 4 — Coming Soon</span></div>
+      </div>
+      <div style="margin-top:20px;text-align:center;">
+        <a href="${p.url}" target="_blank" rel="noopener" class="btn-primary" style="font-size:0.88rem;">
+          <i class="bi bi-box-arrow-up-right"></i> Visit Live Website
+        </a>
+      </div>
+    </div>
+  `;
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
 
-// Button magnetic
-document.querySelectorAll('.btn-gold, .btn-outline, .nav-hire').forEach(b => {
-  b.addEventListener('mousemove', function(e) {
-    const r = this.getBoundingClientRect();
-    const x = e.clientX - r.left - r.width / 2;
-    const y = e.clientY - r.top - r.height / 2;
-    gsap.to(this, { x: x * 0.15, y: y * 0.15, duration: 0.35, ease: 'power2.out' });
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', e => { if(e.key==='Escape') closeLightbox(); });
+
+// ---- EDU CARD TOGGLE ----
+function toggleEduImg(el) {
+  const ph = el.querySelector('.edu-img-placeholder');
+  if(ph) ph.style.display = ph.style.display === 'none' ? 'flex' : 'none';
+}
+
+// ---- SKILL BARS ANIMATE ----
+function animateBars() {
+  document.querySelectorAll('.skill-bar-fill').forEach(bar => {
+    bar.style.width = '0%';
+    setTimeout(() => { bar.style.width = bar.getAttribute('data-width'); }, 200);
   });
-  b.addEventListener('mouseleave', function() {
-    gsap.to(this, { x: 0, y: 0, duration: 0.5, ease: 'elastic.out(1, 0.5)' });
+}
+
+// ---- AOS ----
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if(e.isIntersecting){
+      setTimeout(() => e.target.classList.add('visible'), i * 55);
+      observer.unobserve(e.target);
+      // trigger skill bars when about section visible
+      if(e.target.closest && e.target.closest('#about')) animateBars();
+    }
   });
-});
+}, { threshold: 0.08 });
+document.querySelectorAll('.aos,.aos-left').forEach(el => observer.observe(el));
+
+// ---- NAV SCROLL ----
+const nav = document.getElementById('navbar');
+window.addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 60));
+
+// ---- FEATURED GRID RESPONSIVE ----
+function featGrid() {
+  const fg = document.getElementById('featured-grid');
+  if(window.innerWidth < 700) fg.style.gridTemplateColumns = '1fr';
+  else fg.style.gridTemplateColumns = '1fr 1fr';
+}
+window.addEventListener('resize', featGrid);
+
+// ---- INIT ----
+window.addEventListener('load', () => { renderProjects(); featGrid(); animateBars(); });
 </script>
+
 </body>
 </html>
