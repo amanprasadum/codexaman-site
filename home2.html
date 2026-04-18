@@ -1,0 +1,1613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ===== SEO: CodeXaman — Aman Prasad Web Developer Kolkata & Howrah ===== -->
+<title>CodeXaman | Aman Prasad — Web Developer Kolkata & Howrah</title>
+<meta name="description" content="CodeXaman — Aman Prasad, affordable freelance web developer in Howrah, Kolkata. Professional WordPress website design, React Native mobile apps, MERN Stack development. Best web designer near you in Kolkata, Howrah, West Bengal.">
+<meta name="keywords" content="web developer Kolkata, freelance web designer Howrah, WordPress developer Kolkata, website design Kolkata, affordable website design Kolkata, React Native developer India, mobile app developer Kolkata, MERN stack developer Kolkata, low cost website West Bengal, business website Kolkata, CodeXaman">
+<meta name="author" content="Aman Prasad">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://codexaman.dev/">
+
+<meta property="og:title" content="CodeXaman | Aman Prasad — Affordable Freelance Web Developer Kolkata">
+<meta property="og:description" content="CodeXaman — Professional web developer from Howrah, Kolkata. Affordable WordPress websites, React Native apps, MERN Stack.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://codexaman.dev/">
+<meta property="og:locale" content="en_IN">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Aman Prasad",
+  "jobTitle": "Freelance Web Developer",
+  "description": "Affordable professional freelance web developer based in Howrah, Kolkata specializing in WordPress, React Native, and MERN Stack development",
+  "url": "https://codexaman.dev/",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Kona",
+    "addressLocality": "Howrah",
+    "addressRegion": "West Bengal",
+    "postalCode": "711114",
+    "addressCountry": "IN"
+  },
+  "email": "amanprasad0902@gmail.com",
+  "telephone": "+918420966418",
+  "areaServed": ["Kolkata", "Howrah", "West Bengal", "India", "Australia"]
+}
+</script>
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+/* ===== RESET & BASE — no changes from original ===== */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Nunito', sans-serif; background: #f8fafc; color: #1e293b; overflow-x: hidden; }
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: #2563eb; border-radius: 4px; }
+
+/* ---- NAVBAR ---- */
+#navbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1050;
+  padding: 16px 5%;
+  background: rgba(248,250,252,0.95);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid #e2e8f0;
+  transition: all 0.3s;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+#navbar.scrolled { padding: 10px 5%; box-shadow: 0 2px 20px rgba(37,99,235,0.08); }
+.nav-logo { font-size: 1.3rem; font-weight: 800; color: #1e293b; text-decoration: none; letter-spacing: -0.02em; }
+.nav-logo span { color: #2563eb; }
+.nav-links { display: flex; gap: 28px; list-style: none; margin: 0; padding: 0; }
+.nav-links a { color: #64748b; font-size: 0.88rem; font-weight: 600; text-decoration: none; transition: color 0.2s; }
+.nav-links a:hover { color: #2563eb; }
+.nav-right { display: flex; gap: 8px; align-items: center; }
+
+/* ---- BUTTONS ---- */
+.btn-primary-custom {
+  padding: 9px 20px; background: #2563eb; color: #fff;
+  font-weight: 700; font-size: 0.84rem; border-radius: 8px;
+  text-decoration: none; transition: all 0.2s; border: 2px solid #2563eb;
+  display: inline-flex; align-items: center; gap: 6px;
+}
+.btn-primary-custom:hover { background: #1d4ed8; border-color: #1d4ed8; transform: translateY(-1px); box-shadow: 0 8px 20px rgba(37,99,235,0.28); color: #fff; }
+.btn-yellow-custom {
+  padding: 9px 20px; background: #facc15; color: #1e293b;
+  font-weight: 700; font-size: 0.84rem; border-radius: 8px;
+  text-decoration: none; transition: all 0.2s; border: 2px solid #facc15;
+  display: inline-flex; align-items: center; gap: 6px;
+}
+.btn-yellow-custom:hover { background: #eab308; border-color: #eab308; transform: translateY(-1px); box-shadow: 0 8px 20px rgba(234,179,8,0.3); }
+.btn-outline-custom {
+  padding: 9px 20px; background: transparent; color: #2563eb;
+  font-weight: 700; font-size: 0.84rem; border-radius: 8px;
+  text-decoration: none; transition: all 0.2s; border: 2px solid #bfdbfe;
+  display: inline-flex; align-items: center; gap: 6px;
+}
+.btn-outline-custom:hover { background: #eff6ff; }
+
+/* ---- BADGES ---- */
+.badge-blue { display: inline-flex; align-items: center; gap: 6px; padding: 5px 13px; background: #eff6ff; border: 1.5px solid #bfdbfe; color: #2563eb; font-size: 0.75rem; font-weight: 700; border-radius: 7px; }
+.badge-yellow { display: inline-flex; align-items: center; gap: 6px; padding: 5px 13px; background: #fefce8; border: 1.5px solid #fde047; color: #ca8a04; font-size: 0.75rem; font-weight: 700; border-radius: 7px; }
+.badge-green { display: inline-flex; align-items: center; gap: 6px; padding: 5px 13px; background: #f0fdf4; border: 1.5px solid #bbf7d0; color: #16a34a; font-size: 0.75rem; font-weight: 700; border-radius: 7px; }
+.badge-gray { display: inline-flex; align-items: center; gap: 6px; padding: 5px 13px; background: #f1f5f9; border: 1.5px solid #e2e8f0; color: #64748b; font-size: 0.75rem; font-weight: 600; border-radius: 7px; }
+.section-tag { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: #2563eb; display: inline-flex; align-items: center; gap: 7px; background: #eff6ff; border: 1.5px solid #bfdbfe; padding: 5px 13px; border-radius: 7px; margin-bottom: 14px; }
+
+/* ---- CARDS ---- */
+.card-custom { background: #fff; border: 1.5px solid #e2e8f0; border-radius: 14px; transition: all 0.25s; }
+.card-custom:hover { border-color: #93c5fd; box-shadow: 0 8px 32px rgba(37,99,235,0.1); transform: translateY(-3px); }
+
+/* ---- SKILL TAGS ---- */
+.stag { display: inline-block; padding: 3px 10px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; font-size: 0.72rem; color: #64748b; font-weight: 600; }
+.stag-blue { display: inline-block; padding: 3px 10px; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 6px; font-size: 0.72rem; color: #2563eb; font-weight: 700; }
+.stag-yellow { display: inline-block; padding: 3px 10px; background: #fefce8; border: 1px solid #fde047; border-radius: 6px; font-size: 0.72rem; color: #ca8a04; font-weight: 700; }
+
+/* ---- MARQUEE ---- */
+.marquee-wrap { overflow: hidden; background: #fff; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0; }
+.marquee-track { display: flex; animation: marquee 32s linear infinite; width: max-content; }
+.marquee-item { padding: 13px 30px; font-size: 0.73rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #94a3b8; border-right: 1px solid #e2e8f0; white-space: nowrap; display: flex; align-items: center; gap: 8px; }
+.marquee-item i { color: #2563eb; font-size: 0.85rem; }
+@keyframes marquee { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+
+/* ---- STATUS DOTS ---- */
+.dot-live { width: 7px; height: 7px; background: #16a34a; border-radius: 50%; display: inline-block; }
+.dot-prog { width: 7px; height: 7px; background: #eab308; border-radius: 50%; display: inline-block; animation: pulse 1.5s ease-in-out infinite; }
+@keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(1.4)} }
+
+/* ---- AVATAR ---- */
+.avatar-box { background: #2563eb; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; font-weight: 800; color: #fff; }
+
+/* ---- SKILL BAR ---- */
+.skill-bar-track { height: 6px; background: #e2e8f0; border-radius: 4px; overflow: hidden; }
+.skill-bar-fill { height: 100%; background: #2563eb; border-radius: 4px; width: 0%; transition: width 1.2s ease; }
+
+/* ---- EXP ---- */
+.exp-row { padding: 32px 0; border-top: 1.5px solid #e2e8f0; }
+
+/* ---- EDU CARD ---- */
+.edu-card { background: #fff; border: 1.5px solid #e2e8f0; border-radius: 12px; padding: 20px; display: flex; gap: 14px; align-items: flex-start; transition: all 0.22s; }
+.edu-card:hover { border-color: #93c5fd; box-shadow: 0 4px 20px rgba(37,99,235,0.1); }
+.edu-icon { width: 42px; height: 42px; min-width: 42px; border-radius: 10px; background: #eff6ff; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0; color: #2563eb; }
+
+/* ---- CERT IMAGE ---- */
+.cert-img-wrap {
+  margin-top: 14px;
+  border-radius: 9px;
+  overflow: hidden;
+  border: 1.5px solid #e2e8f0;
+  background: #f8fafc;
+}
+.cert-img-wrap img { width: 100%; display: block; height: auto; }
+.cert-placeholder {
+  width: 100%; height: 110px; background: #f1f5f9;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 6px; color: #94a3b8; font-size: 0.75rem; font-weight: 600;
+}
+.cert-placeholder i { font-size: 1.4rem; }
+
+/* =====================================================
+   PROJECT CARD — hover scroll preview (top-to-bottom)
+   ===================================================== */
+.proj-card {
+  background: #fff;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: all 0.25s;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.proj-card:hover { border-color: #93c5fd; box-shadow: 0 10px 36px rgba(37,99,235,0.12); transform: translateY(-4px); }
+
+/* image area: fixed height, clip overflow, scroll on hover */
+.proj-img-area {
+  width: 100%;
+  height: 200px; /* fixed viewport height so overflow is clipped */
+  position: relative;
+  background: #f1f5f9;
+  overflow: hidden;
+}
+
+/* the actual image: full height, starts at top, scrolls down on hover */
+.proj-img-area img {
+  display: block;
+  width: 100%;
+  height: auto;           /* natural height — taller than container */
+  min-height: 100%;       /* at minimum fill container */
+  object-fit: cover;
+  object-position: top;   /* always start from top */
+  transition: transform 0s;
+  /* smooth scroll: move upward on hover via transform */
+  transform: translateY(0%);
+}
+
+/* on hover: shift image upward so bottom is visible — CSS handles the math with a generous max */
+.proj-card:hover .proj-img-area img {
+  transition: transform 4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform: translateY(calc(-100% + 200px));
+}
+
+/* fallback icon when no image */
+.proj-fallback {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center; font-size: 2.8rem;
+}
+
+.proj-badge {
+  position: absolute; top: 10px; left: 10px;
+  padding: 3px 10px; border-radius: 6px; font-size: 0.68rem; font-weight: 700;
+  letter-spacing: 0.05em; text-transform: uppercase;
+  display: flex; align-items: center; gap: 5px; z-index: 2;
+}
+.proj-badge-live { background: rgba(240,253,244,0.95); border: 1px solid #86efac; color: #16a34a; }
+.proj-badge-prog { background: rgba(254,252,232,0.95); border: 1px solid #fde047; color: #ca8a04; }
+
+/* open-in-new-tab button — shows on hover over card */
+.proj-open-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 3;
+  background: #fff;
+  border: 1.5px solid #bfdbfe;
+  color: #2563eb;
+  border-radius: 8px;
+  padding: 5px 11px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  opacity: 0;
+  transform: translateY(5px);
+  transition: opacity 0.22s, transform 0.22s;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.proj-card:hover .proj-open-btn { opacity: 1; transform: translateY(0); }
+.proj-open-btn:hover { background: #2563eb; color: #fff; border-color: #2563eb; }
+
+/* card body flex-grows to fill */
+.proj-card-body { padding: 18px; flex: 1; display: flex; flex-direction: column; }
+
+/* ---- CONTACT LINK ---- */
+.clink { display: flex; align-items: center; gap: 12px; padding: 15px 18px; background: #fff; border: 1.5px solid #e2e8f0; border-radius: 10px; color: #475569; text-decoration: none; font-size: 0.88rem; font-weight: 600; transition: all 0.22s; }
+.clink:hover { border-color: #93c5fd; color: #2563eb; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(37,99,235,0.1); }
+.clink-icon { width: 36px; height: 36px; background: #eff6ff; border-radius: 9px; display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0; color: #2563eb; }
+
+/* ---- CTA BG ---- */
+.cta-bg { background: #1e40af; position: relative; overflow: hidden; border-radius: 18px; }
+.cta-bg::before { content: ''; position: absolute; top: -60px; right: -60px; width: 260px; height: 260px; background: rgba(250,204,21,0.1); border-radius: 50%; }
+.cta-bg::after { content: ''; position: absolute; bottom: -40px; left: 40px; width: 180px; height: 180px; background: rgba(96,165,250,0.08); border-radius: 50%; }
+
+/* =====================================================
+   LIGHTBOX
+   ===================================================== */
+#lightbox {
+  display: none; position: fixed; inset: 0; z-index: 9999;
+  background: rgba(15,23,42,0.85);
+  align-items: center; justify-content: center; padding: 16px;
+}
+#lightbox.open { display: flex; }
+#lb-inner {
+  background: #fff; border-radius: 16px;
+  width: 100%; max-width: 860px; max-height: 90vh; overflow-y: auto;
+  position: relative;
+}
+#lb-close {
+  position: absolute; top: 14px; right: 14px; width: 32px; height: 32px;
+  border-radius: 8px; background: #f1f5f9; border: none; cursor: pointer;
+  font-size: 1rem; color: #64748b; display: flex; align-items: center; justify-content: center;
+  z-index: 10; transition: all 0.2s;
+}
+#lb-close:hover { background: #e2e8f0; color: #1e293b; }
+
+/* Gallery Slider inside lightbox */
+.gallery-slider { position: relative; overflow: hidden; border-radius: 10px; background: #f1f5f9; }
+.gallery-track { display: flex; transition: transform 0.4s cubic-bezier(0.4,0,0.2,1); }
+.gallery-slide { flex-shrink: 0; width: 100%; }
+
+/* Lightbox slide image — also scrolls top-to-bottom on hover */
+.gallery-slide-img-wrap {
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+  position: relative;
+  background: #f1f5f9;
+}
+.gallery-slide-img-wrap img {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transform: translateY(0%);
+  transition: transform 0s;
+}
+.gallery-slide-img-wrap:hover img {
+  transition: transform 5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform: translateY(calc(-100% + 380px));
+}
+
+.gallery-slide .img-placeholder {
+  width: 100%; height: 320px; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 8px;
+  color: #94a3b8; font-size: 0.82rem; font-weight: 600;
+}
+.gallery-slide .img-placeholder i { font-size: 2.2rem; color: #cbd5e1; }
+.gallery-prev, .gallery-next {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  width: 38px; height: 38px; border-radius: 8px; background: rgba(255,255,255,0.92);
+  border: 1.5px solid #e2e8f0; cursor: pointer; display: flex; align-items: center;
+  justify-content: center; color: #2563eb; font-size: 1rem; transition: all 0.2s;
+  z-index: 10;
+}
+.gallery-prev { left: 10px; }
+.gallery-next { right: 10px; }
+.gallery-prev:hover, .gallery-next:hover { background: #2563eb; color: #fff; border-color: #2563eb; }
+.gallery-dots { display: flex; align-items: center; justify-content: center; gap: 6px; padding: 10px 0 4px; }
+.gallery-dot { width: 7px; height: 7px; border-radius: 50%; background: #cbd5e1; cursor: pointer; transition: all 0.2s; border: none; padding: 0; }
+.gallery-dot.active { background: #2563eb; width: 20px; border-radius: 4px; }
+.gallery-label { position: absolute; bottom: 8px; right: 8px; background: rgba(15,23,42,0.65); color: #fff; font-size: 0.68rem; font-weight: 700; padding: 3px 9px; border-radius: 5px; z-index: 5; }
+
+/* ---- AOS ---- */
+.aos { opacity: 0; transform: translateY(22px); transition: opacity 0.55s ease, transform 0.55s ease; }
+.aos.visible { opacity: 1; transform: translateY(0); }
+.aos-left { opacity: 0; transform: translateX(-22px); transition: opacity 0.55s ease, transform 0.55s ease; }
+.aos-left.visible { opacity: 1; transform: translateX(0); }
+
+/* ---- SCROLL BOUNCE ---- */
+@keyframes bounce { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(5px)} }
+.scroll-hint { position: absolute; bottom: 28px; left: 50%; animation: bounce 1.7s ease-in-out infinite; display: flex; flex-direction: column; align-items: center; gap: 4px; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #94a3b8; }
+
+/* ---- HERO ---- */
+.hero-section { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; padding: 100px 5% 60px; background: #f8fafc; position: relative; }
+
+/* =====================================================
+   HERO RIGHT — replaced stat card with graphic image
+   ===================================================== */
+.hero-graphic-wrap {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+}
+.hero-graphic-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 18px;
+  border: 1.5px solid #e2e8f0;
+  box-shadow: 0 8px 40px rgba(37,99,235,0.10);
+}
+/* floating badge on top of hero graphic */
+.hero-graphic-badge {
+  position: absolute;
+  bottom: 18px;
+  left: 18px;
+  right: 18px;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(10px);
+  border: 1.5px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* ---- FEATURED PROJ ---- */
+.featured-split { display: grid; grid-template-columns: 1fr 1fr; }
+@media(max-width: 700px) { .featured-split { grid-template-columns: 1fr; } }
+
+/* ---- RESPONSIVE ---- */
+@media(max-width: 991px) {
+  .nav-links { display: none; }
+  .why-grid { grid-template-columns: 1fr 1fr !important; }
+}
+@media(max-width: 575px) {
+  .why-grid { grid-template-columns: 1fr !important; }
+  .hero-btns { flex-direction: column; }
+  .cta-btns { flex-direction: column; align-items: center; }
+}
+
+/* ---- HAMBURGER ---- */
+.nav-toggler { display: none; background: none; border: 1.5px solid #e2e8f0; border-radius: 7px; padding: 5px 10px; cursor: pointer; color: #2563eb; font-size: 1.1rem; }
+@media(max-width: 991px) { .nav-toggler { display: block; } }
+.mobile-menu { display: none; position: fixed; top: 68px; left: 0; right: 0; background: #fff; border-bottom: 1.5px solid #e2e8f0; z-index: 1049; padding: 16px 5%; flex-direction: column; gap: 14px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+.mobile-menu.open { display: flex; }
+.mobile-menu a { color: #475569; font-size: 0.95rem; font-weight: 700; text-decoration: none; padding: 8px 0; border-bottom: 1px solid #f1f5f9; }
+.mobile-menu a:hover { color: #2563eb; }
+
+/* hero stat box */
+.hero-stat { background: #f8fafc; border: 1.5px solid #e2e8f0; border-radius: 9px; padding: 12px; text-align: center; }
+.hero-stat-num { font-size: 1.6rem; font-weight: 800; color: #2563eb; line-height: 1; }
+.hero-stat-label { font-size: 0.65rem; color: #94a3b8; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; margin-top: 2px; }
+
+/* pagination dots for projects */
+#proj-dots { margin-top: 20px; }
+</style>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">Code<span>Xaman</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="#meeting" class="btn-yellow-custom d-none d-lg-inline-flex"><i class="bi bi-calendar-check"></i> Book a Call</a>
+    <a href="mailto:amanprasad0902@gmail.com" class="btn-primary-custom d-none d-lg-inline-flex"><i class="bi bi-envelope"></i> Hire Me</a>
+    <button class="nav-toggler" onclick="toggleMobile()"><i class="bi bi-list"></i></button>
+  </div>
+</nav>
+
+<!-- ===== MOBILE MENU ===== -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="toggleMobile()">About</a>
+  <a href="#skills" onclick="toggleMobile()">Skills</a>
+  <a href="#experience" onclick="toggleMobile()">Experience</a>
+  <a href="#projects" onclick="toggleMobile()">Projects</a>
+  <a href="#education" onclick="toggleMobile()">Education</a>
+  <a href="#contact" onclick="toggleMobile()">Contact</a>
+  <a href="#meeting" onclick="toggleMobile()" style="color:#ca8a04;"><i class="bi bi-calendar-check me-1"></i>Book a Call</a>
+  <a href="mailto:amanprasad0902@gmail.com" style="color:#2563eb;"><i class="bi bi-envelope me-1"></i>Hire Me</a>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero-section" id="hero" aria-label="Aman Prasad Web Developer Kolkata Howrah — CodeXaman">
+  <div class="container-fluid px-0" style="max-width:1200px; margin:0 auto;">
+    <div class="row align-items-center g-4">
+
+      <!-- Left: text content — unchanged -->
+      <div class="col-lg-6">
+        <div class="badge-blue aos mb-3">
+          <span class="dot-live"></span> Available for Freelance — Kolkata &amp; Howrah
+        </div>
+        <h1 class="aos" style="font-size:clamp(2.2rem,4.5vw,3.6rem);font-weight:800;line-height:1.1;letter-spacing:-0.03em;color:#0f172a;margin-bottom:14px;">
+          Welcome to<br>
+          <span style="color:#2563eb;">Code</span><span style="color:#0f172a;">Xaman</span><br>
+          <span style="color:#64748b;font-size:0.68em;font-weight:700;">Web Developer in Kolkata &amp; Howrah</span>
+        </h1>
+        <p class="aos" style="font-size:1rem;color:#64748b;line-height:1.8;max-width:480px;margin-bottom:10px;">
+          I'm <strong style="color:#1e293b;">Aman Prasad</strong> — a freelance web developer from Howrah building professional, affordable websites for businesses in <strong style="color:#1e293b;">Kolkata, Howrah, West Bengal</strong> and globally.
+        </p>
+        <p class="aos" style="font-size:0.82rem;color:#94a3b8;margin-bottom:26px;">
+          <i class="bi bi-geo-alt-fill" style="color:#2563eb;"></i> Kona, Howrah &nbsp;|&nbsp;
+          <i class="bi bi-currency-rupee" style="color:#2563eb;"></i> Affordable Pricing &nbsp;|&nbsp;
+          <i class="bi bi-lightning-charge-fill" style="color:#facc15;"></i> Fast Delivery
+        </p>
+        <div class="hero-btns aos d-flex flex-wrap gap-2 mb-4">
+          <a href="#projects" class="btn-primary-custom"><i class="bi bi-grid-3x3-gap"></i> View Projects</a>
+          <a href="#meeting" class="btn-yellow-custom"><i class="bi bi-calendar-check"></i> Free Consultation</a>
+          <a href="#contact" class="btn-outline-custom"><i class="bi bi-chat-dots"></i> Let's Talk</a>
+        </div>
+        <div class="aos d-flex flex-wrap gap-2">
+          <span class="badge-gray"><i class="bi bi-wordpress"></i> WordPress</span>
+          <span class="badge-gray"><i class="bi bi-phone"></i> React Native</span>
+          <span class="badge-gray"><i class="bi bi-stack"></i> MERN Stack</span>
+          <span class="badge-gray"><i class="bi bi-lightning"></i> Firebase</span>
+          <span class="badge-gray"><i class="bi bi-database"></i> MySQL</span>
+        </div>
+      </div>
+
+      <!-- Right: HERO GRAPHIC (replaced profile card with image) -->
+      <div class="col-lg-6">
+        <div class="hero-graphic-wrap aos">
+          <!-- Primary hero graphic — place codexaman-hero.png in root -->
+          <img
+            src="codexaman-hero.png"
+            alt="CodeXaman — Aman Prasad, Freelance Web Developer in Kolkata and Howrah"
+            onerror="this.onerror=null; this.src='codexaman-bg.png';"
+          >
+          <!-- Floating info badge over the graphic -->
+          <div class="hero-graphic-badge">
+            <div class="avatar-box" style="width:42px;height:42px;font-size:0.82rem;flex-shrink:0;">AP</div>
+            <div style="flex:1;min-width:0;">
+              <div style="font-weight:800;font-size:0.88rem;color:#0f172a;line-height:1.2;">Aman Prasad</div>
+              <div style="font-size:0.72rem;color:#64748b;">Web Developer · Howrah, Kolkata</div>
+            </div>
+            <div style="display:flex;align-items:center;gap:5px;font-size:0.72rem;color:#16a34a;font-weight:700;flex-shrink:0;">
+              <span class="dot-live"></span> Open to projects
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats row below graphic -->
+        <div class="row g-2 mt-3 aos">
+          <div class="col-4">
+            <div class="hero-stat">
+              <div class="hero-stat-num">9+</div>
+              <div class="hero-stat-label">Projects</div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="hero-stat">
+              <div class="hero-stat-num">5+</div>
+              <div class="hero-stat-label">Yrs Exp</div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="hero-stat">
+              <div class="hero-stat-num">3+</div>
+              <div class="hero-stat-label">Countries</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Affordable pricing strip -->
+        <div class="aos mt-2" style="background:#eff6ff;border:1.5px solid #bfdbfe;border-radius:12px;padding:14px 18px;display:flex;align-items:center;gap:10px;">
+          <i class="bi bi-currency-rupee" style="color:#2563eb;font-size:1.3rem;flex-shrink:0;"></i>
+          <div>
+            <div style="font-size:0.82rem;font-weight:800;color:#1e40af;">Affordable Pricing for Small Businesses</div>
+            <div style="font-size:0.72rem;color:#3b82f6;">Professional quality websites at budgets that suit local businesses</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="scroll-hint"><span>Scroll</span><i class="bi bi-chevron-down" style="color:#2563eb;font-size:0.9rem;"></i></div>
+</section>
+
+<!-- ===== MARQUEE ===== -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <div class="marquee-item"><i class="bi bi-globe2"></i> CodeXaman</div>
+    <div class="marquee-item"><i class="bi bi-globe2"></i> Web Developer Kolkata</div>
+    <div class="marquee-item"><i class="bi bi-code-slash"></i> HTML / CSS / JavaScript</div>
+    <div class="marquee-item"><i class="bi bi-wordpress"></i> WordPress Expert</div>
+    <div class="marquee-item"><i class="bi bi-phone"></i> React Native Apps</div>
+    <div class="marquee-item"><i class="bi bi-lightning-charge"></i> Firebase Backend</div>
+    <div class="marquee-item"><i class="bi bi-database"></i> MySQL Databases</div>
+    <div class="marquee-item"><i class="bi bi-stack"></i> MERN Stack</div>
+    <div class="marquee-item"><i class="bi bi-geo-alt"></i> Freelancer Howrah</div>
+    <div class="marquee-item"><i class="bi bi-shop"></i> Business Websites</div>
+    <div class="marquee-item"><i class="bi bi-currency-rupee"></i> Affordable Prices</div>
+    <div class="marquee-item"><i class="bi bi-robot"></i> AI Automation</div>
+    <div class="marquee-item"><i class="bi bi-headset"></i> IT Support</div>
+    <!-- duplicate set for seamless loop -->
+    <div class="marquee-item"><i class="bi bi-globe2"></i> CodeXaman</div>
+    <div class="marquee-item"><i class="bi bi-globe2"></i> Web Developer Kolkata</div>
+    <div class="marquee-item"><i class="bi bi-code-slash"></i> HTML / CSS / JavaScript</div>
+    <div class="marquee-item"><i class="bi bi-wordpress"></i> WordPress Expert</div>
+    <div class="marquee-item"><i class="bi bi-phone"></i> React Native Apps</div>
+    <div class="marquee-item"><i class="bi bi-lightning-charge"></i> Firebase Backend</div>
+    <div class="marquee-item"><i class="bi bi-database"></i> MySQL Databases</div>
+    <div class="marquee-item"><i class="bi bi-stack"></i> MERN Stack</div>
+    <div class="marquee-item"><i class="bi bi-geo-alt"></i> Freelancer Howrah</div>
+    <div class="marquee-item"><i class="bi bi-shop"></i> Business Websites</div>
+    <div class="marquee-item"><i class="bi bi-currency-rupee"></i> Affordable Prices</div>
+    <div class="marquee-item"><i class="bi bi-robot"></i> AI Automation</div>
+    <div class="marquee-item"><i class="bi bi-headset"></i> IT Support</div>
+  </div>
+</div>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" style="background:#fff;padding:96px 5%;" aria-label="About Aman Prasad Web Developer Howrah Kolkata CodeXaman">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5">
+        <div class="aos-left" style="background:#f8fafc;border:1.5px solid #e2e8f0;border-radius:18px;padding:32px;">
+          <div class="avatar-box mb-3" style="width:72px;height:72px;font-size:1.4rem;">AP</div>
+          <h3 style="font-size:1.2rem;font-weight:800;color:#0f172a;margin-bottom:4px;">Aman Prasad</h3>
+          <p style="font-size:0.82rem;color:#2563eb;font-weight:700;margin-bottom:18px;">Freelance Web Developer — Howrah, Kolkata</p>
+          <div class="d-flex flex-column gap-2 mb-4">
+            <div style="display:flex;align-items:center;gap:10px;font-size:0.82rem;color:#475569;font-weight:600;"><i class="bi bi-envelope-fill" style="color:#2563eb;width:16px;"></i>amanprasad0902@gmail.com</div>
+            <div style="display:flex;align-items:center;gap:10px;font-size:0.82rem;color:#475569;font-weight:600;"><i class="bi bi-telephone-fill" style="color:#2563eb;width:16px;"></i>+91 84209 66418</div>
+            <div style="display:flex;align-items:center;gap:10px;font-size:0.82rem;color:#475569;font-weight:600;"><i class="bi bi-geo-alt-fill" style="color:#2563eb;width:16px;"></i>Kona, Howrah — 711114, West Bengal</div>
+          </div>
+          <div class="d-flex flex-column gap-3">
+            <div>
+              <div class="d-flex justify-content-between mb-1" style="font-size:0.75rem;font-weight:700;color:#475569;"><span>WordPress &amp; Web Design</span><span style="color:#2563eb;">90%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90%"></div></div>
+            </div>
+            <div>
+              <div class="d-flex justify-content-between mb-1" style="font-size:0.75rem;font-weight:700;color:#475569;"><span>React Native / Mobile</span><span style="color:#2563eb;">75%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75%"></div></div>
+            </div>
+            <div>
+              <div class="d-flex justify-content-between mb-1" style="font-size:0.75rem;font-weight:700;color:#475569;"><span>MERN Stack</span><span style="color:#2563eb;">60%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="60%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="section-tag aos">About Me</div>
+        <h2 class="aos" style="font-size:clamp(1.8rem,3.2vw,2.6rem);font-weight:800;letter-spacing:-0.02em;line-height:1.18;margin-bottom:18px;color:#0f172a;">
+          Building purposeful<br><span style="color:#2563eb;">digital products</span> for<br>real businesses in Kolkata.
+        </h2>
+        <div class="aos d-flex flex-column gap-3" style="color:#64748b;font-size:0.94rem;line-height:1.85;">
+          <p>I'm a freelance web developer from Kona, Howrah with 5+ years of experience building professional business websites, mobile apps, and custom web solutions at affordable prices under the brand <strong style="color:#1e293b;">CodeXaman</strong>.</p>
+          <p>Whether you need a <strong style="color:#1e293b;">WordPress website, an e-commerce store, or a mobile app</strong> — I deliver fast, SEO-optimised, and mobile-friendly websites that help your business grow online.</p>
+          <p>Currently expanding into <strong style="color:#1e293b;">MERN Stack</strong> and exploring AI automation with LangChain and n8n.</p>
+        </div>
+        <div class="aos row g-2 mt-3">
+          <div class="col-6 col-sm-3">
+            <div style="background:#f8fafc;border:1.5px solid #e2e8f0;border-radius:10px;padding:16px;">
+              <div style="font-size:1.8rem;font-weight:800;color:#2563eb;line-height:1;">19+</div>
+              <div style="font-size:0.75rem;color:#64748b;font-weight:700;">Projects</div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-3">
+            <div style="background:#f8fafc;border:1.5px solid #e2e8f0;border-radius:10px;padding:16px;">
+              <div style="font-size:1.8rem;font-weight:800;color:#2563eb;line-height:1;">3+</div>
+              <div style="font-size:0.75rem;color:#64748b;font-weight:700;">Years Exp</div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-3">
+            <div style="background:#f8fafc;border:1.5px solid #e2e8f0;border-radius:10px;padding:16px;">
+              <div style="font-size:1.8rem;font-weight:800;color:#2563eb;line-height:1;">3+</div>
+              <div style="font-size:0.75rem;color:#64748b;font-weight:700;">Countries</div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-3">
+            <div style="background:#fefce8;border:1.5px solid #fde047;border-radius:10px;padding:16px;">
+              <div style="font-size:1.8rem;font-weight:800;color:#ca8a04;line-height:1;">₹₹</div>
+              <div style="font-size:0.75rem;color:#92400e;font-weight:700;">Affordable</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY CHOOSE ME ===== -->
+<section style="background:#eff6ff;padding:72px 5%;border-top:1.5px solid #bfdbfe;border-bottom:1.5px solid #bfdbfe;">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div class="text-center mb-5">
+      <div class="section-tag aos" style="justify-content:center;">Why Choose CodeXaman</div>
+      <h2 class="aos" style="font-size:clamp(1.7rem,3vw,2.3rem);font-weight:800;letter-spacing:-0.02em;color:#0f172a;">Best Web Developer in <span style="color:#2563eb;">Kolkata &amp; Howrah</span></h2>
+    </div>
+    <div class="why-grid row g-3">
+      <div class="col-md-3 col-sm-6">
+        <div class="card-custom p-4 text-center aos h-100">
+          <i class="bi bi-currency-rupee" style="font-size:1.8rem;color:#2563eb;display:block;margin-bottom:10px;"></i>
+          <h3 style="font-size:0.9rem;font-weight:800;color:#0f172a;margin-bottom:7px;">Affordable Prices</h3>
+          <p style="font-size:0.78rem;color:#64748b;line-height:1.65;margin:0;">Professional websites at budgets that suit small businesses in Kolkata and Howrah.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card-custom p-4 text-center aos h-100">
+          <i class="bi bi-search" style="font-size:1.8rem;color:#2563eb;display:block;margin-bottom:10px;"></i>
+          <h3 style="font-size:0.9rem;font-weight:800;color:#0f172a;margin-bottom:7px;">SEO Optimised</h3>
+          <p style="font-size:0.78rem;color:#64748b;line-height:1.65;margin:0;">Every website I build is optimised to rank on Google and bring you local customers.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card-custom p-4 text-center aos h-100">
+          <i class="bi bi-lightning-charge-fill" style="font-size:1.8rem;color:#facc15;display:block;margin-bottom:10px;"></i>
+          <h3 style="font-size:0.9rem;font-weight:800;color:#0f172a;margin-bottom:7px;">Fast Delivery</h3>
+          <p style="font-size:0.78rem;color:#64748b;line-height:1.65;margin:0;">Quick turnaround without compromising on quality or attention to detail.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card-custom p-4 text-center aos h-100">
+          <i class="bi bi-headset" style="font-size:1.8rem;color:#2563eb;display:block;margin-bottom:10px;"></i>
+          <h3 style="font-size:0.9rem;font-weight:800;color:#0f172a;margin-bottom:7px;">Dedicated Support</h3>
+          <p style="font-size:0.78rem;color:#64748b;line-height:1.65;margin:0;">Ongoing support and maintenance so your website runs perfectly at all times.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills" style="background:#f8fafc;padding:96px 5%;" aria-label="Skills WordPress React Native MERN Stack Kolkata">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div class="text-center mb-5">
+      <div class="section-tag aos" style="justify-content:center;"><i class="bi bi-tools"></i> Technical Stack</div>
+      <h2 class="aos" style="font-size:clamp(1.8rem,3.2vw,2.6rem);font-weight:800;letter-spacing:-0.02em;color:#0f172a;margin-bottom:10px;">What I <span style="color:#2563eb;">Build With</span></h2>
+      <p class="aos" style="font-size:0.94rem;color:#64748b;max-width:460px;margin:0 auto;">A full-stack toolkit spanning web, mobile, databases, and productivity tools.</p>
+    </div>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <div class="card-custom p-4 aos h-100">
+          <i class="bi bi-window-desktop" style="font-size:1.6rem;color:#2563eb;margin-bottom:14px;display:block;"></i>
+          <h3 style="font-weight:800;font-size:0.9rem;margin-bottom:7px;color:#0f172a;">Frontend Development</h3>
+          <p style="font-size:0.78rem;color:#64748b;line-height:1.65;margin-bottom:12px;">Responsive, pixel-perfect interfaces using modern web standards.</p>
+          <div class="d-flex flex-wrap gap-1">
+            <span class="stag">HTML5</span><span class="stag">CSS3</span><span class="stag">JavaScript</span><span class="stag">jQuery</span><span class="stag">Bootstrap</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-custom p-4 aos h-100">
+          <i class="bi bi-server" style="font-size:1.6rem;color:#2563eb;margin-bottom:14px;display:block;"></i>
+          <h3 style="font-weight:800;font-size:0.9rem;margin-bottom:7px;color:#0f172a;">Backend &amp; Database</h3>
+          <p style="font-size:0.78rem;color:#64748b;line-height:1.65;margin-bottom:12px;">Server-side logic, database design, and cloud backend services.</p>
+          <div class="d-flex flex-wrap gap-1">
+            <span class="stag">MySQL</span><span class="stag">Firebase</span><span class="stag">Cloud Functions</span><span class="stag">PHP</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-custom p-4 aos h-100">
+          <i class="bi bi-phone-fill" style="font-size:1.6rem;color:#2563eb;margin-bottom:14px;display:block;"></i>
+          <h3 style="font-weight:800;font-size:0.9rem;margin-bottom:7px;color:#0f172a;">Mobile Development</h3>
+          <p style="font-size:0.78rem;color:#64748b;line-height:1.65;margin-bottom:12px;">Cross-platform Android &amp; iOS apps with seamless UX.</p>
+          <div class="d-flex flex-wrap gap-1">
+            <span class="stag">React Native</span><span class="stag">Expo</span><span class="stag">Firebase Auth</span><span class="stag">Barcode</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-custom p-4 aos h-100">
+          <i class="bi bi-wordpress" style="font-size:1.6rem;color:#2563eb;margin-bottom:14px;display:block;"></i>
+          <h3 style="font-weight:800;font-size:0.9rem;margin-bottom:7px;color:#0f172a;">CMS &amp; WordPress</h3>
+          <p style="font-size:0.78rem;color:#64748b;line-height:1.65;margin-bottom:12px;">Complete WordPress websites with custom themes, plugins, and WooCommerce.</p>
+          <div class="d-flex flex-wrap gap-1">
+            <span class="stag">WordPress</span><span class="stag">Theme Dev</span><span class="stag">WooCommerce</span><span class="stag">SEO</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-custom p-4 aos h-100">
+          <i class="bi bi-file-earmark-spreadsheet" style="font-size:1.6rem;color:#2563eb;margin-bottom:14px;display:block;"></i>
+          <h3 style="font-weight:800;font-size:0.9rem;margin-bottom:7px;color:#0f172a;">Productivity &amp; Office</h3>
+          <p style="font-size:0.78rem;color:#64748b;line-height:1.65;margin-bottom:12px;">Advanced MS Office and data tools for efficient business operations.</p>
+          <div class="d-flex flex-wrap gap-1">
+            <span class="stag">MS Office</span><span class="stag">Advanced Excel</span><span class="stag">Data Entry</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-custom p-4 aos h-100" style="border-color:#bfdbfe;background:#f8fbff;">
+          <i class="bi bi-rocket-takeoff" style="font-size:1.6rem;color:#facc15;margin-bottom:14px;display:block;"></i>
+          <h3 style="font-weight:800;font-size:0.9rem;margin-bottom:7px;color:#0f172a;">Currently Learning</h3>
+          <p style="font-size:0.78rem;color:#64748b;line-height:1.65;margin-bottom:12px;">Expanding into full-stack and AI-driven development actively.</p>
+          <div class="d-flex flex-wrap gap-1">
+            <span class="stag-blue">React</span><span class="stag-blue">Node.js</span><span class="stag-blue">MongoDB</span><span class="stag-yellow">LangChain</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE ===== -->
+<section id="experience" style="background:#fff;padding:96px 5%;" aria-label="Work Experience IT Support Web Designer Kolkata">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div class="section-tag aos"><i class="bi bi-briefcase"></i> Work History</div>
+    <h2 class="aos" style="font-size:clamp(1.8rem,3.2vw,2.6rem);font-weight:800;letter-spacing:-0.02em;color:#0f172a;margin-bottom:48px;">Professional <span style="color:#2563eb;">Experience</span></h2>
+
+    <div class="exp-row aos">
+      <div class="row g-4">
+        <div class="col-lg-3">
+          <div style="font-size:0.78rem;font-weight:700;color:#64748b;margin-bottom:10px;">2022 — Present</div>
+          <span class="badge-green"><i class="bi bi-circle-fill" style="font-size:0.5rem;"></i> Current Role</span>
+        </div>
+        <div class="col-lg-9">
+          <div class="d-flex align-items-center gap-3 mb-2">
+            <div style="width:38px;height:38px;background:#eff6ff;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="bi bi-buildings" style="color:#2563eb;font-size:1rem;"></i></div>
+            <div>
+              <h3 style="font-weight:800;font-size:1rem;color:#0f172a;line-height:1.2;margin:0;">IT Support &amp; Operations Specialist</h3>
+              <div style="font-size:0.82rem;color:#2563eb;font-weight:700;">Bhagwati Traders Pvt Ltd</div>
+            </div>
+          </div>
+          <p style="font-size:0.88rem;color:#64748b;line-height:1.8;max-width:580px;margin:12px 0;">Day-to-day IT support, website management and content updates, inventory application oversight, and digital channel enquiries. Using advanced Excel and MS Office for operational workflows and record-keeping.</p>
+          <div class="d-flex flex-wrap gap-1"><span class="stag">IT Support</span><span class="stag">Website Management</span><span class="stag">Inventory App</span><span class="stag">MS Office</span><span class="stag">Excel</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-row aos" style="border-bottom:1.5px solid #e2e8f0;">
+      <div class="row g-4">
+        <div class="col-lg-3">
+          <div style="font-size:0.78rem;font-weight:700;color:#64748b;margin-bottom:10px;">Jan — Aug 2020</div>
+          <span class="badge-gray">Past Role</span>
+        </div>
+        <div class="col-lg-9">
+          <div class="d-flex align-items-center gap-3 mb-2">
+            <div style="width:38px;height:38px;background:#f8fafc;border:1.5px solid #e2e8f0;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="bi bi-palette" style="color:#64748b;font-size:1rem;"></i></div>
+            <div>
+              <h3 style="font-weight:800;font-size:1rem;color:#0f172a;line-height:1.2;margin:0;">Junior Associate Web Designer</h3>
+              <div style="font-size:0.82rem;color:#2563eb;font-weight:700;">Visite Tech (South City)</div>
+            </div>
+          </div>
+          <p style="font-size:0.88rem;color:#64748b;line-height:1.8;max-width:580px;margin:12px 0;">Assisted senior designers on client-facing website projects. Worked on front-end design and visual development, sharpening skills in layout, typography, and cross-browser compatibility. Role discontinued due to COVID-19.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects" style="background:#f8fafc;padding:96px 5%;" aria-label="Portfolio Projects CodeXaman Web Development Kolkata India Australia">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div class="d-flex align-items-end justify-content-between mb-5 flex-wrap gap-3">
+      <div>
+        <div class="section-tag aos"><i class="bi bi-grid-3x3-gap"></i> Portfolio</div>
+        <h2 class="aos" style="font-size:clamp(1.8rem,3.2vw,2.6rem);font-weight:800;letter-spacing:-0.02em;color:#0f172a;margin:0;">Selected <span style="color:#2563eb;">Projects</span></h2>
+      </div>
+      <p class="aos" style="font-size:0.85rem;color:#64748b;max-width:280px;line-height:1.7;margin:0;">Hover to preview · Click to view screenshots.</p>
+    </div>
+
+    <!-- Featured Project — Inventory App (static HTML, not from JS variable) -->
+    <div class="card-custom aos mb-4" style="overflow:hidden;">
+      <div class="featured-split">
+        <div style="padding:36px;background:#eff6ff;">
+          <div class="badge-yellow mb-3"><span class="dot-prog"></span> Active Development</div>
+          <h3 style="font-size:1.5rem;font-weight:800;letter-spacing:-0.02em;line-height:1.22;margin-bottom:13px;color:#0f172a;">Inventory Management <span style="color:#2563eb;">Mobile App</span></h3>
+          <p style="font-size:0.88rem;color:#475569;line-height:1.8;margin-bottom:18px;">A cross-platform mobile application built with React Native (Expo) featuring real-time record management, barcode scanning, and secure Firebase authentication.</p>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="stag-blue">React Native</span>
+            <span class="stag-blue">Expo</span>
+            <span class="stag-blue">Firebase</span>
+            <span class="stag-blue">Cloud Functions</span>
+            <span class="stag-blue">Barcode Scanner</span>
+          </div>
+        </div>
+        <div style="padding:32px;background:#fff;border-left:1.5px solid #e2e8f0;display:flex;flex-direction:column;justify-content:center;">
+          <div style="font-size:0.72rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:#94a3b8;margin-bottom:14px;">Key Features</div>
+          <div class="d-flex flex-column gap-2">
+            <div class="d-flex align-items-start gap-2" style="font-size:0.85rem;color:#475569;line-height:1.5;"><i class="bi bi-check-circle-fill" style="color:#2563eb;flex-shrink:0;margin-top:2px;"></i>Challan and billing generation system</div>
+            <div class="d-flex align-items-start gap-2" style="font-size:0.85rem;color:#475569;line-height:1.5;"><i class="bi bi-check-circle-fill" style="color:#2563eb;flex-shrink:0;margin-top:2px;"></i>Real-time record search and management</div>
+            <div class="d-flex align-items-start gap-2" style="font-size:0.85rem;color:#475569;line-height:1.5;"><i class="bi bi-check-circle-fill" style="color:#2563eb;flex-shrink:0;margin-top:2px;"></i>Barcode scanner with scan-to-insert</div>
+            <div class="d-flex align-items-start gap-2" style="font-size:0.85rem;color:#475569;line-height:1.5;"><i class="bi bi-check-circle-fill" style="color:#2563eb;flex-shrink:0;margin-top:2px;"></i>Firebase phone &amp; email authentication</div>
+            <div class="d-flex align-items-start gap-2" style="font-size:0.85rem;color:#475569;line-height:1.5;"><i class="bi bi-check-circle-fill" style="color:#2563eb;flex-shrink:0;margin-top:2px;"></i>Cloud Functions backend</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== PROJECT CARDS GRID (written directly in HTML — no JS innerHTML) ===== -->
+    <div class="row g-3 aos" id="proj-grid">
+
+      <!-- 1. EPIC Loft Conversion -->
+      <div class="col-md-4 col-sm-6 proj-item" data-page="0">
+        <div class="proj-card" onclick="openLightbox(0)">
+          <div class="proj-img-area" style="background:#dbeafe;">
+            <img
+              src="assets/images/projects/epicloft/home.png"
+              alt="EPIC Loft Conversion website — CodeXaman WordPress project for Australian market"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            >
+            <div class="proj-fallback" style="display:none;"><i class="bi bi-house-door-fill" style="color:#2563eb;"></i></div>
+            <div class="proj-badge proj-badge-live"><i class="bi bi-circle-fill" style="font-size:0.5rem;"></i> Live</div>
+            <!-- open in new tab button — add your URL here when ready -->
+            <button class="proj-open-btn" onclick="event.stopPropagation();" title="Open project in new tab" disabled>
+              <i class="bi bi-box-arrow-up-right"></i> Open Site
+            </button>
+          </div>
+          <div class="proj-card-body">
+            <h3 style="font-weight:800;font-size:0.9rem;color:#0f172a;margin-bottom:6px;">EPIC Loft Conversion</h3>
+            <p style="font-size:0.78rem;color:#64748b;line-height:1.65;margin-bottom:10px;flex:1;">Business website for a loft conversion company serving UK and Australian markets. Strong lead generation with clean service layout.</p>
+            <div class="d-flex flex-wrap gap-1 mb-2">
+              <span class="stag">WordPress</span><span class="stag">AU Market</span><span class="stag">Business</span>
+            </div>
+            <div style="font-size:0.78rem;color:#2563eb;font-weight:800;display:flex;align-items:center;gap:5px;">
+              <i class="bi bi-images"></i> View Screenshots
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Pavitra Mitti -->
+      <div class="col-md-4 col-sm-6 proj-item" data-page="0">
+        <div class="proj-card" onclick="openLightbox(1)">
+          <div class="proj-img-area" style="background:#dcfce7;">
+            <img
+              src="assets/images/projects/pavitramitti/home.png"
+              alt="Pavitra Mitti — Plant nursery WordPress website Kolkata by CodeXaman"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            >
+            <div class="proj-fallback" style="display:none;"><i class="bi bi-flower2" style="color:#16a34a;"></i></div>
+            <div class="proj-badge proj-badge-live"><i class="bi bi-circle-fill" style="font-size:0.5rem;"></i> Live</div>
+            <button class="proj-open-btn" onclick="event.stopPropagation();" title="Open project" disabled>
+              <i class="bi bi-box-arrow-up-right"></i> Open Site
+            </button>
+          </div>
+          <div class="proj-card-body">
+            <h3 style="font-weight:800;font-size:0.9rem;color:#0f172a;margin-bottom:6px;">Pavitra Mitti</h3>
+            <p style="font-size:0.78rem;color:#64748b;line-height:1.65;margin-bottom:10px;flex:1;">Plant nursery website in Basirhat, Kolkata. Product display and customer engagement for an eco-conscious local brand.</p>
+            <div class="d-flex flex-wrap gap-1 mb-2">
+              <span class="stag">WordPress</span><span class="stag">Nursery</span><span class="stag">Kolkata</span>
+            </div>
+            <div style="font-size:0.78rem;color:#16a34a;font-weight:800;display:flex;align-items:center;gap:5px;">
+              <i class="bi bi-images"></i> View Screenshots
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Uniwaves -->
+      <div class="col-md-4 col-sm-6 proj-item" data-page="0">
+        <div class="proj-card" onclick="openLightbox(2)">
+          <div class="proj-img-area" style="background:#fef3c7;">
+            <div class="proj-fallback"><i class="bi bi-bag-heart-fill" style="color:#d97706;"></i></div>
+            <div class="proj-badge proj-badge-live"><i class="bi bi-circle-fill" style="font-size:0.5rem;"></i> Live</div>
+            <button class="proj-open-btn" onclick="event.stopPropagation();" title="Open project" disabled>
+              <i class="bi bi-box-arrow-up-right"></i> Open Site
+            </button>
+          </div>
+          <div class="proj-card-body">
+            <h3 style="font-weight:800;font-size:0.9rem;color:#0f172a;margin-bottom:6px;">Uniwaves</h3>
+            <p style="font-size:0.78rem;color:#64748b;line-height:1.65;margin-bottom:10px;flex:1;">Corporate website for a kidswear manufacturer and wholesale company in West Bengal. B2B focused design.</p>
+            <div class="d-flex flex-wrap gap-1 mb-2">
+              <span class="stag">Manufacturing</span><span class="stag">Wholesale</span><span class="stag">Corporate</span>
+            </div>
+            <div style="font-size:0.78rem;color:#d97706;font-weight:800;display:flex;align-items:center;gap:5px;">
+              <i class="bi bi-images"></i> View Screenshots
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. BPT Group -->
+      <div class="col-md-4 col-sm-6 proj-item" data-page="0">
+        <div class="proj-card" onclick="openLightbox(3)">
+          <div class="proj-img-area" style="background:#e0e7ff;">
+            <div class="proj-fallback"><i class="bi bi-buildings-fill" style="color:#4f46e5;"></i></div>
+            <div class="proj-badge proj-badge-live"><i class="bi bi-circle-fill" style="font-size:0.5rem;"></i> Live</div>
+            <button class="proj-open-btn" onclick="event.stopPropagation();" title="Open project" disabled>
+              <i class="bi bi-box-arrow-up-right"></i> Open Site
+            </button>
+          </div>
+          <div class="proj-card-body">
+            <h3 style="font-weight:800;font-size:0.9rem;color:#0f172a;margin-bottom:6px;">BPT Group</h3>
+            <p style="font-size:0.78rem;color:#64748b;line-height:1.65;margin-bottom:10px;flex:1;">Corporate business website establishing strong online presence for a multi-service group. Clean, structured layout.</p>
+            <div class="d-flex flex-wrap gap-1 mb-2">
+              <span class="stag">Corporate</span><span class="stag">Business</span><span class="stag">WordPress</span>
+            </div>
+            <div style="font-size:0.78rem;color:#4f46e5;font-weight:800;display:flex;align-items:center;gap:5px;">
+              <i class="bi bi-images"></i> View Screenshots
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. The Caulking Guy -->
+      <div class="col-md-4 col-sm-6 proj-item" data-page="0">
+        <div class="proj-card" onclick="openLightbox(4)">
+          <div class="proj-img-area" style="background:#fce7f3;">
+            <div class="proj-fallback"><i class="bi bi-tools" style="color:#be185d;"></i></div>
+            <div class="proj-badge proj-badge-live"><i class="bi bi-circle-fill" style="font-size:0.5rem;"></i> Live</div>
+            <button class="proj-open-btn" onclick="event.stopPropagation();" title="Open project" disabled>
+              <i class="bi bi-box-arrow-up-right"></i> Open Site
+            </button>
+          </div>
+          <div class="proj-card-body">
+            <h3 style="font-weight:800;font-size:0.9rem;color:#0f172a;margin-bottom:6px;">The Caulking Guy</h3>
+            <p style="font-size:0.78rem;color:#64748b;line-height:1.65;margin-bottom:10px;flex:1;">Service website for a caulking and sealing provider in Australia. Optimised for local search and customer inquiries.</p>
+            <div class="d-flex flex-wrap gap-1 mb-2">
+              <span class="stag">Service</span><span class="stag">AU Market</span><span class="stag">WordPress</span>
+            </div>
+            <div style="font-size:0.78rem;color:#be185d;font-weight:800;display:flex;align-items:center;gap:5px;">
+              <i class="bi bi-images"></i> View Screenshots
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. Inspiring Group -->
+      <div class="col-md-4 col-sm-6 proj-item" data-page="0">
+        <div class="proj-card" onclick="openLightbox(5)">
+          <div class="proj-img-area" style="background:#f0fdf4;">
+            <div class="proj-fallback"><i class="bi bi-star-fill" style="color:#059669;"></i></div>
+            <div class="proj-badge proj-badge-live"><i class="bi bi-circle-fill" style="font-size:0.5rem;"></i> Live</div>
+            <button class="proj-open-btn" onclick="event.stopPropagation();" title="Open project" disabled>
+              <i class="bi bi-box-arrow-up-right"></i> Open Site
+            </button>
+          </div>
+          <div class="proj-card-body">
+            <h3 style="font-weight:800;font-size:0.9rem;color:#0f172a;margin-bottom:6px;">Inspiring Group</h3>
+            <p style="font-size:0.78rem;color:#64748b;line-height:1.65;margin-bottom:10px;flex:1;">Business website improving client engagement and brand visibility online. Professional layout with strong calls to action.</p>
+            <div class="d-flex flex-wrap gap-1 mb-2">
+              <span class="stag">Business</span><span class="stag">Branding</span><span class="stag">WordPress</span>
+            </div>
+            <div style="font-size:0.78rem;color:#059669;font-weight:800;display:flex;align-items:center;gap:5px;">
+              <i class="bi bi-images"></i> View Screenshots
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7. Maa Laxmi Export — page 2 -->
+      <div class="col-md-4 col-sm-6 proj-item" data-page="1" style="display:none;">
+        <div class="proj-card" onclick="openLightbox(6)">
+          <div class="proj-img-area" style="background:#fffbeb;">
+            <div class="proj-fallback"><i class="bi bi-box-seam-fill" style="color:#d97706;"></i></div>
+            <div class="proj-badge proj-badge-live"><i class="bi bi-circle-fill" style="font-size:0.5rem;"></i> Live</div>
+            <button class="proj-open-btn" onclick="event.stopPropagation();" title="Open project" disabled>
+              <i class="bi bi-box-arrow-up-right"></i> Open Site
+            </button>
+          </div>
+          <div class="proj-card-body">
+            <h3 style="font-weight:800;font-size:0.9rem;color:#0f172a;margin-bottom:6px;">Maa Laxmi Export</h3>
+            <p style="font-size:0.78rem;color:#64748b;line-height:1.65;margin-bottom:10px;flex:1;">Website for an export company enhancing global outreach and credibility with international buyers worldwide.</p>
+            <div class="d-flex flex-wrap gap-1 mb-2">
+              <span class="stag">Export</span><span class="stag">Global</span><span class="stag">Business</span>
+            </div>
+            <div style="font-size:0.78rem;color:#d97706;font-weight:800;display:flex;align-items:center;gap:5px;">
+              <i class="bi bi-images"></i> View Screenshots
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8. Web Easy Experts — page 2 -->
+      <div class="col-md-4 col-sm-6 proj-item" data-page="1" style="display:none;">
+        <div class="proj-card" onclick="openLightbox(7)">
+          <div class="proj-img-area" style="background:#eff6ff;">
+            <img
+              src="assets/images/projects/webeasyexperts/home.png"
+              alt="Web Easy Experts — website design by CodeXaman Kolkata"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            >
+            <div class="proj-fallback" style="display:none;"><i class="bi bi-globe2" style="color:#2563eb;"></i></div>
+            <div class="proj-badge proj-badge-prog"><i class="bi bi-clock-fill" style="font-size:0.5rem;"></i> In Progress</div>
+            <button class="proj-open-btn" onclick="event.stopPropagation();" title="Open project" disabled>
+              <i class="bi bi-box-arrow-up-right"></i> Open Site
+            </button>
+          </div>
+          <div class="proj-card-body">
+            <h3 style="font-weight:800;font-size:0.9rem;color:#0f172a;margin-bottom:6px;">Web Easy Experts</h3>
+            <p style="font-size:0.78rem;color:#64748b;line-height:1.65;margin-bottom:10px;flex:1;">Business website for a web agency focused on service presentation and brand positioning. In active development.</p>
+            <div class="d-flex flex-wrap gap-1 mb-2">
+              <span class="stag">Web Agency</span><span class="stag">CMS</span><span class="stag">In Progress</span>
+            </div>
+            <div style="font-size:0.78rem;color:#2563eb;font-weight:800;display:flex;align-items:center;gap:5px;">
+              <i class="bi bi-images"></i> View Screenshots
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9. Bexily ERP — page 2 -->
+      <div class="col-md-4 col-sm-6 proj-item" data-page="1" style="display:none;">
+        <div class="proj-card" onclick="openLightbox(8)">
+          <div class="proj-img-area" style="background:#f1f5f9;">
+            <div class="proj-fallback"><i class="bi bi-gear-wide-connected" style="color:#475569;"></i></div>
+            <div class="proj-badge proj-badge-prog"><i class="bi bi-clock-fill" style="font-size:0.5rem;"></i> In Progress</div>
+            <button class="proj-open-btn" onclick="event.stopPropagation();" title="Open project" disabled>
+              <i class="bi bi-box-arrow-up-right"></i> Open Site
+            </button>
+          </div>
+          <div class="proj-card-body">
+            <h3 style="font-weight:800;font-size:0.9rem;color:#0f172a;margin-bottom:6px;">Bexily ERP</h3>
+            <p style="font-size:0.78rem;color:#64748b;line-height:1.65;margin-bottom:10px;flex:1;">Website for an ERP solutions provider highlighting enterprise services for corporate clients. Professional B2B design.</p>
+            <div class="d-flex flex-wrap gap-1 mb-2">
+              <span class="stag">ERP</span><span class="stag">B2B</span><span class="stag">Enterprise</span>
+            </div>
+            <div style="font-size:0.78rem;color:#475569;font-weight:800;display:flex;align-items:center;gap:5px;">
+              <i class="bi bi-images"></i> View Screenshots
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /#proj-grid -->
+
+    <!-- Pagination dots -->
+    <div class="d-flex align-items-center justify-content-center gap-2 mt-4" id="proj-dots">
+      <button class="gallery-dot active" onclick="showProjPage(0)"></button>
+      <button class="gallery-dot" onclick="showProjPage(1)"></button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== PROJECT LIGHTBOX ===== -->
+<div id="lightbox" onclick="if(event.target===this) closeLightbox()">
+  <div id="lb-inner">
+    <button id="lb-close" onclick="closeLightbox()"><i class="bi bi-x-lg"></i></button>
+    <!-- JS injects content here — only gallery/meta, no "client privacy" text -->
+  </div>
+</div>
+
+<!-- ===== EDUCATION & CERTIFICATIONS ===== -->
+<section id="education" style="background:#fff;padding:96px 5%;" aria-label="Education Certifications CodeXaman IGNOU Ramakrishna Mission NIELIT Howrah">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div class="section-tag aos"><i class="bi bi-mortarboard"></i> Academic Background</div>
+    <h2 class="aos" style="font-size:clamp(1.8rem,3.2vw,2.6rem);font-weight:800;letter-spacing:-0.02em;color:#0f172a;margin-bottom:44px;">Education &amp; <span style="color:#2563eb;">Certifications</span></h2>
+
+    <div class="row g-3">
+      <!-- BCOM -->
+      <div class="col-lg-6">
+        <div class="edu-card aos h-100">
+          <div class="edu-icon"><i class="bi bi-mortarboard-fill"></i></div>
+          <div class="flex-1 w-100">
+            <div style="font-weight:800;font-size:0.88rem;color:#0f172a;margin-bottom:2px;">Bachelor of Commerce (BCOM)</div>
+            <div style="font-size:0.78rem;color:#64748b;">IGNOU — Indira Gandhi National Open University</div>
+            <div style="font-size:0.72rem;color:#2563eb;margin-top:5px;font-weight:800;">2023</div>
+            <div class="cert-img-wrap mt-3">
+              <img src="assets/images/certs/bcom-ignou.jpg" alt="BCOM IGNOU Certificate — Aman Prasad CodeXaman"
+                onerror="this.parentElement.innerHTML='<div class=\'cert-placeholder\'><i class=\'bi bi-award\' style=\'font-size:2rem;color:#93c5fd;\'></i><span>Certificate will appear here</span></div>'">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Advanced Computer -->
+      <div class="col-lg-6">
+        <div class="edu-card aos h-100">
+          <div class="edu-icon"><i class="bi bi-keyboard"></i></div>
+          <div class="flex-1 w-100">
+            <div style="font-weight:800;font-size:0.88rem;color:#0f172a;margin-bottom:2px;">Advanced Computer Programming</div>
+            <div style="font-size:0.78rem;color:#64748b;">Ramakrishna Mission Shilpamandira (Belur Math)</div>
+            <div style="font-size:0.72rem;color:#2563eb;margin-top:5px;font-weight:800;">2019 — 2021</div>
+            <div class="cert-img-wrap mt-3">
+              <img src="assets/images/certs/rkm-computer.jpg" alt="Ramakrishna Mission Computer Certificate — Aman Prasad"
+                onerror="this.parentElement.innerHTML='<div class=\'cert-placeholder\'><i class=\'bi bi-award\' style=\'font-size:2rem;color:#93c5fd;\'></i><span>Certificate will appear here</span></div>'">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NIELIT -->
+      <div class="col-lg-6">
+        <div class="edu-card aos h-100">
+          <div class="edu-icon"><i class="bi bi-bank"></i></div>
+          <div class="flex-1 w-100">
+            <div style="font-weight:800;font-size:0.88rem;color:#0f172a;margin-bottom:2px;">IT Tools &amp; Office Software</div>
+            <div style="font-size:0.78rem;color:#64748b;">NIELIT (National Institute of Electronics and IT)</div>
+            <div style="font-size:0.72rem;color:#2563eb;margin-top:5px;font-weight:800;">2019</div>
+            <div class="cert-img-wrap mt-3">
+              <img src="assets/images/certs/nielit.jpg" alt="NIELIT Certificate — Aman Prasad Howrah"
+                onerror="this.parentElement.innerHTML='<div class=\'cert-placeholder\'><i class=\'bi bi-award\' style=\'font-size:2rem;color:#93c5fd;\'></i><span>Certificate will appear here</span></div>'">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Subhomoy -->
+      <div class="col-lg-6">
+        <div class="edu-card aos h-100">
+          <div class="edu-icon"><i class="bi bi-pc-display"></i></div>
+          <div class="flex-1 w-100">
+            <div style="font-weight:800;font-size:0.88rem;color:#0f172a;margin-bottom:2px;">Basic Computer Application</div>
+            <div style="font-size:0.78rem;color:#64748b;">Subhomoy Computer Academy</div>
+            <div style="font-size:0.72rem;color:#2563eb;margin-top:5px;font-weight:800;">2018</div>
+            <div class="cert-img-wrap mt-3">
+              <img src="assets/images/certs/subhomoy.jpg" alt="Subhomoy Computer Certificate — Aman Prasad"
+                onerror="this.parentElement.innerHTML='<div class=\'cert-placeholder\'><i class=\'bi bi-award\' style=\'font-size:2rem;color:#93c5fd;\'></i><span>Certificate will appear here</span></div>'">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Higher Secondary -->
+      <div class="col-12">
+        <div class="edu-card aos">
+          <div class="edu-icon"><i class="bi bi-book-half"></i></div>
+          <div class="flex-1 w-100">
+            <div style="font-weight:800;font-size:0.88rem;color:#0f172a;margin-bottom:2px;">Higher Secondary Education</div>
+            <div style="font-size:0.78rem;color:#64748b;">Howrah Hindi High School, Salkia</div>
+            <div style="font-size:0.72rem;color:#2563eb;margin-top:5px;font-weight:800;">2017</div>
+            <div class="cert-img-wrap mt-3" style="max-width:480px;">
+              <img src="assets/images/certs/higher-secondary.jpg" alt="Higher Secondary Certificate — Howrah Hindi High School"
+                onerror="this.parentElement.innerHTML='<div class=\'cert-placeholder\'><i class=\'bi bi-award\' style=\'font-size:2rem;color:#93c5fd;\'></i><span>Certificate will appear here</span></div>'">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CURRENTLY LEARNING ===== -->
+<section style="background:#f8fafc;padding:80px 5%;">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div class="text-center mb-5">
+      <div class="section-tag aos" style="justify-content:center;"><i class="bi bi-stars"></i> Growth Areas</div>
+      <h2 class="aos" style="font-size:clamp(1.7rem,3vw,2.3rem);font-weight:800;letter-spacing:-0.02em;color:#0f172a;">Currently <span style="color:#2563eb;">Exploring</span></h2>
+    </div>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <div class="card-custom p-4 aos h-100">
+          <i class="bi bi-stack" style="font-size:1.6rem;color:#2563eb;margin-bottom:13px;display:block;"></i>
+          <h3 style="font-weight:800;font-size:0.9rem;color:#0f172a;margin-bottom:10px;">MERN Stack</h3>
+          <ul class="d-flex flex-column gap-2 list-unstyled m-0">
+            <li style="font-size:0.78rem;color:#64748b;display:flex;gap:7px;align-items:center;"><i class="bi bi-arrow-right-short" style="color:#2563eb;font-size:1rem;flex-shrink:0;"></i>MongoDB for NoSQL data management</li>
+            <li style="font-size:0.78rem;color:#64748b;display:flex;gap:7px;align-items:center;"><i class="bi bi-arrow-right-short" style="color:#2563eb;font-size:1rem;flex-shrink:0;"></i>Express.js RESTful backend APIs</li>
+            <li style="font-size:0.78rem;color:#64748b;display:flex;gap:7px;align-items:center;"><i class="bi bi-arrow-right-short" style="color:#2563eb;font-size:1rem;flex-shrink:0;"></i>React component-based UIs</li>
+            <li style="font-size:0.78rem;color:#64748b;display:flex;gap:7px;align-items:center;"><i class="bi bi-arrow-right-short" style="color:#2563eb;font-size:1rem;flex-shrink:0;"></i>Node.js server-side runtime</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-custom p-4 aos h-100">
+          <i class="bi bi-phone-fill" style="font-size:1.6rem;color:#2563eb;margin-bottom:13px;display:block;"></i>
+          <h3 style="font-weight:800;font-size:0.9rem;color:#0f172a;margin-bottom:10px;">Mobile Development</h3>
+          <ul class="d-flex flex-column gap-2 list-unstyled m-0">
+            <li style="font-size:0.78rem;color:#64748b;display:flex;gap:7px;align-items:center;"><i class="bi bi-arrow-right-short" style="color:#2563eb;font-size:1rem;flex-shrink:0;"></i>React Native (Expo framework)</li>
+            <li style="font-size:0.78rem;color:#64748b;display:flex;gap:7px;align-items:center;"><i class="bi bi-arrow-right-short" style="color:#2563eb;font-size:1rem;flex-shrink:0;"></i>Firebase auth &amp; backend services</li>
+            <li style="font-size:0.78rem;color:#64748b;display:flex;gap:7px;align-items:center;"><i class="bi bi-arrow-right-short" style="color:#2563eb;font-size:1rem;flex-shrink:0;"></i>Cross-platform Android &amp; iOS</li>
+            <li style="font-size:0.78rem;color:#64748b;display:flex;gap:7px;align-items:center;"><i class="bi bi-arrow-right-short" style="color:#2563eb;font-size:1rem;flex-shrink:0;"></i>Native device APIs integration</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card-custom p-4 aos h-100">
+          <i class="bi bi-robot" style="font-size:1.6rem;color:#facc15;margin-bottom:13px;display:block;"></i>
+          <h3 style="font-weight:800;font-size:0.9rem;color:#0f172a;margin-bottom:10px;">AI &amp; Automation</h3>
+          <ul class="d-flex flex-column gap-2 list-unstyled m-0">
+            <li style="font-size:0.78rem;color:#64748b;display:flex;gap:7px;align-items:center;"><i class="bi bi-arrow-right-short" style="color:#2563eb;font-size:1rem;flex-shrink:0;"></i>LangChain for AI workflows</li>
+            <li style="font-size:0.78rem;color:#64748b;display:flex;gap:7px;align-items:center;"><i class="bi bi-arrow-right-short" style="color:#2563eb;font-size:1rem;flex-shrink:0;"></i>Python automation scripting</li>
+            <li style="font-size:0.78rem;color:#64748b;display:flex;gap:7px;align-items:center;"><i class="bi bi-arrow-right-short" style="color:#2563eb;font-size:1rem;flex-shrink:0;"></i>n8n workflow automation</li>
+            <li style="font-size:0.78rem;color:#64748b;display:flex;gap:7px;align-items:center;"><i class="bi bi-arrow-right-short" style="color:#2563eb;font-size:1rem;flex-shrink:0;"></i>Scalable, efficient pipelines</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CALENDLY — Free Meeting ===== -->
+<section id="meeting" style="background:#fff;padding:96px 5%;border-top:1.5px solid #e2e8f0;">
+  <div style="max-width:1100px;margin:0 auto;">
+    <div class="text-center mb-5">
+      <div class="section-tag aos" style="justify-content:center;"><i class="bi bi-calendar-check"></i> Free Consultation</div>
+      <h2 class="aos" style="font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:800;letter-spacing:-0.02em;color:#0f172a;margin-bottom:12px;">Schedule a <span style="color:#2563eb;">Free Meeting</span></h2>
+      <p class="aos" style="font-size:0.95rem;color:#64748b;max-width:480px;margin:0 auto 16px;line-height:1.8;">Book a free 30-minute consultation call. Tell me about your project, get a quote, and let's start building your website today — no commitment required.</p>
+      <div class="aos d-flex justify-content-center flex-wrap gap-4">
+        <div style="display:flex;align-items:center;gap:7px;font-size:0.8rem;color:#64748b;font-weight:700;"><i class="bi bi-check-circle-fill" style="color:#16a34a;"></i>100% Free</div>
+        <div style="display:flex;align-items:center;gap:7px;font-size:0.8rem;color:#64748b;font-weight:700;"><i class="bi bi-check-circle-fill" style="color:#16a34a;"></i>No obligation</div>
+        <div style="display:flex;align-items:center;gap:7px;font-size:0.8rem;color:#64748b;font-weight:700;"><i class="bi bi-check-circle-fill" style="color:#16a34a;"></i>Instant quote</div>
+        <div style="display:flex;align-items:center;gap:7px;font-size:0.8rem;color:#64748b;font-weight:700;"><i class="bi bi-check-circle-fill" style="color:#16a34a;"></i>30 mins only</div>
+      </div>
+    </div>
+    <div class="aos" style="border:1.5px solid #e2e8f0;border-radius:16px;overflow:hidden;min-height:700px;">
+      <div class="calendly-inline-widget"
+           data-url="https://calendly.com/amanprasad-um/30min?hide_gdpr_banner=1&primary_color=2563eb"
+           style="min-width:320px;height:700px;"></div>
+    </div>
+  </div>
+</section>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+<!-- ===== CTA ===== -->
+<section style="padding:60px 5%;">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div class="cta-bg aos p-5 text-center">
+      <div style="position:relative;z-index:1;">
+        <div class="d-inline-flex align-items-center gap-2 mb-3" style="background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.2);border-radius:8px;padding:5px 14px;font-size:0.72rem;font-weight:700;color:#bfdbfe;letter-spacing:0.08em;text-transform:uppercase;">
+          <span class="dot-live" style="background:#86efac;"></span>Open to Freelance Work
+        </div>
+        <h2 style="font-size:clamp(1.8rem,4vw,3rem);font-weight:800;letter-spacing:-0.03em;line-height:1.1;color:#fff;margin-bottom:14px;">Need an affordable website<br><span style="color:#fde047;">for your business in Kolkata?</span></h2>
+        <p style="font-size:0.95rem;color:rgba(219,234,254,0.85);max-width:440px;margin:0 auto 32px;line-height:1.8;">Fast, SEO-optimised, and professional websites for businesses in Kolkata, Howrah, West Bengal. Best prices guaranteed.</p>
+        <div class="cta-btns d-flex gap-3 justify-content-center flex-wrap">
+          <a href="mailto:amanprasad0902@gmail.com" style="padding:13px 28px;background:#fff;color:#2563eb;font-weight:800;border-radius:9px;text-decoration:none;font-size:0.9rem;display:inline-flex;align-items:center;gap:8px;transition:all 0.2s;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform=''">
+            <i class="bi bi-envelope-fill"></i> Send me an Email
+          </a>
+          <a href="#meeting" style="padding:13px 28px;background:#facc15;color:#1e293b;font-weight:800;border-radius:9px;text-decoration:none;font-size:0.9rem;display:inline-flex;align-items:center;gap:8px;transition:all 0.2s;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform=''">
+            <i class="bi bi-calendar-check-fill"></i> Book Free Call
+          </a>
+          <a href="tel:8420966418" style="padding:13px 28px;background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);color:#fff;font-weight:700;border-radius:9px;text-decoration:none;font-size:0.9rem;display:inline-flex;align-items:center;gap:8px;">
+            <i class="bi bi-telephone-fill"></i> Call Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" style="background:#fff;padding:96px 5%;">
+  <div style="max-width:680px;margin:0 auto;text-align:center;">
+    <div class="section-tag aos" style="justify-content:center;"><i class="bi bi-chat-dots"></i> Get In Touch</div>
+    <h2 class="aos" style="font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:800;letter-spacing:-0.03em;line-height:1.1;margin-bottom:14px;color:#0f172a;">Let's build<br><span style="color:#2563eb;">something great.</span></h2>
+    <p class="aos" style="font-size:0.95rem;color:#64748b;line-height:1.8;max-width:420px;margin:0 auto 40px;">Need a professional, affordable website for your business in Kolkata or Howrah? I'm open to all enquiries.</p>
+    <div class="aos d-flex flex-column gap-2 mb-4" style="max-width:460px;margin-left:auto;margin-right:auto;">
+      <a href="mailto:amanprasad0902@gmail.com" class="clink">
+        <div class="clink-icon"><i class="bi bi-envelope-fill"></i></div>amanprasad0902@gmail.com
+      </a>
+      <a href="tel:8420966418" class="clink">
+        <div class="clink-icon"><i class="bi bi-telephone-fill"></i></div>+91 84209 66418
+      </a>
+      <div class="clink" style="cursor:default;">
+        <div class="clink-icon"><i class="bi bi-geo-alt-fill"></i></div>Kona, Howrah, West Bengal — 711114
+      </div>
+    </div>
+    <div class="aos d-flex gap-2 justify-content-center flex-wrap">
+      <a href="mailto:amanprasad0902@gmail.com" class="btn-primary-custom"><i class="bi bi-envelope"></i> Send a Message</a>
+      <a href="#meeting" class="btn-yellow-custom"><i class="bi bi-calendar-check"></i> Book Free Meeting</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer style="background:#0f172a;padding:26px 5%;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;">
+  <div>
+    <a href="#" style="font-size:1.1rem;font-weight:800;color:#f8fafc;text-decoration:none;">Code<span style="color:#60a5fa;">Xaman</span></a>
+    <span style="margin-left:12px;font-size:0.72rem;color:#64748b;">&copy; 2026 · Aman Prasad · Web Developer · Kolkata, India</span>
+  </div>
+  <div class="d-flex gap-3 align-items-center flex-wrap">
+    <a href="mailto:amanprasad0902@gmail.com" style="color:#64748b;text-decoration:none;font-size:0.8rem;font-weight:600;display:flex;align-items:center;gap:5px;" onmouseover="this.style.color='#60a5fa'" onmouseout="this.style.color='#64748b'"><i class="bi bi-envelope"></i> Email</a>
+    <a href="tel:8420966418" style="color:#64748b;text-decoration:none;font-size:0.8rem;font-weight:600;display:flex;align-items:center;gap:5px;" onmouseover="this.style.color='#60a5fa'" onmouseout="this.style.color='#64748b'"><i class="bi bi-telephone"></i> Phone</a>
+    <a href="#meeting" style="color:#64748b;text-decoration:none;font-size:0.8rem;font-weight:600;display:flex;align-items:center;gap:5px;" onmouseover="this.style.color='#facc15'" onmouseout="this.style.color='#64748b'"><i class="bi bi-calendar-check"></i> Book a Call</a>
+    <span style="font-size:0.8rem;color:#475569;">Howrah, West Bengal</span>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+/* ===================================================================
+   PROJECT DATA — used only for lightbox, cards are written in HTML
+   =================================================================== */
+const projects = [
+  {
+    name: "EPIC Loft Conversion",
+    desc: "Business website for a loft conversion company serving UK and Australian markets. Strong lead generation with clean service layout.",
+    tags: ["WordPress", "AU Market", "Business"],
+    status: "live",
+    icon: "bi-house-door-fill",
+    color: "#dbeafe",
+    accent: "#2563eb",
+    url: "", // add live URL here when ready
+    images: [
+      "assets/images/projects/epicloft/home.png",
+      "assets/images/projects/epicloft/about.png",
+      "assets/images/projects/epicloft/service.png",
+      "assets/images/projects/epicloft/contact.png"
+    ],
+    imgLabels: ["Home Page", "About Page", "Services Page", "Contact Page"]
+  },
+  {
+    name: "Pavitra Mitti",
+    desc: "Plant nursery website in Basirhat, Kolkata. Product display and customer engagement for an eco-conscious local brand.",
+    tags: ["WordPress", "Nursery", "Kolkata"],
+    status: "live",
+    icon: "bi-flower2",
+    color: "#dcfce7",
+    accent: "#16a34a",
+    url: "",
+    images: [
+      "assets/images/projects/pavitramitti/home.png",
+      "assets/images/projects/pavitramitti/about.png",
+      "assets/images/projects/pavitramitti/contact.png"
+    ],
+    imgLabels: ["Home Page", "About Page", "Contact Page"]
+  },
+  {
+    name: "Uniwaves",
+    desc: "Corporate website for a kidswear manufacturer and wholesale company in West Bengal. B2B focused design.",
+    tags: ["Manufacturing", "Wholesale", "Corporate"],
+    status: "live", icon: "bi-bag-heart-fill", color: "#fef3c7", accent: "#d97706", url: "",
+    images: [], imgLabels: []
+  },
+  {
+    name: "BPT Group",
+    desc: "Corporate business website establishing strong online presence for a multi-service group.",
+    tags: ["Corporate", "Business", "WordPress"],
+    status: "live", icon: "bi-buildings-fill", color: "#e0e7ff", accent: "#4f46e5", url: "",
+    images: [], imgLabels: []
+  },
+  {
+    name: "The Caulking Guy",
+    desc: "Service website for a caulking and sealing provider in Australia. Optimised for local search.",
+    tags: ["Service", "AU Market", "WordPress"],
+    status: "live", icon: "bi-tools", color: "#fce7f3", accent: "#be185d", url: "",
+    images: [], imgLabels: []
+  },
+  {
+    name: "Inspiring Group",
+    desc: "Business website improving client engagement and brand visibility online.",
+    tags: ["Business", "Branding", "WordPress"],
+    status: "live", icon: "bi-star-fill", color: "#f0fdf4", accent: "#059669", url: "",
+    images: [], imgLabels: []
+  },
+  {
+    name: "Maa Laxmi Export",
+    desc: "Website for an export company enhancing global outreach and credibility with international buyers.",
+    tags: ["Export", "Global", "Business"],
+    status: "live", icon: "bi-box-seam-fill", color: "#fffbeb", accent: "#d97706", url: "",
+    images: [], imgLabels: []
+  },
+  {
+    name: "Web Easy Experts",
+    desc: "Business website for a web agency focused on service presentation. In active development.",
+    tags: ["Web Agency", "CMS", "In Progress"],
+    status: "progress", icon: "bi-globe2", color: "#eff6ff", accent: "#2563eb", url: "",
+    images: [
+      "assets/images/projects/webeasyexperts/home.png",
+      "assets/images/projects/webeasyexperts/about.png",
+      "assets/images/projects/webeasyexperts/contact.png"
+    ],
+    imgLabels: ["Home Page", "About Page", "Contact Page"]
+  },
+  {
+    name: "Bexily ERP",
+    desc: "Website for an ERP solutions provider highlighting enterprise services for corporate clients.",
+    tags: ["ERP", "B2B", "Enterprise"],
+    status: "progress", icon: "bi-gear-wide-connected", color: "#f1f5f9", accent: "#475569", url: "",
+    images: [], imgLabels: []
+  }
+];
+
+/* ===================================================================
+   PROJECT PAGINATION — show/hide items by data-page attribute
+   =================================================================== */
+let currentProjPage = 0;
+
+function showProjPage(page) {
+  currentProjPage = page;
+  document.querySelectorAll('.proj-item').forEach(el => {
+    el.style.display = (parseInt(el.dataset.page) === page) ? '' : 'none';
+  });
+  // update dot active state
+  document.querySelectorAll('#proj-dots .gallery-dot').forEach((dot, i) => {
+    dot.classList.toggle('active', i === page);
+  });
+  // scroll back to projects section top
+  document.getElementById('projects').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+/* ===================================================================
+   GALLERY SLIDER — lightbox internal slider (properly fixed)
+   =================================================================== */
+let galleryIdx = 0;
+let galleryTotal = 0;
+let currentProjectIdx = -1;
+
+function galleryGo(dir) {
+  galleryIdx = (galleryIdx + dir + galleryTotal) % galleryTotal;
+  updateGallery();
+}
+
+function galleryGoTo(i) {
+  galleryIdx = i;
+  updateGallery();
+}
+
+function updateGallery() {
+  const track = document.getElementById('gTrack');
+  if (!track) return;
+  track.style.transform = 'translateX(-' + (galleryIdx * 100) + '%)';
+  // update dot states inside lightbox
+  document.querySelectorAll('#lb-inner .gallery-dot').forEach((d, i) => {
+    d.classList.toggle('active', i === galleryIdx);
+  });
+  const label = document.getElementById('gLabel');
+  if (label) label.textContent = (galleryIdx + 1) + ' / ' + galleryTotal;
+}
+
+/* ===================================================================
+   LIGHTBOX — open with gallery slider, no "client privacy" text
+   =================================================================== */
+function openLightbox(idx) {
+  const p = projects[idx];
+  currentProjectIdx = idx;
+  galleryIdx = 0;
+  const hasImages = p.images && p.images.length > 0;
+  galleryTotal = hasImages ? p.images.length : 1;
+
+  // build slide HTML
+  let slidesHTML = '';
+  if (hasImages) {
+    p.images.forEach((src, i) => {
+      const label = p.imgLabels[i] || (p.name + ' screenshot ' + (i + 1));
+      slidesHTML += `
+        <div class="gallery-slide">
+          <div class="gallery-slide-img-wrap">
+            <img
+              src="${src}"
+              alt="${label} — ${p.name} by CodeXaman"
+              onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'><i class=\'bi bi-image\'></i><span>${label} — image not found</span></div>'"
+            >
+          </div>
+        </div>
+      `;
+    });
+  } else {
+    slidesHTML = `
+      <div class="gallery-slide">
+        <div class="img-placeholder">
+          <i class="bi bi-images"></i>
+          <span>Screenshots coming soon</span>
+        </div>
+      </div>
+    `;
+  }
+
+  const showControls = p.images.length > 1;
+  const statusClass = p.status === 'live' ? 'proj-badge-live' : 'proj-badge-prog';
+  const statusIcon  = p.status === 'live' ? 'bi-circle-fill' : 'bi-clock-fill';
+  const statusLabel = p.status === 'live' ? 'Live' : 'In Progress';
+
+  // open-in-new-tab button — only shows if URL is set
+  const openBtnHTML = p.url
+    ? `<a href="${p.url}" target="_blank" rel="noopener noreferrer" class="btn-primary-custom mt-3" style="display:inline-flex;"><i class="bi bi-box-arrow-up-right"></i> Open Live Site</a>`
+    : `<p style="font-size:0.78rem;color:#94a3b8;font-weight:600;margin-top:16px;"><i class="bi bi-lock"></i> Live URL not listed — available on request.</p>`;
+
+  const lb = document.getElementById('lb-inner');
+  lb.innerHTML = `
+    <button id="lb-close" onclick="closeLightbox()"><i class="bi bi-x-lg"></i></button>
+    <div style="padding:28px;">
+      <div class="d-flex align-items-center gap-3 mb-4">
+        <div style="width:48px;height:48px;background:${p.color};border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+          <i class="bi ${p.icon}" style="color:${p.accent};font-size:1.4rem;"></i>
+        </div>
+        <div class="flex-1">
+          <h2 style="font-size:1.2rem;font-weight:800;color:#0f172a;margin:0;">${p.name}</h2>
+          <div class="d-flex flex-wrap gap-1 mt-1">${p.tags.map(t => '<span class="stag">' + t + '</span>').join('')}</div>
+        </div>
+        <span class="proj-badge ${statusClass}" style="position:static;flex-shrink:0;">
+          <i class="bi ${statusIcon}" style="font-size:0.5rem;"></i> ${statusLabel}
+        </span>
+      </div>
+
+      <p style="font-size:0.9rem;color:#64748b;line-height:1.8;margin-bottom:22px;">${p.desc}</p>
+
+      <!-- Gallery slider -->
+      <div class="gallery-slider">
+        <div class="gallery-track" id="gTrack" style="transform:translateX(0%);">
+          ${slidesHTML}
+        </div>
+        ${showControls ? `
+          <button class="gallery-prev" onclick="galleryGo(-1)"><i class="bi bi-chevron-left"></i></button>
+          <button class="gallery-next" onclick="galleryGo(1)"><i class="bi bi-chevron-right"></i></button>
+          <div class="gallery-label" id="gLabel">1 / ${p.images.length}</div>
+        ` : (hasImages ? '<div class="gallery-label" id="gLabel">1 / 1</div>' : '')}
+      </div>
+
+      ${showControls ? `
+        <div class="gallery-dots" style="padding:10px 0 4px;">
+          ${p.images.map((_, i) => '<button class="gallery-dot ' + (i===0?'active':'') + '" onclick="galleryGoTo(' + i + ')"></button>').join('')}
+        </div>
+      ` : ''}
+
+      <div class="text-center">
+        ${openBtnHTML}
+      </div>
+    </div>
+  `;
+
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow = '';
+  galleryIdx = 0;
+}
+
+/* keyboard nav for lightbox */
+document.addEventListener('keydown', e => {
+  if (!document.getElementById('lightbox').classList.contains('open')) return;
+  if (e.key === 'Escape')      closeLightbox();
+  if (e.key === 'ArrowLeft')   galleryGo(-1);
+  if (e.key === 'ArrowRight')  galleryGo(1);
+});
+
+/* ===================================================================
+   MOBILE MENU TOGGLE
+   =================================================================== */
+function toggleMobile() {
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+
+/* ===================================================================
+   SKILL BARS — animate when about section is visible
+   =================================================================== */
+function animateBars() {
+  document.querySelectorAll('.skill-bar-fill').forEach(bar => {
+    bar.style.width = bar.getAttribute('data-width');
+  });
+}
+
+/* ===================================================================
+   AOS — simple intersection observer scroll-in effect
+   =================================================================== */
+const aosObserver = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('visible'), i * 55);
+      aosObserver.unobserve(e.target);
+      // trigger skill bars when about section enters view
+      if (e.target.closest && e.target.closest('#about')) animateBars();
+    }
+  });
+}, { threshold: 0.08 });
+
+document.querySelectorAll('.aos, .aos-left').forEach(el => aosObserver.observe(el));
+
+/* ===================================================================
+   NAVBAR — shrink on scroll
+   =================================================================== */
+const nav = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 60);
+});
+
+/* ===================================================================
+   INIT on load
+   =================================================================== */
+window.addEventListener('load', () => {
+  animateBars();
+  // make sure page 0 cards are visible on load (they already are via HTML, just confirm)
+  showProjPage(0);
+});
+</script>
+
+</body>
+</html>
